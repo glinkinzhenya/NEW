@@ -902,6 +902,9 @@ ul
 }
 .money-item__content-text
 {
+    font-size: 14px;
+    font-weight: 300;
+
     color: white;
 }
 
