@@ -20,7 +20,6 @@
 
         background-image: url(../img/background.gif);
         background-size: cover;
- 
 
         filter: blur(3px);
     }
@@ -41,7 +40,6 @@
 
         &__left
         {
-
             &-list
             {
                 display: flex;
@@ -84,8 +82,6 @@
 
         &__right
         {
- 
-
             &-list
             {
                 display: flex;
@@ -263,31 +259,22 @@
 }
 
 
-.fix {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: -5;
+.fix
+{
+    position: fixed;
+    z-index: -5;
 
-   &__image {
-  
-    width: 100%;
-   } 
-}
-
-.illusia {
     width: 100vw;
-    height: 500px;
-  
+    height: 100vh;
+
+    &__image
+    {
+        width: 100%;
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
+.illusia
+{
+    width: 100vw;
+    // height: 500px;
+}

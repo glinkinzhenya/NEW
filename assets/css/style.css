@@ -543,7 +543,6 @@ ul
 .illusia
 {
     width: 100vw;
-    height: 500px;
 }
 
 .services
@@ -587,10 +586,10 @@ ul
 
     max-width: 335px;
 
-    gap: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    gap: 10px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -684,7 +683,7 @@ ul
 .nextwork__title
 {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     line-height: 140%;
 
@@ -699,10 +698,6 @@ ul
     opacity: .5;
     opacity: .9;
     color: white;
-}
-.nextwork__title:hover
-{
-    scale: 1.1;
 }
 .nextwork-box
 {
@@ -748,7 +743,6 @@ ul
     width: 100px;
     height: 100px;
 
-    border: 1px solid black;
     border-radius: 50px;
     background-color: white;
 
@@ -769,6 +763,10 @@ ul
 }
 .nextwork-box__item-description
 {
+    font-size: 13px;
+
+    text-align: center;
+
     color: white;
 }
 .nextwork-technology__title
@@ -813,6 +811,7 @@ ul
 .nextwork::after
 {
     position: absolute;
+    z-index: -1;
     top: 70%;
     right: 0;
     bottom: 0;
@@ -909,4 +908,80 @@ ul
 .money-item__button:hover
 {
     background-color: black;
+}
+
+.technology
+{
+    background-color: white;
+}
+.technology-container
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+.technology-info__title
+{
+    font-size: 35px;
+    font-weight: 500;
+
+    margin-bottom: 40px;
+}
+.technology-info__description
+{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+
+    width: 500px;
+}
+.technology-circle
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.technology-circle__icon
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column-reverse;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 300px;
+    background-color: #ebebeb;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 15px;
+}
+.technology-circle__icon-title
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.technology-circle__icon-image
+{
+    width: 120px;
 }

@@ -2,15 +2,15 @@
 @use '../../mixins' as *;
 
 .portfolio {
-    padding-bottom: 100px;
     padding-top: 100px;
+    padding-bottom: 100px;
+
     background-color: white;
 
     &-container {
         max-width: 70vw;
-        margin-left: auto;
         margin-right: auto;
-
+        margin-left: auto;
     }
 
     &__title {
@@ -35,6 +35,5 @@
         &:hover {
             scale: 1.1;
         }
-
     }
 }
