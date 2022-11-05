@@ -643,19 +643,8 @@ ul
     margin-bottom: 50px;
     padding-top: 30px;
 
-    -webkit-transition: 3s;
-         -o-transition: 3s;
-            transition: 3s;
     text-align: center;
     letter-spacing: 4px;
-
-    opacity: .5;
-    opacity: .9;
-    color: black;
-}
-.portfolio__title:hover
-{
-    scale: 1.1;
 }
 
 .nextwork
@@ -980,8 +969,78 @@ ul
 {
     font-size: 20px;
     font-weight: 500;
+
+    letter-spacing: 1px;
 }
 .technology-circle__icon-image
 {
     width: 120px;
+}
+
+.about
+{
+    background-color: white;
+}
+.about-container
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row-reverse;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+}
+.about-info__title
+{
+    font-size: 35px;
+    font-weight: 500;
+
+    margin-bottom: 40px;
+}
+.about-info__description
+{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+
+    width: 500px;
+}
+.about-circle
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.about-circle__icon
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column-reverse;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.about-circle__icon-image
+{
+    width: 200px;
 }
