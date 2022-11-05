@@ -3,7 +3,7 @@
 
 .header
 {
-    min-height: 110vh;
+    min-height: 100vh;
 
 
     &-bg
@@ -20,7 +20,7 @@
 
         background-image: url(../img/background.gif);
         background-size: cover;
-        border-radius: 30px;
+ 
 
         filter: blur(3px);
     }
@@ -262,40 +262,11 @@
     width: 30px;
 }
 
-.header::after {
-    position: absolute;
-    top: 100%;
-    right: 30px;
-    left: 30px;
-    height: 10px;
-    content: "";
-    border-radius: 0 0 12px 12px;
-    background-color: #0b2447d1;
-    filter: blur(1px);
-   
-}
 
 
-.header::before {
-    position: absolute;
-    top: 100%;
-    right: 40px;
-    left: 40px;
-    height: 20px;
-    content: "";
-    border-radius: 0 0 12px 12px;
-    background-color: #5d5da56a;
-    filter: blur(1px);
-}
 
-// .header::after {
-//     position: absolute;
-//     top: 80%;
-//     right: -5px;
-//     bottom: -5px;
-//     left: 0;
-//     content: "";
-//     background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #f5f5fa 86.5%);
-// }
+
+
+
 
 
