@@ -1,4 +1,143 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
+.nextwork {
 
+position: relative;
+    display: flex;
+
+    width: 100vw;
+    min-height: 50vh;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    align-items: center;
+    justify-content: center;
+
+
+    &__title {
+        font-size: 50px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 140%;
+
+        margin-bottom: 70px;
+
+        transition: 3.0s;
+        text-align: center;
+        letter-spacing: 4px;
+
+        opacity: .5;
+        opacity: .9;
+        color: white;
+
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    &-box {
+        display: flex;
+
+        margin-bottom: 50px;
+
+        justify-content: space-between;
+        gap: 20px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+
+            max-width: 300px;
+            padding: 20px;
+
+      
+
+            align-items: center;
+            gap: 20px;
+
+            &-title {
+                color: white;
+            }
+
+            &-picture {
+                order: -1;
+                border-radius: 50px;
+                background-color: white;
+                border: 1px solid black;
+                height: 100px;
+                width: 100px;
+                display: flex;
+                align-items: center;
+            }
+
+            &-image {
+                display: block;
+
+                width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            &-description{
+                color: white;
+            }
+        }
+    }
+
+    &-technology {
+
+        &__title {
+            font-size: 50px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 140%;
+
+            position: relative;
+
+            margin-bottom: 70px;
+
+            transition: 3.0s;
+            text-align: center;
+            letter-spacing: 4px;
+
+            opacity: .5;
+            opacity: .9;
+            color: white;
+
+        }
+
+
+        &__box {
+            display: grid;
+
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+
+
+
+            &-picture {
+                display: flex;
+
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+.nextwork::after {
+  
+        position: absolute;
+        top: 70%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        content: "";
+// background: black;
+        background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, black 86.5%);
+    }

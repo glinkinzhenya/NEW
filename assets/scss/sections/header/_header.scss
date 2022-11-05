@@ -263,6 +263,27 @@
 }
 
 
+.fix {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -5;
+
+   &__image {
+  
+    width: 100%;
+   } 
+}
+
+.illusia {
+    width: 100vw;
+    height: 500px;
+  
+}
+
+
+
+
 
 
 
