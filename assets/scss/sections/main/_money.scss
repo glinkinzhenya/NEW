@@ -1,45 +1,54 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.money
-{
+.money {
     position: relative;
+    padding-bottom: 80px;
 
-    min-height: 100vh;
+    &-img {
+        width: 100%;
+    }
 
-    background-color: white;
+    &-picture {
+        position: absolute;
+        z-index: -1;
+    }
 
-    &-title
-    {
-        font-size: 50px;
-        font-weight: 500;
+
+
+
+
+
+    &-title {
+        font-size: 40px;
+        font-weight: 300;
         font-style: normal;
         line-height: 140%;
-
-        padding: 50px;
+        padding-top: 100px;
+        padding-bottom: 25px;
 
         text-align: center;
         letter-spacing: 4px;
 
-        color: black;
+        color: white;
     }
 
-    &-description
-    {
+    &-description {
         text-align: center;
+        color: white;
+        font-weight: 300;
+        padding-bottom: 30px;
+        font-size: 15px;
     }
 
 
-    &-box
-    {
+    &-box {
         display: flex;
 
-        justify-content: space-around;
-        gap: 20px;
+        justify-content: center;
     }
 
-    &-item
-    {
+    &-item {
         display: flex;
         flex-direction: column;
 
@@ -47,47 +56,27 @@
         padding: 20px;
 
         gap: 20px;
+        align-items: center;
 
 
-        &__title
-        {
-            color: black;
+        &__title {
+            color: white;
         }
 
-        &__price
-        {
+        &__price {
             display: flex;
 
-            &-number
-            {
-                color: black;
+            &-number {
+                color: white;
             }
         }
 
-        &__content
-        {
-            &-text
-            {
-                color: black;
+        &__content {
+            &-text {
+                color: white;
             }
         }
 
-        &__button
-        {
-            width: 100px;
-            margin-right: auto;
-            margin-left: auto;
 
-            text-align: center;
-
-            color: red;
-            border: 1px solid black;
-            border-radius: 20px;
-
-            &:hover
-            {
-                background-color: black;
-            }
-        }
     }
 }
