@@ -253,8 +253,6 @@ body
 a
 {
     text-decoration: none;
-
-    color: white !important;
 }
 
 ul
@@ -403,6 +401,8 @@ ul
     -webkit-transition: .5s;
          -o-transition: .5s;
             transition: .5s;
+
+    color: white;
 }
 .header-menu__language-link:hover
 {
@@ -410,10 +410,11 @@ ul
 }
 .header-menu__language-link.action
 {
-    padding: 4px 5px;
+    padding: 5px 5px;
 
-    border-radius: 5px;
-    background-color: #dc365d;
+    color: black;
+    border-radius: 30px;
+    background-color: white;
 }
 .header-menu__language-link.action:hover
 {

@@ -1,13 +1,11 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.header
-{
+.header {
     min-height: 100vh;
 
 
-    &-bg
-    {
+    &-bg {
         position: absolute;
         z-index: -2;
         top: 50%;
@@ -27,8 +25,7 @@
 
 
 
-    &-menu
-    {
+    &-menu {
         position: absolute;
         top: 3%;
         right: 0;
@@ -38,10 +35,8 @@
 
         grid-template-columns: 1fr auto 1fr auto;
 
-        &__left
-        {
-            &-list
-            {
+        &__left {
+            &-list {
                 display: flex;
 
                 height: 75px;
@@ -54,8 +49,7 @@
 
 
 
-            &-link
-            {
+            &-link {
                 font-size: 16px;
                 font-weight: 400;
                 font-style: normal;
@@ -66,8 +60,7 @@
                 opacity: .5;
 
 
-                &:hover
-                {
+                &:hover {
                     opacity: 1;
                     color: white;
                     border-bottom: 3px solid #dc365d;
@@ -80,10 +73,8 @@
 
 
 
-        &__right
-        {
-            &-list
-            {
+        &__right {
+            &-list {
                 display: flex;
 
                 height: 75px;
@@ -95,8 +86,7 @@
 
 
 
-            &-link
-            {
+            &-link {
                 font-size: 16px;
                 font-weight: 400;
                 font-style: normal;
@@ -106,8 +96,7 @@
 
                 opacity: .5;
 
-                &:hover
-                {
+                &:hover {
                     opacity: 1;
                     color: white;
                     border-bottom: 3px solid #dc365d;
@@ -115,35 +104,32 @@
             }
         }
 
-        &__language
-        {
+        &__language {
             position: absolute;
             top: 35%;
             right: 2%;
 
-            &-link
-            {
+
+            &-link {
                 font-size: 16px;
                 font-weight: 400;
                 font-style: normal;
                 line-height: 150%;
-
+                color: white;
                 transition: .5s;
 
-                &:hover
-                {
+                &:hover {
                     border-bottom: 3px solid #dc365d;
                 }
 
-                &.action
-                {
-                    padding: 4px 5px;
+                &.action {
+                    padding: 5px 5px;
 
-                    border-radius: 5px;
-                    background-color: #dc365d;
+                    border-radius: 30px;
+                    background-color: white;
+                    color: black;
 
-                    &:hover
-                    {
+                    &:hover {
                         border-bottom: none;
                     }
                 }
@@ -151,8 +137,7 @@
         }
     }
 
-    &-content
-    {
+    &-content {
         display: flex;
         flex-direction: column;
         //gap: 50px;
@@ -162,8 +147,7 @@
         justify-content: center;
         align-items: center;
 
-        &__title
-        {
+        &__title {
             font-size: 120px;
             font-weight: 700;
             font-style: normal;
@@ -177,14 +161,12 @@
             opacity: .5;
             color: white;
 
-            &:hover
-            {
+            &:hover {
                 scale: 1.1;
             }
         }
 
-        &__description
-        {
+        &__description {
             font-size: 20px;
             font-weight: 400;
             font-style: normal;
@@ -198,13 +180,11 @@
             color: white;
         }
 
-        &__action
-        {
+        &__action {
             position: absolute;
             bottom: 10%;
 
-            &-link
-            {
+            &-link {
                 font-size: 16px;
                 font-weight: 400;
                 font-style: normal;
@@ -216,8 +196,7 @@
                 border: 1px solid #dc365d;
                 border-radius: 15px;
 
-                &:hover
-                {
+                &:hover {
                     background-color: #dc365d;
                     box-shadow: 0 0 20px #dc365d;
                 }
@@ -226,8 +205,7 @@
     }
 }
 
-.header-arrow
-{
+.header-arrow {
     position: fixed;
     z-index: 3;
     right: 2%;
@@ -236,8 +214,7 @@
     transition: 1s;
     opacity: .5;
 
-    &:hover
-    {
+    &:hover {
         opacity: 1;
         scale: 1.1;
     }
@@ -245,28 +222,24 @@
 
 
 
-.header-arrow__image
-{
+.header-arrow__image {
     width: 30px;
 }
 
 
-.fix
-{
+.fix {
     position: fixed;
     z-index: -5;
 
     width: 100vw;
     height: 100vh;
 
-    &__image
-    {
+    &__image {
         width: 100%;
     }
 }
 
-.illusia
-{
+.illusia {
     width: 100vw;
     // height: 500px;
 }
