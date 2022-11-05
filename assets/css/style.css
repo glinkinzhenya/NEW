@@ -514,12 +514,12 @@ ul
             transition: 1s;
 
     opacity: .5;
-    border: solid 1px white;
-    border-radius: 15px;
 }
 .header-arrow:hover
 {
     opacity: 1;
+
+    scale: 1.1;
 }
 
 .header-arrow__image

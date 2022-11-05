@@ -226,28 +226,20 @@
     }
 }
 
-
-
-
-
 .header-arrow
 {
     position: fixed;
     z-index: 3;
     right: 2%;
     bottom: 4%;
-
     padding: 5px;
-
     transition: 1s;
-
     opacity: .5;
-    border: solid 1px white;
-    border-radius: 15px;
 
     &:hover
     {
         opacity: 1;
+        scale: 1.1;
     }
 }
 
