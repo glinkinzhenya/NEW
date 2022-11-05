@@ -1,0 +1,65 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.portfolio {
+    display: flex;
+
+    min-height: 100vh;
+    padding-bottom: 20px;
+
+    background-image: url(../img/IMAGE\ 2022-10-26\ 13:55:28.jpg);
+    background-position: center;
+    background-size: cover;
+
+    align-items: center;
+
+
+    &-container {
+        max-width: 80vw;
+    }
+
+    &__title {
+        font-size: 50px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 140%;
+
+        position: relative;
+
+        margin-bottom: 50px;
+        padding-top: 30px;
+
+        transition: 3.0s;
+        text-align: center;
+        letter-spacing: 4px;
+
+        opacity: .5;
+        opacity: .9;
+        color: white;
+
+        &:hover {
+            scale: 1.1;
+        }
+
+
+
+        &::after {
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+
+            width: 280px;
+            height: 3px;
+
+            content: '';
+            transform: translateX(-50%);
+
+            background-color: #dc365d;
+        }
+    }
+}
+
+// .test {
+// //    margin-left: auto;
+// //    margin-right: auto;
+// }

@@ -1,0 +1,26 @@
+@mixin unlist()
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@mixin abs-position($t: 0, $r: 0, $b: 0, $l: 0)
+{
+    position: absolute;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+}
+
+@mixin text-gradient($gradient)
+{
+    background: linear-gradient(90.13deg, #ef8080 .84%, #f0145a 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+}
