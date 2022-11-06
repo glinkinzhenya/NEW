@@ -1100,6 +1100,8 @@ ul
     display: flex;
         flex-direction: row-reverse;
 
+    margin-left: 25px;
+
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -1118,6 +1120,19 @@ ul
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.love-box__info-name
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.love-box__info-work
+{
+    font-size: 15px;
+    font-weight: 300;
 }
 .love-box__info-image
 {
