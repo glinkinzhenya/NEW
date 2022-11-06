@@ -1058,14 +1058,14 @@ ul
 .love
 {
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 
     background-color: #eee;
 }
 .love-title
 {
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 500;
     line-height: 140%;
 
     padding-bottom: 80px;
@@ -1078,20 +1078,37 @@ ul
 
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 40px;
+    gap: 60px 0;
 }
 .love-section__item-text
 {
     font-size: 15px;
     font-weight: 300;
-    line-height: 160%;
+    line-height: 200%;
 
-    width: 500px;
-    margin-bottom: 20px;
-    padding: 20px 40px;
+    position: relative;
 
-    border-radius: 20px;
+    width: 600px;
+    margin-bottom: 35px;
+    padding: 40px 40px;
+
+    letter-spacing: 1px;
+
+    border-radius: 15px;
     background-color: white;
+}
+.love-section__item-text::after
+{
+    position: absolute;
+    bottom: -35px;
+    left: 80px;
+
+    width: 50px;
+    height: 50px;
+
+    content: '';
+
+    background-image: url(../img/corner.png);
 }
 .love-box
 {
@@ -1136,5 +1153,5 @@ ul
 }
 .love-box__info-image
 {
-    width: 70px;
+    width: 60px;
 }
