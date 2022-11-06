@@ -323,7 +323,7 @@ ul
     display: flex;
 
     height: 75px;
-    margin-right: 20px;
+    margin-right: 70px;
 
     gap: 30px;
     -webkit-box-pack: end;
@@ -345,12 +345,12 @@ ul
             transition: .5s;
 
     opacity: .5;
+    color: white;
 }
 .header-menu__left-link:hover
 {
     opacity: 1;
     color: white;
-    border-bottom: 3px solid #dc365d;
 }
 .header-menu__right-list
 {
@@ -359,7 +359,7 @@ ul
     display: flex;
 
     height: 75px;
-    margin-left: 20px;
+    margin-left: 70px;
 
     gap: 30px;
     -webkit-box-align: center;
@@ -378,12 +378,12 @@ ul
             transition: .5s;
 
     opacity: .5;
+    color: white;
 }
 .header-menu__right-link:hover
 {
     opacity: 1;
     color: white;
-    border-bottom: 3px solid #dc365d;
 }
 .header-menu__language
 {
@@ -406,7 +406,11 @@ ul
 }
 .header-menu__language-link:hover
 {
-    border-bottom: 3px solid #dc365d;
+    padding: 5px 5px;
+
+    color: black;
+    border-radius: 30px;
+    background-color: white;
 }
 .header-menu__language-link.action
 {
@@ -441,12 +445,10 @@ ul
 }
 .header-content__title
 {
-    font-size: 120px;
-    font-weight: 700;
+    font-size: 100px;
+    font-weight: 500;
     font-style: normal;
     line-height: 140%;
-
-    margin: 0;
 
     cursor: pointer;
     -webkit-transition: 3s;
@@ -455,10 +457,6 @@ ul
 
     opacity: .5;
     color: white;
-}
-.header-content__title:hover
-{
-    scale: 1.1;
 }
 .header-content__description
 {
@@ -486,19 +484,22 @@ ul
     font-style: normal;
 
     padding: 10px 10px;
+    padding: 15px 50px;
 
     -webkit-transition: .5s;
          -o-transition: .5s;
             transition: .5s;
 
-    border: 1px solid #dc365d;
-    border-radius: 15px;
+    opacity: .5;
+    color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
 }
 .header-content__action-link:hover
 {
-    background-color: #dc365d;
-    -webkit-box-shadow: 0 0 20px #dc365d;
-            box-shadow: 0 0 20px #dc365d;
+    opacity: 1;
+    color: black;
 }
 
 .header-arrow
