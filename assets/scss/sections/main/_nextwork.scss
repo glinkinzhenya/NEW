@@ -1,7 +1,8 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.nextwork {
+.nextwork
+{
     position: relative;
 
     display: flex;
@@ -17,7 +18,8 @@
     justify-content: center;
 
 
-    &__title {
+    &__title
+    {
         font-size: 50px;
         font-weight: 400;
         font-style: normal;
@@ -34,7 +36,8 @@
         color: white;
     }
 
-    &-box {
+    &-box
+    {
         display: flex;
 
         margin-bottom: 50px;
@@ -42,7 +45,8 @@
         justify-content: space-between;
         gap: 20px;
 
-        &__item {
+        &__item
+        {
             display: flex;
             flex-direction: column;
 
@@ -52,11 +56,13 @@
             align-items: center;
             gap: 20px;
 
-            &-title {
+            &-title
+            {
                 color: white;
             }
 
-            &-picture {
+            &-picture
+            {
                 display: flex;
 
                 width: 100px;
@@ -69,7 +75,8 @@
                 align-items: center;
             }
 
-            &-image {
+            &-image
+            {
                 display: block;
 
                 width: 50%;
@@ -77,18 +84,21 @@
                 margin-left: auto;
             }
 
-            &-description {
-                color: white;
+            &-description
+            {
                 font-size: 13px;
+
                 text-align: center;
 
-
+                color: white;
             }
         }
     }
 
-    &-technology {
-        &__title {
+    &-technology
+    {
+        &__title
+        {
             font-size: 50px;
             font-weight: 500;
             font-style: normal;
@@ -108,7 +118,8 @@
         }
 
 
-        &__box {
+        &__box
+        {
             display: grid;
 
             grid-template-columns: repeat(5, 1fr);
@@ -116,7 +127,8 @@
 
 
 
-            &-picture {
+            &-picture
+            {
                 display: flex;
 
                 justify-content: center;
@@ -126,13 +138,16 @@
 }
 
 
-.nextwork::after {
+.nextwork::after
+{
     position: absolute;
+    z-index: -1;
     top: 70%;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -1;
+
     content: '';
+
     background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, black 86.5%);
 }

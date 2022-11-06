@@ -2,71 +2,78 @@
 @use '../../mixins' as *;
 
 .love {
-    background-color: #eeeeee;
-    padding-bottom: 100px;
     padding-top: 120px;
+    padding-bottom: 100px;
 
-    &-container {}
+    background-color: #eee;
+
+
 
     &-title {
-        text-align: center;
-        padding-bottom: 80px;
         font-size: 40px;
         font-weight: 500;
         line-height: 140%;
+
+        padding-bottom: 80px;
+
+        text-align: center;
     }
 
     &-section {
         display: grid;
+
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-        gap: 60px 0px;
+        gap: 60px 0;
 
         &__item {
-
-
             &-text {
-                margin-bottom: 35px;
-                width: 600px;
-                padding: 40px 40px;
-                background-color: white;
-                border-radius: 15px;
                 font-size: 15px;
                 font-weight: 300;
                 line-height: 200%;
-                letter-spacing: 1px;
+
                 position: relative;
+
+                width: 600px;
+                margin-bottom: 35px;
+                padding: 40px 40px;
+
+                letter-spacing: 1px;
+
+                border-radius: 15px;
+                background-color: white;
 
 
                 &::after {
                     position: absolute;
                     bottom: -32px;
-
-                    height: 50px;
-                    width: 50px;
-                    content: "";
                     left: 76px;
+
+                    width: 50px;
+                    height: 50px;
+
+                    content: '';
+
                     background-image: url(../img/corner.png);
-
                 }
-
             }
-
         }
     }
 
     &-box {
         display: flex;
+        flex-direction: row-reverse;
+
+        margin-left: 25px;
 
         justify-content: flex-end;
-        flex-direction: row-reverse;
         gap: 20px;
-        margin-left: 25px;
 
 
         &__info {
             display: flex;
             flex-direction: column;
+
             justify-content: center;
 
             &-name {
@@ -79,7 +86,7 @@
                 font-weight: 300;
             }
 
-            &-picture {}
+
 
             &-image {
                 width: 60px;
