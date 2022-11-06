@@ -99,7 +99,7 @@
                 &:hover {
                     opacity: 1;
                     color: white;
-                  // border-bottom: 3px solid #dc365d;
+                    // border-bottom: 3px solid #dc365d;
                 }
             }
         }
@@ -206,8 +206,8 @@
                 transition: 0.5s;
 
                 &:hover {
-               opacity: 1;
-               color: black;
+                    opacity: 1;
+                    color: black;
                 }
             }
         }
@@ -222,6 +222,30 @@
     padding: 5px;
     transition: 1s;
     opacity: .5;
+
+    &__second {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &-link {}
+
+        &-image {
+            width: 40px;
+            opacity: 0.5;
+            transition: 1s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+        }
+
+
+
+    }
+
 
     &:hover {
         opacity: 1;
