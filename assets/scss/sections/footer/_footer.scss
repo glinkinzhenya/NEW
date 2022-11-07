@@ -1,0 +1,37 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.footer {
+    background-color: #171717;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    &-picture {}
+
+    &-image {
+     width: 200px;
+    }
+
+    &-security {
+        color: white;
+    }
+
+    &-box {
+        display: flex;
+        gap: 10px;
+
+        &__picture {}
+
+        &__image {
+       width: 30px;
+        }
+    }
+
+
+}

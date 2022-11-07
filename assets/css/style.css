@@ -600,7 +600,7 @@ ul
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px 20px;
+    gap: 100px 0;
     justify-items: center;
 }
 .services-box__item
@@ -610,7 +610,7 @@ ul
     display: flex;
         flex-direction: column;
 
-    max-width: 335px;
+    max-width: 280px;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -626,7 +626,7 @@ ul
 }
 .services-box__item-picture
 {
-    max-width: 100px;
+    max-width: 90px;
     padding-bottom: 50px;
 
     -webkit-box-ordinal-group: 0;
@@ -1026,15 +1026,15 @@ ul
     padding-top: 100px;
     padding-bottom: 100px;
 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
 }
 .about-info__title
 {
@@ -1144,12 +1144,12 @@ ul
 
     margin-left: 25px;
 
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     gap: 20px;
 }
 .love-box__info
@@ -1179,4 +1179,45 @@ ul
 .love-box__info-image
 {
     width: 60px;
+}
+
+.footer
+{
+    background-color: #171717;
+}
+.footer-container
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer-image
+{
+    width: 200px;
+}
+.footer-security
+{
+    color: white;
+}
+.footer-box
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    gap: 10px;
+}
+.footer-box__image
+{
+    width: 30px;
 }

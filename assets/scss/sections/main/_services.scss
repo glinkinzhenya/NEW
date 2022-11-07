@@ -3,8 +3,7 @@
 
 
 
-.services
-{
+.services {
     display: flex;
     //margin-top: 100px;
 
@@ -20,8 +19,7 @@
 
 
 
-    &__title
-    {
+    &__title {
         font-size: 40px;
         font-weight: 500;
 
@@ -30,20 +28,18 @@
         text-align: center;
     }
 
-    &-box
-    {
+    &-box {
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
-        gap: 100px 20px;
+        gap: 100px 0px;
         justify-items: center;
 
-        &__item
-        {
+        &__item {
             display: flex;
             flex-direction: column;
 
-            max-width: 335px;
+            max-width: 280px;
 
             gap: 10px;
             // background-color: red;
@@ -51,29 +47,25 @@
 
 
 
-            &-title
-            {
+            &-title {
                 font-size: 25px;
             }
 
-            &-picture
-            {
+            &-picture {
                 //background-color:yellow;
-                max-width: 100px;
+                max-width: 90px;
                 padding-bottom: 50px;
                 //height: 100px;
 
                 order: -1;
             }
 
-            &-image
-            {
+            &-image {
                 // display: block;
                 width: 100%;
             }
 
-            &-description
-            {
+            &-description {
                 font-size: 15px;
 
                 text-align: center;
