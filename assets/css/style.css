@@ -298,12 +298,6 @@ ul
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-
-    background-image: url(../img/background.gif);
-    background-size: cover;
-
-    -webkit-filter: blur(3px);
-            filter: blur(3px);
 }
 .header-menu
 {
