@@ -10,12 +10,14 @@
         align-items: center;
         padding-top: 70px;
         padding-bottom: 70px;
+        padding-right: 40px;
+        padding-left: 40px;
     }
 
     &-picture {}
 
     &-image {
-     width: 200px;
+        width: 200px;
     }
 
     &-security {
@@ -26,10 +28,10 @@
         display: flex;
         gap: 10px;
 
-        &__picture {}
+        &__link {}
 
         &__image {
-       width: 30px;
+            width: 30px;
         }
     }
 

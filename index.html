@@ -650,34 +650,82 @@
 
     <section class="contacts">
       <div class="contacts-container container">
-        <h4 class="contacts-title">Контакты</h4>
-        <div class="contacts-description">Feel free to write and call us. We really love to communicate with our
+        <h4 class="contacts__title">Контакты</h4>
+        <div class="contacts__description">Feel free to write and call us. We really love to communicate with our
           clients.</div>
         <div class="contacts-box">
+          <div class="contacts-box__text">
+
+            <div class="contacts-box__text-item contacts-item">
+              <a class="contacts-item__tel" href="tel:+38063403045">+ 38 (063) 403 30 45</a>
+              <a class="contacts-item__tel" href="mailto:glinkinzhenya@gmail.com">glinkinzhenya@gmail.com</a>
+
+              <div class="contacts-item__address">Pineapple Loft, 22 Pink Street, New York</div>
+              <div class="contacts-item__box">
+                <a class="contacts-item__box-link" href="">
+                  <img class="contacts-item__box-image" src="assets/img/footer-box__image1.png" alt="">
+                </a>
+                <a class="contacts-item__box-link" href="">
+                  <img class="contacts-item__box-image" src="assets/img/footer-box__image2.png" alt="">
+                </a>
+                <a class="contacts-item__box-link" href="">
+                  <img class="contacts-item__box-image" src="assets/img/footer-box__image3.png" alt="">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contacts-box__enter">
+
+            <form class="contacts-box__enter-form contacts-form" action="">
+
+              <div class="contacts-form__label">
+                <input class="contacts-form__input" type="email" name="email" placeholder="email">
+              </div>
+
+              <div class="contacts-form__label">
+                <input class="contacts-form__input" type="text" name="имя" placeholder="имя">
+              </div>
+
+              <div class="contacts-form__label">
+                <!-- <input class="contacts-form__input" type="text" name="комментарий" placeholder="комментарий"> -->
+                <textarea class="contacts-form__input" name="" id="" cols="20" rows="10"></textarea>
+              </div>
+
+              <div class="contacts-form__enter">
+                <button class="contacts-form__button" type="submit">Отправить</button>
+              </div>
+
+            </form>
+
+          </div>
 
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer-container container">
+      <div class="footer-container">
         <div class="footer-picture">
           <img class="footer-image" src="assets/img/logo.png" alt="">
         </div>
         <div class="footer-security">© All rights reserved</div>
         <div class="footer-box">
-          <div class="footer-box__picture">
+          <a class="footer-box__link" href="">
             <img class="footer-box__image" src="assets/img/footer-box__image1.png" alt="">
-          </div>
-          <div class="footer-box__picture">
+          </a>
+          <a class="footer-box__link" href="">
             <img class="footer-box__image" src="assets/img/footer-box__image2.png" alt="">
-          </div>
-          <div class="footer-box__picture">
+          </a>
+          <a class="footer-box__link" href="">
             <img class="footer-box__image" src="assets/img/footer-box__image3.png" alt="">
-          </div>
+          </a>
         </div>
       </div>
     </footer>
+
+
 
 
 
