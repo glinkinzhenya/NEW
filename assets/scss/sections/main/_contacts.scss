@@ -3,24 +3,36 @@
 
 .contacts {
     background-color: white;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
+
 
     &-container {}
 
     &__title {
         text-align: center;
         margin-bottom: 50px;
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: 3px;
     }
 
     &__description {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 37px;
     }
 
     &-box {
         display: flex;
-        justify-content: space-around;
+        gap: 180px;
+        margin-left: 170px;
 
         &__text {}
 
@@ -33,11 +45,24 @@
 
         &__tel {
             color: black;
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 1px;
+
+        }
+
+        &__mail {
+            color: black;
+            font-size: 23px;
+            font-weight: 300;
+            letter-spacing: 1px;
         }
 
         &__address {
-            margin-top: 20px;
+            margin-top: 30px;
             margin-bottom: 20px;
+            font-size: 15px;
+            font-weight: 300;
         }
 
         &__box {
@@ -46,6 +71,7 @@
 
             &-image {
                 width: 30px;
+
             }
 
             &__enter {}
@@ -64,9 +90,17 @@
 
         &__input {
             padding: 20px;
-            width: 300px;
-            max-height: 20vh;
+            width: 470px;
+            max-height: 15vh;
             outline: none;
+            border: rgb(191, 189, 189) solid 1px;
+
+            &::placeholder {
+                color: grey;
+                font-size: 15px;
+                font-weight: 300;
+
+            }
         }
 
         &__enter {}
@@ -75,13 +109,13 @@
             padding: 20px;
             border-radius: 40px;
             background-color: white;
-            border-color: black;
+            border: 1px solid black;
             min-width: 150px;
 
             &:hover {
                 background-color: black;
-                
-                    color: white;
+
+                color: white;
             }
         }
 
