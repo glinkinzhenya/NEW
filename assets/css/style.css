@@ -1260,6 +1260,7 @@ ul
 
 .footer
 {
+    opacity: .5;
     background-color: #171717;
 }
 .footer-container
