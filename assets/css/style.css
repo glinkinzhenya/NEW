@@ -317,7 +317,7 @@ ul
     display: flex;
 
     height: 75px;
-    margin-right: 70px;
+    margin-right: 80px;
 
     gap: 30px;
     -webkit-box-pack: end;
@@ -353,7 +353,7 @@ ul
     display: flex;
 
     height: 75px;
-    margin-left: 70px;
+    margin-left: 80px;
 
     gap: 30px;
     -webkit-box-align: center;
@@ -384,6 +384,8 @@ ul
     position: absolute;
     top: 35%;
     right: 2%;
+
+    opacity: .5;
 }
 .header-menu__language-link
 {
@@ -968,8 +970,8 @@ ul
 {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 .technology-circle__icon
 {
@@ -978,8 +980,8 @@ ul
     display: flex;
         flex-direction: column-reverse;
 
-    width: 250px;
-    height: 250px;
+    width: 160px;
+    height: 160px;
 
     border-radius: 300px;
     background-color: #ebebeb;
@@ -993,7 +995,6 @@ ul
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 15px;
 }
 .technology-circle__icon-title
 {
@@ -1004,7 +1005,7 @@ ul
 }
 .technology-circle__icon-image
 {
-    width: 120px;
+    width: 100px;
 }
 
 .about
@@ -1195,7 +1196,7 @@ ul
 }
 .contacts__description
 {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 300;
     line-height: 37px;
 
@@ -1341,9 +1342,9 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    padding-top: 70px;
+    padding-top: 40px;
     padding-right: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     padding-left: 40px;
 
     -webkit-box-pack: justify;
