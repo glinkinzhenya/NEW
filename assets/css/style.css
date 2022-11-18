@@ -620,11 +620,13 @@ ul
 .services-box__item-title
 {
     font-size: 25px;
+
+    text-align: center;
 }
 .services-box__item-picture
 {
-    max-width: 90px;
-    padding-bottom: 50px;
+    max-width: 130px;
+    padding-bottom: 30px;
 
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
