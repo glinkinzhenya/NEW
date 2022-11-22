@@ -441,7 +441,7 @@ ul
 }
 .header-content__title
 {
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 500;
     font-style: normal;
     line-height: 140%;
@@ -456,7 +456,7 @@ ul
 }
 .header-content__description
 {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 400;
     font-style: normal;
     line-height: 140%;
@@ -465,7 +465,6 @@ ul
 
     letter-spacing: 5px;
 
-    opacity: .5;
     color: white;
 }
 .header-content__action
@@ -721,7 +720,7 @@ ul
 
     opacity: .5;
     opacity: .9;
-    color: white;
+    color: rgba(233, 228, 228, .953);
 }
 .nextwork-box
 {
@@ -796,7 +795,7 @@ ul
 
     text-align: center;
 
-    color: white;
+    color: rgb(221, 215, 215);
 }
 .nextwork-technology__title
 {
@@ -841,7 +840,7 @@ ul
 {
     position: absolute;
     z-index: -1;
-    top: 70%;
+    top: 55%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1098,7 +1097,7 @@ ul
     padding-top: 120px;
     padding-bottom: 100px;
 
-    background-color: #eee;
+    background-color: black;
 }
 .love-title
 {
@@ -1109,6 +1108,8 @@ ul
     padding-bottom: 80px;
 
     text-align: center;
+
+    color: rgba(195, 191, 191, .663);
 }
 .love-section
 {
@@ -1183,11 +1184,15 @@ ul
 {
     font-size: 20px;
     font-weight: 500;
+
+    color: rgba(234, 231, 231, .886);
 }
 .love-box__info-work
 {
     font-size: 15px;
     font-weight: 300;
+
+    color: rgba(229, 227, 227, .76);
 }
 .love-box__info-image
 {
