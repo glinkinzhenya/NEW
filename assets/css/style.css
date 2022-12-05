@@ -310,6 +310,11 @@ ul
 
     grid-template-columns: 1fr auto 1fr auto;
 }
+.header-menu__logo-image
+{
+    width: 220px;
+    padding-top: 15px;
+}
 .header-menu__left-list
 {
     display: -webkit-box;
@@ -1364,9 +1369,9 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    padding-top: 40px;
+    padding-top: 20px;
     padding-right: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-left: 40px;
 
     -webkit-box-pack: justify;
@@ -1378,7 +1383,7 @@ ul
 }
 .footer-image
 {
-    width: 200px;
+    width: 100px;
 }
 .footer-security
 {

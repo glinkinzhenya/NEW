@@ -9,8 +9,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         padding-right: 40px;
         padding-left: 40px;
     }
@@ -18,7 +18,7 @@
     &-picture {}
 
     &-image {
-        width: 200px;
+        width: 100px;
     }
 
     &-security {

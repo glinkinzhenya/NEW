@@ -35,6 +35,20 @@
 
         grid-template-columns: 1fr auto 1fr auto;
 
+
+
+        &__logo {
+
+            &-image {
+                width: 220px;
+                padding-top: 15px;
+            }
+
+        }
+
+
+
+
         &__left {
             &-list {
                 display: flex;
@@ -126,7 +140,7 @@
 
                 &:hover {
 
-                  
+
                     color: black;
                     border-radius: 30px;
                     background-color: white;
