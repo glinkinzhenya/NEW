@@ -308,12 +308,21 @@ ul
 
     display: grid;
 
-    grid-template-columns: 1fr auto 1fr auto;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: 'navl logo navr';
+}
+.header-menu__logo
+{
+    grid-area: logo;
 }
 .header-menu__logo-image
 {
     width: 220px;
     padding-top: 15px;
+}
+.header-menu__left
+{
+    grid-area: navl;
 }
 .header-menu__left-list
 {
@@ -350,6 +359,10 @@ ul
 {
     opacity: 1;
     color: white;
+}
+.header-menu__right
+{
+    grid-area: navr;
 }
 .header-menu__right-list
 {
@@ -389,8 +402,6 @@ ul
     position: absolute;
     top: 35%;
     right: 2%;
-
-    opacity: .5;
 }
 .header-menu__language-link
 {
@@ -405,21 +416,19 @@ ul
          -o-transition: .5s;
             transition: .5s;
 
+    opacity: .5;
     color: white;
 }
 .header-menu__language-link:hover
 {
-    color: black;
-    border-radius: 30px;
-    background-color: white;
+    opacity: 1;
+    color: white;
 }
 .header-menu__language-link.action
 {
     padding: 5px 5px;
 
-    color: black;
-    border-radius: 30px;
-    background-color: white;
+    opacity: 1;
 }
 .header-menu__language-link.action:hover
 {
@@ -1403,4 +1412,34 @@ ul
 .footer-box__image
 {
     width: 30px;
+}
+@media (max-width: 991.8px)
+{
+    .header-menu
+    {
+        grid-template-areas: 'logo' 'navl' 'navr';
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .header-menu__left-list
+    {
+        height: 35px;
+        margin-right: 0;
+    }
+    .header-menu__right-list
+    {
+        height: 35px;
+        margin-left: 0;
+    }
+    .header-menu__language
+    {
+        top: 22%;
+    }
+}
+@media (max-width: 575.8px)
+{
+    .header-content__title
+    {
+        text-align: center;
+    }
 }
