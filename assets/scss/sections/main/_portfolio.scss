@@ -1,22 +1,23 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.portfolio
-{
+.portfolio {
     padding-top: 100px;
     padding-bottom: 100px;
 
     background-color: white;
 
-    &-container
-    {
+    &-container {
         max-width: 70vw;
         margin-right: auto;
         margin-left: auto;
+
+        @include xl {
+            max-width: 90vw;
+        }
     }
 
-    &__title
-    {
+    &__title {
         font-size: 50px;
         font-weight: 500;
         font-style: normal;
@@ -29,5 +30,9 @@
 
         text-align: center;
         letter-spacing: 4px;
+
+        @include sm {
+            font-size: 40px;
+        }
     }
 }
