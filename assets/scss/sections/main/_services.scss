@@ -5,6 +5,7 @@
 
 .services {
     display: flex;
+    // display: grid;
     //margin-top: 100px;
 
     padding-top: 150px;
@@ -16,6 +17,10 @@
 
     align-items: center;
 
+    @include sm {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
 
 
@@ -29,6 +34,10 @@
         padding-bottom: 100px;
 
         text-align: center;
+
+        @include sm {
+            padding-bottom: 50px;
+        }
     }
 
     &-box {
@@ -38,10 +47,19 @@
         gap: 100px 0px;
         justify-items: center;
 
+        @include lg {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px 0px;
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+        }
+
         &__item {
             display: flex;
             flex-direction: column;
-
+            padding: 20px;
             max-width: 280px;
 
             gap: 10px;

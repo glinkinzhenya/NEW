@@ -628,6 +628,7 @@ ul
         flex-direction: column;
 
     max-width: 280px;
+    padding: 20px;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1435,11 +1436,29 @@ ul
     {
         top: 22%;
     }
+    .services-box
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 0;
+    }
 }
 @media (max-width: 575.8px)
 {
     .header-content__title
     {
         text-align: center;
+    }
+    .services
+    {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .services__title
+    {
+        padding-bottom: 50px;
+    }
+    .services-box
+    {
+        grid-template-columns: 1fr;
     }
 }
