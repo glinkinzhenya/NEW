@@ -2,52 +2,60 @@
 @use '../../mixins' as *;
 
 
-.technology
-{
+.technology {
     background-color: white;
 
 
-    &-container
-    {
+    &-container {
         display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: space-evenly;
 
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 100px;
         padding-bottom: 100px;
 
-        align-items: center;
-        justify-content: space-evenly;
+        @include lg {
+            flex-wrap: wrap;
+        }
+
     }
 
-    &-info
-    {
-        &__title
-        {
+    &-info {
+        &__title {
             font-size: 35px;
             font-weight: 500;
 
             margin-bottom: 40px;
         }
 
-        &__description
-        {
+        &__description {
             font-size: 20px;
             font-weight: 300;
             line-height: 33px;
 
-            width: 500px;
+            max-width: 500px;
         }
     }
 
-    &-circle
-    {
+    &-circle {
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
 
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
 
-        &__icon
-        {
+
+        }
+
+
+
+        &__icon {
+
             display: flex;
             flex-direction: column-reverse;
 
@@ -59,11 +67,15 @@
 
             justify-content: center;
             align-items: center;
-        
+
+            @include sm {
+                // display: none;
+            }
+
+            // &--md {}
 
 
-            &-title
-            {
+            &-title {
                 font-size: 20px;
                 font-weight: 500;
 
@@ -72,10 +84,11 @@
 
 
 
-            &-image
-            {
-                width:100px;
+            &-image {
+                width: 100px;
             }
         }
     }
 }
+
+// .technology-circle__icon-md {}
