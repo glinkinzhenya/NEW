@@ -3,9 +3,13 @@
 
 .portfolio {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 
     background-color: white;
+
+    @include sm {
+        padding-top: 70px;
+    }
 
     &-container {
         max-width: 70vw;
