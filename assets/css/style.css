@@ -1273,6 +1273,8 @@ ul
 
     margin-left: 170px;
 
+    background-color: red;
+
     gap: 180px;
 }
 .contacts-item
@@ -1331,7 +1333,7 @@ ul
 }
 .contacts-form__input
 {
-    width: 470px;
+    width: 400px;
     max-height: 15vh;
     padding: 20px;
 
@@ -1375,7 +1377,7 @@ ul
 }
 .contacts-form__button
 {
-    min-width: 150px;
+    min-width: 200px;
     padding: 20px;
 
     border: 1px solid black;
