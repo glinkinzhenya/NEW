@@ -1508,8 +1508,16 @@ ul
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .technology-info__title
+    {
+        text-align: center;
+    }
     .technology-circle
     {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .technology-circle__icon--md
+    {
+        display: none;
     }
 }
