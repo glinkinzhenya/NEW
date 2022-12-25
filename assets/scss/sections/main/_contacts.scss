@@ -3,9 +3,13 @@
 
 .contacts {
     background-color: white;
-    background-color: yellow;
+    // background-color: yellow;
     padding-top: 150px;
     padding-bottom: 100px;
+
+    @include sm {
+        padding-top: 100px;
+    }
 
 
     &-container {}
@@ -13,18 +17,23 @@
     &__title {
         text-align: center;
         margin-bottom: 50px;
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 500;
         letter-spacing: 3px;
+
+        @include sm {
+            font-size: 40px;
+        }
     }
 
     &__description {
         text-align: center;
-        margin-bottom: 90px;
+        // margin-bottom: 90px;
+        margin-bottom: 50px;
         font-size: 19px;
         font-weight: 300;
         letter-spacing: 1px;
-        width: 500px;
+        max-width: 500px;
         margin-left: auto;
         margin-right: auto;
         line-height: 37px;
@@ -32,23 +41,28 @@
 
     &-box {
         display: flex;
-        background-color: red;
-        gap: 50px;
         justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+
+        // background-color: red;
+        @include md {
+            flex-wrap: wrap;
+        }
 
         &__text {}
-
     }
 
     &-item {
-        background-color: green;
+        // background-color: green;
         display: flex;
+        align-items: center;
         flex-direction: column;
-        gap: 5px;
+        gap: 20px;
 
         &__tel {
             color: black;
-            font-size: 28px;
+            font-size: 23px;
             font-weight: 300;
             letter-spacing: 1px;
         }
@@ -61,41 +75,51 @@
         }
 
         &__address {
-            margin-top: 30px;
-            margin-bottom: 20px;
+            // margin-top: 30px;
+            // margin-bottom: 20px;
             font-size: 15px;
             font-weight: 300;
         }
 
         &__box {
             display: flex;
-            gap: 20px;
+            gap: 30px;
+            // margin-bottom: 20px;
 
             &-link {}
 
             &-image {
                 width: 30px;
-
             }
 
             &__enter {}
+        }
 
+
+        &__coment {
+            max-width: 325px;
+            color: grey;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
         }
     }
 
     &-form {
-        background-color: blue;
+        // background-color: blue;
         display: flex;
         gap: 20px;
         flex-direction: column;
+        width: 325px;
 
         &__label {}
 
         &__input {
             padding: 20px;
             // width: 470px;
-            width: 400px;
-            max-height: 15vh;
+            width: 100%;
+            // max-height: 15vh;
+            height: 45px;
             outline: none;
             border: rgb(191, 189, 189) solid 1px;
 
@@ -103,28 +127,35 @@
                 color: grey;
                 font-size: 15px;
                 font-weight: 300;
-
             }
+        }
+
+        &__textarea {
+            padding: 20px;
+            // width: 470px;
+            width: 100%;
+            max-height: 15vh;
+            // max-height: 40px;
+            outline: none;
+            border: rgb(191, 189, 189) solid 1px;
         }
 
         &__enter {}
 
         &__button {
-            padding: 20px;
+            padding: 10px 20px;
             border-radius: 40px;
             background-color: white;
-            border: 1px solid black;
-            // min-width: 150px;
-            // min-width: 200px;
-            width: 400px;
+            // border: 1px solid black;
+            width: 100%;
+            height: 45px;
+            border: rgb(191, 189, 189) solid 1px;
+            transition: 0.5s;
 
             &:hover {
-                background-color: black;
-
+                background-color: #b300fe;
                 color: white;
             }
         }
-
-
     }
 }

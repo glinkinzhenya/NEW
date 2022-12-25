@@ -641,10 +641,39 @@
 
     <section class="contacts" id="contacts">
       <div class="contacts-container container">
-        <h4 class="contacts__title">Наші Контакти</h4>
-        <div class="contacts__description">Feel free to write and call us. We really love to communicate with our
-          clients.</div>
+        <h4 class="contacts__title">Наші контакти</h4>
+        <div class="contacts__description">Пишіть і дзвоніть нам. Ми дуже любимо спілкуватися з нашими клієнтами.</div>
+        <!-- <div class="contacts__description">Feel free to write and call us. We really love to communicate with our
+          clients.</div> -->
         <div class="contacts-box">
+
+          <div class="contacts-box__enter">
+            <form class="contacts-box__enter-form contacts-form" action="">
+
+              <div class="contacts-form__label">
+                <input class="contacts-form__input" type="text" name="name" placeholder="Ім'я*">
+              </div>
+
+              <div class="contacts-form__label">
+                <input class="contacts-form__input" type="email" name="email" placeholder="Email*">
+              </div>
+
+              <div class="contacts-form__label">
+                <input class="contacts-form__input" type="tel" name="phone" placeholder="Телефон*">
+              </div>
+
+              <div class="contacts-form__label">
+                <textarea class="contacts-form__textarea" name="" id="" cols="20" rows="10"
+                  placeholder="Комментарий"></textarea>
+              </div>
+
+              <div class="contacts-form__enter">
+                <button class="contacts-form__button" type="submit">Надіслати*</button>
+              </div>
+
+            </form>
+          </div>
+
           <div class="contacts-box__text">
 
             <div class="contacts-box__text-item contacts-item">
@@ -663,37 +692,13 @@
                   <img class="contacts-item__box-image" src="assets/img/contacts-item__box-image3.png" alt="">
                 </a>
               </div>
+              <div class="contacts-item__coment">*Натискаючи кнопку «Надіслати», ви даєте згоду на обробку ваших
+                персональних даних відповідно до умов «Політики
+                конфіденційності».</div>
             </div>
-
           </div>
 
-          <div class="contacts-box__enter">
 
-            <form class="contacts-box__enter-form contacts-form" action="">
-
-              <div class="contacts-form__label">
-                <input class="contacts-form__input" type="text" name="имя" placeholder="Ім'я*">
-              </div>
-
-              <div class="contacts-form__label">
-                <input class="contacts-form__input" type="email" name="email" placeholder="Email*">
-              </div>
-
-              <div class="contacts-form__label">
-                <input class="contacts-form__input" type="tel" name="tel" placeholder="Телефон*">
-              </div>
-
-              <div class="contacts-form__label">
-                <textarea class="contacts-form__input" name="" id="" cols="20" rows="10"
-                  placeholder="Комментарий"></textarea>
-              </div>
-
-              <div class="contacts-form__enter">
-                <button class="contacts-form__button" type="submit">Надіслати*</button>
-              </div>
-
-            </form>
-          </div>
         </div>
       </div>
     </section>
