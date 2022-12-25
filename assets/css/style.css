@@ -519,7 +519,7 @@ ul
     position: fixed;
     z-index: 3;
     right: 2%;
-    bottom: 4%;
+    bottom: 6.5%;
 
     padding: 5px;
 
@@ -1349,22 +1349,36 @@ ul
     font-size: 23px;
     font-weight: 300;
 
+    -webkit-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
     letter-spacing: 1px;
 
     color: black;
+}
+.contacts-item__tel:hover
+{
+    color: #b300fe;
 }
 .contacts-item__mail
 {
     font-size: 23px;
     font-weight: 300;
 
+    -webkit-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
     letter-spacing: 1px;
 
     color: black;
 }
+.contacts-item__mail:hover
+{
+    color: #b300fe;
+}
 .contacts-item__address
 {
-    font-size: 15px;
+    font-size: 23px;
     font-weight: 300;
 }
 .contacts-item__box
@@ -1374,6 +1388,18 @@ ul
     display: flex;
 
     gap: 30px;
+}
+.contacts-item__box-link
+{
+    -webkit-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+}
+.contacts-item__box-link:hover
+{
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
 }
 .contacts-item__box-image
 {
@@ -1457,8 +1483,46 @@ ul
     border: rgb(191, 189, 189) solid 1px;
     outline: none;
 }
+.contacts-form__textarea::-webkit-input-placeholder
+{
+    font-size: 15px;
+    font-weight: 300;
+
+    color: grey;
+}
+.contacts-form__textarea::-moz-placeholder
+{
+    font-size: 15px;
+    font-weight: 300;
+
+    color: grey;
+}
+.contacts-form__textarea:-ms-input-placeholder
+{
+    font-size: 15px;
+    font-weight: 300;
+
+    color: grey;
+}
+.contacts-form__textarea::-ms-input-placeholder
+{
+    font-size: 15px;
+    font-weight: 300;
+
+    color: grey;
+}
+.contacts-form__textarea::placeholder
+{
+    font-size: 15px;
+    font-weight: 300;
+
+    color: grey;
+}
 .contacts-form__button
 {
+    font-size: 15px;
+    font-weight: 300;
+
     width: 100%;
     height: 45px;
     padding: 10px 20px;
@@ -1467,6 +1531,7 @@ ul
          -o-transition: .5s;
             transition: .5s;
 
+    color: grey;
     border: rgb(191, 189, 189) solid 1px;
     border-radius: 40px;
     background-color: white;
@@ -1501,6 +1566,18 @@ ul
     -ms-flex-align: center;
     align-items: center;
 }
+.footer-link
+{
+    -webkit-transition: 2s;
+         -o-transition: 2s;
+            transition: 2s;
+}
+.footer-link:hover
+{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
 .footer-image
 {
     width: 100px;
@@ -1516,6 +1593,18 @@ ul
     display: flex;
 
     gap: 10px;
+}
+.footer-box__link
+{
+    -webkit-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+}
+.footer-box__link:hover
+{
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
 }
 .footer-box__image
 {
@@ -1667,6 +1756,18 @@ ul
     .contacts__title
     {
         font-size: 35px;
+    }
+    .contacts-item__tel
+    {
+        font-size: 18px;
+    }
+    .contacts-item__mail
+    {
+        font-size: 18px;
+    }
+    .contacts-item__address
+    {
+        font-size: 18px;
     }
     .footer-container
     {
