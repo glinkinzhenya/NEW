@@ -3,6 +3,7 @@
 
 .contacts {
     background-color: white;
+    background-color: yellow;
     padding-top: 150px;
     padding-bottom: 100px;
 
@@ -32,14 +33,15 @@
     &-box {
         display: flex;
         background-color: red;
-        gap: 180px;
-        margin-left: 170px;
+        gap: 50px;
+        justify-content: space-evenly;
 
         &__text {}
 
     }
 
     &-item {
+        background-color: green;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -66,6 +68,8 @@
         }
 
         &__box {
+            display: flex;
+            gap: 20px;
 
             &-link {}
 
@@ -77,14 +81,13 @@
             &__enter {}
 
         }
-
     }
 
     &-form {
+        background-color: blue;
         display: flex;
         gap: 20px;
         flex-direction: column;
-
 
         &__label {}
 
@@ -112,7 +115,8 @@
             background-color: white;
             border: 1px solid black;
             // min-width: 150px;
-            min-width: 200px;
+            // min-width: 200px;
+            width: 400px;
 
             &:hover {
                 background-color: black;
