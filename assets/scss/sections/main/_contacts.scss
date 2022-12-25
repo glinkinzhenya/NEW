@@ -3,8 +3,14 @@
 
 .contacts {
     background-color: white;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    // background-color: yellow;
+    padding-top: 105px;
+    padding-bottom: 120px;
+    // min-height: 100vh;
+
+    @include sm {
+        // padding-top: 100px;
+    }
 
 
     &-container {}
@@ -12,43 +18,68 @@
     &__title {
         text-align: center;
         margin-bottom: 50px;
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 500;
         letter-spacing: 3px;
+
+        @include sm {
+            font-size: 35px;
+        }
+
+        &-actite {
+            color: #b300fe;
+        }
     }
 
     &__description {
         text-align: center;
-        margin-bottom: 90px;
+        // margin-bottom: 90px;
+        margin-bottom: 50px;
         font-size: 19px;
         font-weight: 300;
         letter-spacing: 1px;
-        width: 500px;
+        max-width: 500px;
         margin-left: auto;
         margin-right: auto;
         line-height: 37px;
+
     }
 
     &-box {
         display: flex;
-        background-color: red;
-        gap: 180px;
-        margin-left: 170px;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+
+        // background-color: red;
+        @include md {
+            flex-wrap: wrap;
+        }
 
         &__text {}
-
     }
 
     &-item {
+        // background-color: green;
         display: flex;
+        align-items: center;
         flex-direction: column;
-        gap: 5px;
+        gap: 20px;
 
         &__tel {
             color: black;
-            font-size: 28px;
+            font-size: 23px;
             font-weight: 300;
             letter-spacing: 1px;
+            transition: 0.5s;
+
+            @include sm {
+                font-size: 18px;
+            }
+
+            &:hover {
+                color: #b300fe;
+            }
         }
 
         &__mail {
@@ -56,42 +87,98 @@
             font-size: 23px;
             font-weight: 300;
             letter-spacing: 1px;
+            transition: 0.5s;
+
+            @include sm {
+                font-size: 18px;
+            }
+
+            &:hover {
+                color: #b300fe;
+            }
         }
 
         &__address {
-            margin-top: 30px;
-            margin-bottom: 20px;
-            font-size: 15px;
+            // margin-top: 30px;
+            // margin-bottom: 20px;
+            font-size: 23px;
             font-weight: 300;
+
+            @include sm {
+                font-size: 18px;
+            }
         }
 
         &__box {
+            display: flex;
+            gap: 50px;
 
-            &-link {}
+            &-link {
+                // background-color: red;
+                // width: 70px;
+                transition: 1s;
 
-            &-image {
-                width: 30px;
-
+                &:hover {
+                    transform: scale(1.3);
+                }
             }
 
-            &__enter {}
+            &-viber {
+                transform: scale(1.7);
+                color: #785cef;
+            }
 
+            &-telegram {
+                transform: scale(1.7);
+                color: #239cd7;
+            }
+
+            &-whatsapp {
+                transform: scale(1.7);
+                color: #43e460;
+            }
+
+            // &-image {
+            //     width: 30px;
+            // }
+
+            &__enter {}
         }
 
+        &__coment {
+            max-width: 325px;
+            color: grey;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
     }
 
     &-form {
         display: flex;
         gap: 20px;
         flex-direction: column;
-
+        width: 325px;
 
         &__label {}
 
         &__input {
             padding: 20px;
-            // width: 470px;
-            width: 400px;
+            width: 100%;
+            height: 45px;
+            outline: none;
+            border: rgb(191, 189, 189) solid 1px;
+
+            &::placeholder {
+                color: grey;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+
+        &__textarea {
+            padding: 20px;
+            width: 100%;
             max-height: 15vh;
             outline: none;
             border: rgb(191, 189, 189) solid 1px;
@@ -100,27 +187,28 @@
                 color: grey;
                 font-size: 15px;
                 font-weight: 300;
-
             }
         }
 
         &__enter {}
 
         &__button {
-            padding: 20px;
+            padding: 10px 20px;
             border-radius: 40px;
             background-color: white;
-            border: 1px solid black;
-            // min-width: 150px;
-            min-width: 200px;
+            width: 100%;
+            height: 45px;
+            border: rgb(191, 189, 189) solid 1px;
+            transition: 0.5s;
+
+            color: grey;
+            font-size: 15px;
+            font-weight: 300;
 
             &:hover {
-                background-color: black;
-
+                background-color: #b300fe;
                 color: white;
             }
         }
-
-
     }
 }
