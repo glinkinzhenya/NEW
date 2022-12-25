@@ -22,14 +22,13 @@
 
     &-info {
         &__title {
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 500;
 
             margin-bottom: 40px;
 
             @include sm {
                 text-align: center;
-                font-size: 35px;
             }
         }
 
@@ -64,11 +63,6 @@
 
             justify-content: center;
             align-items: center;
-
-            @include sm {
-                width: 140px;
-                height: 140px;
-            }
 
             &-title {
                 font-size: 20px;

@@ -45,12 +45,11 @@
         &__logo {
             grid-area: logo;
 
-            &-link {}
-
             &-image {
                 width: 220px;
                 padding-top: 15px;
             }
+
         }
 
         &__left {
@@ -237,15 +236,12 @@
                 color: black;
                 // transition: .5s;
                 border: 1px solid white;
-                border-radius: 30px;
+                border-radius: 20px;
                 background-color: white;
 
                 &:hover {
                     opacity: 1;
-                    background-color: #b300fe;
-                    // color: black;
-                    color: white;
-
+                    color: black;
                 }
             }
         }
@@ -256,7 +252,7 @@
     position: fixed;
     z-index: 3;
     right: 2%;
-    bottom: 9%;
+    bottom: 4%;
 
     padding: 5px;
 
@@ -293,11 +289,6 @@
 
 .header-arrow__image {
     width: 30px;
-}
-
-.header-arrow__link {
-    display: flex;
-    flex-direction: column;
 }
 
 .fix {

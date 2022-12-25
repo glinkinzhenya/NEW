@@ -18,8 +18,8 @@
     }
 
     &-title {
-        font-size: 40px;
-        font-weight: 500;
+        font-size: 50px;
+        font-weight: 400;
         font-style: normal;
         line-height: 140%;
 
@@ -32,11 +32,7 @@
         color: white;
 
         @include sm {
-            font-size: 35px;
-        }
-
-        &__active {
-            color: #b300fe;
+            font-size: 40px;
         }
     }
 
