@@ -504,7 +504,7 @@ ul
     opacity: .5;
     color: black;
     border: 1px solid white;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: white;
 }
 .header-content__action-link:hover
@@ -563,6 +563,18 @@ ul
 .header-arrow__image
 {
     width: 30px;
+}
+
+.header-arrow__link
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
 }
 
 .fix
