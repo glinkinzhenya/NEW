@@ -1184,6 +1184,21 @@ ul
     justify-items: center;
     gap: 60px 40px;
 }
+.love-section__link
+{
+    -webkit-transition: ease-in-out 1s;
+    -webkit-transition: 3s;
+         -o-transition: ease-in-out 1s;
+         -o-transition: 3s;
+            transition: ease-in-out 1s;
+            transition: 3s;
+}
+.love-section__link:hover
+{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
 .love-section__item-text
 {
     font-size: 15px;
@@ -1198,6 +1213,7 @@ ul
 
     letter-spacing: 1px;
 
+    color: black;
     border-radius: 15px;
     background-color: white;
 }
