@@ -64,6 +64,11 @@
             justify-content: center;
             align-items: center;
 
+            @include sm {
+                width: 140px;
+                height: 140px;
+            }
+
             &-title {
                 font-size: 20px;
                 font-weight: 500;
