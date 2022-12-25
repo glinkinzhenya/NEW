@@ -22,13 +22,14 @@
 
     &-info {
         &__title {
-            font-size: 35px;
+            font-size: 40px;
             font-weight: 500;
 
             margin-bottom: 40px;
 
             @include sm {
                 text-align: center;
+                font-size: 35px;
             }
         }
 

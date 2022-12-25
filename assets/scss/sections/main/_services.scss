@@ -16,7 +16,7 @@
     }
 
     &__title {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 500;
         color: white;
         opacity: 0.8;
@@ -25,8 +25,12 @@
         text-align: center;
 
         @include sm {
-            font-size: 40px;
+            font-size: 35px;
             padding-bottom: 50px;
+        }
+
+        &-active {
+            color: #b300fe;
         }
     }
 

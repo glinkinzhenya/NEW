@@ -22,7 +22,7 @@
     }
 
     &__title {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 500;
         font-style: normal;
         line-height: 140%;
@@ -36,7 +36,7 @@
         letter-spacing: 4px;
 
         @include sm {
-            font-size: 40px;
+            font-size: 35px;
         }
     }
 }

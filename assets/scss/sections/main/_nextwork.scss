@@ -21,8 +21,8 @@
     }
 
     &__title {
-        font-size: 50px;
-        font-weight: 400;
+        font-size: 40px;
+        font-weight: 500;
         font-style: normal;
         line-height: 140%;
 
@@ -32,13 +32,17 @@
         text-align: center;
         letter-spacing: 4px;
 
-        opacity: .5;
+        // opacity: .5;
         opacity: .9;
         color: rgba(233, 228, 228, 0.953);
 
         @include sm {
-            font-size: 40px;
+            font-size: 35px;
             margin-bottom: 50px;
+        }
+
+        &-active {
+            color: #b300fe;
         }
     }
 
