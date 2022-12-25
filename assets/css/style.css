@@ -519,7 +519,7 @@ ul
     position: fixed;
     z-index: 3;
     right: 2%;
-    bottom: 6.5%;
+    bottom: 9%;
 
     padding: 5px;
 
@@ -1612,7 +1612,7 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    gap: 10px;
+    gap: 20px;
 }
 .footer-box__link
 {
@@ -1625,6 +1625,38 @@ ul
     -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
             transform: scale(1.3);
+}
+.footer-box__instagram
+{
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7);
+
+    color: #b300fe;
+}
+.footer-box__facebook
+{
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7);
+
+    color: #1773ea;
+}
+.footer-box__twitter
+{
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7);
+
+    color: #1d9bf0;
+}
+.footer-box__linkedin
+{
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7);
+
+    color: #0077b7;
 }
 .footer-box__image
 {
@@ -1712,6 +1744,10 @@ ul
     .services-box
     {
         grid-template-columns: 1fr;
+    }
+    .services-box__item-picture
+    {
+        max-width: 100px;
     }
     .portfolio__title
     {
