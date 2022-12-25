@@ -624,7 +624,6 @@ ul
 
     text-align: center;
 
-    opacity: .8;
     color: white;
 }
 .services__title-active
@@ -755,7 +754,6 @@ ul
     text-align: center;
     letter-spacing: 4px;
 
-    opacity: .9;
     color: rgba(233, 228, 228, .953);
 }
 .nextwork__title-active
@@ -1268,6 +1266,7 @@ ul
 
 .contacts
 {
+    min-height: 100vh;
     padding-top: 150px;
     padding-bottom: 100px;
 
