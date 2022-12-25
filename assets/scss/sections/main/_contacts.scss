@@ -111,9 +111,11 @@
 
         &__box {
             display: flex;
-            gap: 30px;
+            gap: 50px;
 
             &-link {
+                // background-color: red;
+                // width: 70px;
                 transition: 1s;
 
                 &:hover {
@@ -121,9 +123,24 @@
                 }
             }
 
-            &-image {
-                width: 30px;
+            &-viber {
+                transform: scale(1.7);
+                color: #785cef;
             }
+
+            &-telegram {
+                transform: scale(1.7);
+                color: #239cd7;
+            }
+
+            &-whatsapp {
+                transform: scale(1.7);
+                color: #43e460;
+            }
+
+            // &-image {
+            //     width: 30px;
+            // }
 
             &__enter {}
         }

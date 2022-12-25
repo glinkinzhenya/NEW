@@ -1387,7 +1387,7 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    gap: 30px;
+    gap: 50px;
 }
 .contacts-item__box-link
 {
@@ -1401,9 +1401,29 @@ ul
         -ms-transform: scale(1.3);
             transform: scale(1.3);
 }
-.contacts-item__box-image
+.contacts-item__box-viber
 {
-    width: 30px;
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7);
+
+    color: #785cef;
+}
+.contacts-item__box-telegram
+{
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7);
+
+    color: #239cd7;
+}
+.contacts-item__box-whatsapp
+{
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7);
+
+    color: #43e460;
 }
 .contacts-item__coment
 {
