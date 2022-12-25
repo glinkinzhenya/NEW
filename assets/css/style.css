@@ -912,6 +912,10 @@ ul
 
     color: white;
 }
+.money-title__active
+{
+    color: #b300fe;
+}
 .money-description
 {
     font-size: 15px;
@@ -1090,6 +1094,10 @@ ul
 
     margin-bottom: 40px;
 }
+.about-info__title-active
+{
+    color: #b300fe;
+}
 .about-info__description
 {
     font-size: 20px;
@@ -1153,6 +1161,10 @@ ul
     text-align: center;
 
     color: rgba(195, 191, 191, .663);
+}
+.love-title__active
+{
+    color: #b300fe;
 }
 .love-section
 {

@@ -27,6 +27,10 @@
         @include sm {
             font-size: 35px;
         }
+
+        &__active {
+            color: #b300fe;
+        }
     }
 
     &-section {
