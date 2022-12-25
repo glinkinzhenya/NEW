@@ -3,7 +3,7 @@
 
 .footer {
     background-color: #171717;
-    opacity: 0.5;
+    // opacity: 0.5;
 
     &-container {
         display: flex;
@@ -52,12 +52,19 @@
 
         &__instagram {
             transform: scale(1.7);
+            filter: saturate(0);
             color: #b300fe;
+
         }
 
         &__facebook {
             transform: scale(1.7);
+            filter: saturate(0);
             color: #1773ea;
+
+            &:hover {
+                filter: saturate(1);
+            }
         }
 
         &__twitter {

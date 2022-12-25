@@ -1564,7 +1564,6 @@ ul
 
 .footer
 {
-    opacity: .5;
     background-color: #171717;
 }
 .footer-container
@@ -1633,6 +1632,9 @@ ul
             transform: scale(1.7);
 
     color: #b300fe;
+
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
 }
 .footer-box__facebook
 {
@@ -1641,6 +1643,14 @@ ul
             transform: scale(1.7);
 
     color: #1773ea;
+
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
+}
+.footer-box__facebook:hover
+{
+    -webkit-filter: saturate(1);
+            filter: saturate(1);
 }
 .footer-box__twitter
 {
