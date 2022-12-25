@@ -605,8 +605,8 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 105px;
+    padding-bottom: 100px;
 
     opacity: .8;
     background-color: black;
@@ -620,7 +620,7 @@ ul
     font-size: 40px;
     font-weight: 500;
 
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 
     text-align: center;
 
@@ -635,7 +635,7 @@ ul
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px 0;
+    gap: 70px 0;
     justify-items: center;
 }
 .services-box__item
@@ -690,7 +690,7 @@ ul
 
 .portfolio
 {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 120px;
 
     background-color: white;
@@ -710,7 +710,7 @@ ul
 
     position: relative;
 
-    margin-bottom: 50px;
+    margin-bottom: 85px;
     padding-top: 30px;
 
     text-align: center;
@@ -729,7 +729,7 @@ ul
     min-height: 50vh;
     padding-top: 100px;
     padding-right: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-left: 50px;
 
     -webkit-box-align: center;
@@ -746,7 +746,7 @@ ul
     font-style: normal;
     line-height: 140%;
 
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 
     -webkit-transition: 3s;
          -o-transition: 3s;
@@ -1153,9 +1153,9 @@ ul
 
 .love
 {
-    padding-top: 120px;
+    padding-top: 100px;
     padding-right: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
     padding-left: 20px;
 
     background-color: black;
@@ -1266,9 +1266,8 @@ ul
 
 .contacts
 {
-    min-height: 100vh;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 105px;
+    padding-bottom: 120px;
 
     background-color: white;
 }
@@ -1579,11 +1578,6 @@ ul
 
         text-align: center;
     }
-    .services
-    {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
     .services__title
     {
         font-size: 35px;
@@ -1594,17 +1588,9 @@ ul
     {
         grid-template-columns: 1fr;
     }
-    .portfolio
-    {
-        padding-top: 70px;
-    }
     .portfolio__title
     {
         font-size: 35px;
-    }
-    .nextwork
-    {
-        padding-bottom: 50px;
     }
     .nextwork__title
     {
@@ -1661,10 +1647,6 @@ ul
     .love-title
     {
         font-size: 35px;
-    }
-    .contacts
-    {
-        padding-top: 100px;
     }
     .contacts__title
     {

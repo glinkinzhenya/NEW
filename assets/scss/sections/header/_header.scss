@@ -45,11 +45,12 @@
         &__logo {
             grid-area: logo;
 
+            &-link {}
+
             &-image {
                 width: 220px;
                 padding-top: 15px;
             }
-
         }
 
         &__left {
@@ -262,8 +263,6 @@
     transition: 1s;
 
     opacity: .5;
-
-
 
     &__second {
         position: absolute;

@@ -4,12 +4,12 @@
 .contacts {
     background-color: white;
     // background-color: yellow;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    min-height: 100vh;
+    padding-top: 105px;
+    padding-bottom: 120px;
+    // min-height: 100vh;
 
     @include sm {
-        padding-top: 100px;
+        // padding-top: 100px;
     }
 
 
