@@ -516,7 +516,7 @@ ul
     position: fixed;
     z-index: 3;
     right: 2%;
-    bottom: 4%;
+    bottom: 9%;
 
     padding: 5px;
 
@@ -664,8 +664,8 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 105px;
+    padding-bottom: 100px;
 
     opacity: .8;
     background-color: black;
@@ -676,14 +676,13 @@ ul
 }
 .services__title
 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
 
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 
     text-align: center;
 
-    opacity: .8;
     color: white;
 }
 .services-box
@@ -691,7 +690,7 @@ ul
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px 0;
+    gap: 70px 0;
     justify-items: center;
 }
 .services-box__item
@@ -746,7 +745,7 @@ ul
 
 .portfolio
 {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 120px;
 
     background-color: white;
@@ -759,14 +758,14 @@ ul
 }
 .portfolio__title
 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     font-style: normal;
     line-height: 140%;
 
     position: relative;
 
-    margin-bottom: 50px;
+    margin-bottom: 85px;
     padding-top: 30px;
 
     text-align: center;
@@ -785,7 +784,7 @@ ul
     min-height: 50vh;
     padding-top: 100px;
     padding-right: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-left: 50px;
 
     -webkit-box-align: center;
@@ -797,12 +796,12 @@ ul
 }
 .nextwork__title
 {
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 500;
     font-style: normal;
     line-height: 140%;
 
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 
     -webkit-transition: 3s;
          -o-transition: 3s;
@@ -810,8 +809,6 @@ ul
     text-align: center;
     letter-spacing: 4px;
 
-    opacity: .5;
-    opacity: .9;
     color: rgba(233, 228, 228, .953);
 }
 .nextwork-box
@@ -963,8 +960,8 @@ ul
 }
 .money-title
 {
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 500;
     font-style: normal;
     line-height: 140%;
 
@@ -1068,7 +1065,7 @@ ul
 }
 .technology-info__title
 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 500;
 
     margin-bottom: 40px;
@@ -1149,7 +1146,7 @@ ul
 }
 .about-info__title
 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 500;
 
     margin-bottom: 40px;
@@ -1199,16 +1196,16 @@ ul
 
 .love
 {
-    padding-top: 120px;
+    padding-top: 100px;
     padding-right: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
     padding-left: 20px;
 
     background-color: black;
 }
 .love-title
 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     line-height: 140%;
 
@@ -1240,6 +1237,7 @@ ul
 
     letter-spacing: 1px;
 
+    color: black;
     border-radius: 15px;
     background-color: white;
 }
@@ -1476,6 +1474,7 @@ ul
     padding-bottom: 20px;
     padding-left: 40px;
 
+    gap: 20px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1497,7 +1496,7 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    gap: 10px;
+    gap: 20px;
 }
 .footer-box__image
 {
@@ -1638,14 +1637,9 @@ ul
 
         text-align: center;
     }
-    .services
-    {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
     .services__title
     {
-        font-size: 40px;
+        font-size: 35px;
 
         padding-bottom: 50px;
     }
@@ -1653,21 +1647,17 @@ ul
     {
         grid-template-columns: 1fr;
     }
-    .portfolio
+    .services-box__item-picture
     {
-        padding-top: 70px;
+        max-width: 100px;
     }
     .portfolio__title
     {
-        font-size: 40px;
-    }
-    .nextwork
-    {
-        padding-bottom: 50px;
+        font-size: 35px;
     }
     .nextwork__title
     {
-        font-size: 40px;
+        font-size: 35px;
 
         margin-bottom: 50px;
     }
@@ -1678,15 +1668,22 @@ ul
     }
     .money-title
     {
-        font-size: 40px;
+        font-size: 35px;
     }
     .technology-info__title
     {
+        font-size: 35px;
+
         text-align: center;
     }
     .technology-circle
     {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .technology-circle__icon
+    {
+        width: 140px;
+        height: 140px;
     }
     .technology-circle__icon--md
     {
@@ -1698,6 +1695,8 @@ ul
     }
     .about-info__title
     {
+        font-size: 35px;
+
         text-align: center;
     }
     .about-circle__icon-picture
@@ -1710,6 +1709,14 @@ ul
     }
     .love-title
     {
-        font-size: 40px;
+        font-size: 35px;
+    }
+    .footer-container
+    {
+            flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
     }
 }

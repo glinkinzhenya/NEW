@@ -2,14 +2,10 @@
 @use '../../mixins' as *;
 
 .portfolio {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 120px;
 
     background-color: white;
-
-    @include sm {
-        padding-top: 70px;
-    }
 
     &-container {
         max-width: 70vw;
@@ -22,21 +18,21 @@
     }
 
     &__title {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 500;
         font-style: normal;
         line-height: 140%;
 
         position: relative;
 
-        margin-bottom: 50px;
+        margin-bottom: 85px;
         padding-top: 30px;
 
         text-align: center;
         letter-spacing: 4px;
 
         @include sm {
-            font-size: 40px;
+            font-size: 35px;
         }
     }
 }
