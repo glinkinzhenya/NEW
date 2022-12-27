@@ -1561,6 +1561,8 @@ ul
     }
     .header-menu__left-link
     {
+        font-weight: 500;
+
         opacity: 1;
     }
     .header-menu__right-list
@@ -1592,6 +1594,8 @@ ul
     }
     .header-menu__right-link
     {
+        font-weight: 500;
+
         opacity: 1;
     }
     .header-menu__language
