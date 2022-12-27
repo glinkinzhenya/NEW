@@ -74,7 +74,7 @@
                     top: 100%;
                     right: 50vw;
                     height: 50vh;
-                    border-radius: 0 0 12px 12px;
+                    // border-radius: 0 0 12px 12px;
                     background: #b300fe;
                     display: none;
                     padding-top: 20px;
@@ -139,11 +139,22 @@
                     top: 100%;
                     right: 0;
                     height: 50vh;
-                    border-radius: 0 0 12px 12px;
+                    // border-radius: 0 0 12px 12px;
                     background: #b300fe;
-                    background: red;
                     display: none;
                     padding-top: 20px;
+                }
+            }
+
+            &-item {
+
+                @include lg {
+                    margin-right: 20px;
+                    margin-bottom: 11px;
+                    margin-left: 20px;
+                    padding: 8px;
+                    border-radius: 12px;
+                    background: black;
                 }
             }
 
@@ -162,6 +173,10 @@
                     opacity: 1;
                     color: white;
                     // border-bottom: 3px solid #dc365d;
+                }
+
+                @include lg {
+                    opacity: 1;
                 }
             }
         }
