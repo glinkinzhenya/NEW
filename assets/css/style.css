@@ -1306,14 +1306,14 @@ ul
 
 .contacts
 {
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 105px;
+    padding-bottom: 120px;
 
     background-color: white;
 }
 .contacts__title
 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 500;
 
     margin-bottom: 50px;
@@ -1327,7 +1327,7 @@ ul
     font-weight: 300;
     line-height: 37px;
 
-    width: 500px;
+    max-width: 500px;
     margin-right: auto;
     margin-bottom: 90px;
     margin-left: auto;
@@ -1341,9 +1341,10 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    margin-left: 170px;
-
-    gap: 180px;
+    gap: 50px;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
 }
 .contacts-item
 {
@@ -1394,6 +1395,8 @@ ul
     display: flex;
         flex-direction: column;
 
+    width: 400px;
+
     gap: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1401,7 +1404,7 @@ ul
 }
 .contacts-form__input
 {
-    width: 400px;
+    width: 100%;
     max-height: 15vh;
     padding: 20px;
 
@@ -1448,7 +1451,7 @@ ul
     min-width: 200px;
     padding: 20px;
 
-    border: 1px solid black;
+    border: 1px solid rgb(191, 189, 189);
     border-radius: 40px;
     background-color: white;
 }
@@ -1628,6 +1631,11 @@ ul
     {
         grid-template-columns: 1fr;
     }
+    .contacts-box
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
 }
 @media (max-width: 575.8px)
 {
@@ -1710,6 +1718,26 @@ ul
     .love-title
     {
         font-size: 35px;
+    }
+    .contacts__title
+    {
+        font-size: 35px;
+    }
+    .contacts-item__tel
+    {
+        font-size: 25px;
+    }
+    .contacts-item__mail
+    {
+        font-size: 20px;
+    }
+    .contacts-form
+    {
+        width: 300px;
+    }
+    .contacts-form__button
+    {
+        min-width: 150px;
     }
     .footer-container
     {
