@@ -37,12 +37,20 @@
             align-items: center;
             grid-template-areas:
                 "lang logo burger";
-            // justify-items: center;
-            // grid-template-columns: 1fr;
+        }
+
+        @include sm {
+            grid-template-columns: auto 1fr;
+            grid-template-areas:
+                "logo burger";
         }
 
         &__logo {
             grid-area: logo;
+
+            @include sm {
+                margin-left: 20px;
+            }
 
             &-image {
                 width: 220px;
@@ -194,8 +202,10 @@
 
             @include lg {
                 margin-left: 20px;
-                // top: 35%;
-                // left: 2%;
+            }
+
+            @include sm {
+                display: none;
             }
 
             &-link {

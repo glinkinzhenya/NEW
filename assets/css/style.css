@@ -1639,6 +1639,19 @@ ul
 }
 @media (max-width: 575.8px)
 {
+    .header-menu
+    {
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 'logo burger';
+    }
+    .header-menu__logo
+    {
+        margin-left: 20px;
+    }
+    .header-menu__language
+    {
+        display: none;
+    }
     .header-content__title
     {
         font-size: 70px;
