@@ -40,3 +40,26 @@
         }
     }
 }
+
+.portfolio-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.portfolio-box__right,
+.portfolio-box__left {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.portfolio-box__image {}
+
+.portfolio-box__picture {
+    width: 500px;
+}
+
+.portfolio-box__right {}
