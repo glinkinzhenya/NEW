@@ -9,6 +9,7 @@
     &-picture {
         position: absolute;
         z-index: -1;
+        // width: 100vw;
     }
 
     &-img {
@@ -17,8 +18,8 @@
     }
 
     &-title {
-        font-size: 50px;
-        font-weight: 400;
+        font-size: 40px;
+        font-weight: 500;
         font-style: normal;
         line-height: 140%;
 
@@ -31,8 +32,9 @@
         color: white;
 
         @include sm {
-            font-size: 40px;
+            font-size: 35px;
         }
+
     }
 
     &-description {
@@ -45,7 +47,6 @@
 
         color: white;
     }
-
 
     &-box {
         display: flex;

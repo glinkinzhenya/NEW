@@ -3,15 +3,27 @@
 
 .contacts {
     background-color: white;
+<<<<<<< HEAD
     padding-top: 150px;
     padding-bottom: 100px;
+=======
+    padding-top: 105px;
+    padding-bottom: 120px;
+    // min-height: 100vh;
+
+    &-container {}
+>>>>>>> 9e906f86d735d4070fb58ad36aed38a726477c90
 
     &__title {
         text-align: center;
         margin-bottom: 50px;
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 500;
         letter-spacing: 3px;
+
+        @include sm {
+            font-size: 35px;
+        }
     }
 
     &__description {
@@ -20,16 +32,28 @@
         font-size: 19px;
         font-weight: 300;
         letter-spacing: 1px;
-        width: 500px;
+        max-width: 500px;
         margin-left: auto;
         margin-right: auto;
         line-height: 37px;
+
     }
 
     &-box {
         display: flex;
+<<<<<<< HEAD
         gap: 180px;
         margin-left: 170px;
+=======
+        gap: 50px;
+        // margin-left: 170px;
+        justify-content: space-evenly;
+
+        @include lg {
+            flex-wrap: wrap;
+        }
+
+>>>>>>> 9e906f86d735d4070fb58ad36aed38a726477c90
         &__text {}
 
     }
@@ -44,6 +68,10 @@
             font-size: 28px;
             font-weight: 300;
             letter-spacing: 1px;
+
+            @include sm {
+                font-size: 25px;
+            }
         }
 
         &__mail {
@@ -51,6 +79,10 @@
             font-size: 23px;
             font-weight: 300;
             letter-spacing: 1px;
+
+            @include sm {
+                font-size: 20px;
+            }
         }
 
         &__address {
@@ -69,7 +101,6 @@
             }
 
             &__enter {}
-
         }
     }
 
@@ -77,13 +108,21 @@
         display: flex;
         gap: 20px;
         flex-direction: column;
+        width: 400px;
 
+<<<<<<< HEAD
+=======
+        @include sm {
+            width: 300px;
+        }
+
+>>>>>>> 9e906f86d735d4070fb58ad36aed38a726477c90
         &__label {}
 
         &__input {
             padding: 20px;
             // width: 470px;
-            width: 400px;
+            width: 100%;
             max-height: 15vh;
             outline: none;
             border: rgb(191, 189, 189) solid 1px;
@@ -102,9 +141,13 @@
             padding: 20px;
             border-radius: 40px;
             background-color: white;
-            border: 1px solid black;
+            border: 1px solid rgb(191, 189, 189);
             // min-width: 150px;
             min-width: 200px;
+
+            @include sm {
+                min-width: 150px;
+            }
 
             &:hover {
                 background-color: black;
