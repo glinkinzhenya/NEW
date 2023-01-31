@@ -9,9 +9,9 @@ function logoTime() {
 
 setTimeout("logoTime()", 4000);
 
-setInterval(() => {
+let setStop = setInterval(() => {
     logoTime()
-}, 20000);
+}, 30000);
 
 logo.addEventListener("click", () => logoTime());
 
