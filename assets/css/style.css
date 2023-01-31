@@ -319,6 +319,8 @@ ul
 {
     width: 220px;
     padding-top: 15px;
+
+    cursor: pointer;
 }
 .header-menu__left
 {
@@ -538,7 +540,7 @@ ul
 }
 .header-arrow__second-image
 {
-    width: 70px;
+    width: 90px;
 
     -webkit-transition: 1s;
          -o-transition: 1s;
@@ -787,19 +789,14 @@ ul
     gap: 10px;
 }
 
-.portfolio-box__right,
-.portfolio-box__left
-{
-    width: 50px;
-    height: 50px;
-
-    border-radius: 10px;
-    background-color: blue;
-}
-
 .portfolio-box__picture
 {
     width: 500px;
+}
+
+.portfolio-box__left-image
+{
+    width: 50px;
 }
 
 .nextwork
@@ -1336,8 +1333,8 @@ ul
 
 .contacts
 {
-    padding-top: 105px;
-    padding-bottom: 120px;
+    padding-top: 150px;
+    padding-bottom: 100px;
 
     background-color: white;
 }
@@ -1371,10 +1368,9 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    gap: 50px;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    margin-left: 170px;
+
+    gap: 180px;
 }
 .contacts-item
 {
@@ -1661,11 +1657,6 @@ ul
     {
         grid-template-columns: 1fr;
     }
-    .contacts-box
-    {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    }
 }
 @media (max-width: 575.8px)
 {
@@ -1773,10 +1764,6 @@ ul
     .contacts-item__mail
     {
         font-size: 20px;
-    }
-    .contacts-form
-    {
-        width: 300px;
     }
     .contacts-form__button
     {

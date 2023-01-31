@@ -1,3 +1,22 @@
+// Замена логотипа
+
+const logo = document.querySelector(".header-menu__logo-image");
+
+function logoTime() {
+    logo.setAttribute("src", "assets/img/logo_2.gif")
+    setTimeout(`logo.setAttribute("src", "assets/img/logo_3.png")`, 4000);
+};
+
+setTimeout("logoTime()", 4000);
+
+setInterval(() => {
+    logoTime()
+}, 20000);
+
+logo.addEventListener("click", () => logoTime());
+
+
+
 const left = document.querySelector(".portfolio-box__left")
 const right = document.querySelector(".portfolio-box__right")
 const image = document.querySelector(".portfolio-box__picture")
@@ -25,4 +44,13 @@ left.addEventListener("click", () => {
     image.setAttribute("src", `assets/img/${y}.jpg`);
     clearInterval(1);
 });
+
+
+// левая стрелочка в портфолио
+
+const leftImage = document.querySelector(".portfolio-box__left-image");
+
+left.onmouseenter = () => leftImage.setAttribute("src", `assets/img/arrow_left_2.png`);
+left.onmouseleave = () => leftImage.setAttribute("src", `assets/img/arrow_left_1.png`);
+
 
