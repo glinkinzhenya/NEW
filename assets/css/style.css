@@ -800,7 +800,7 @@ ul
 }
 .portfolio-box__picture
 {
-    width: 700px;
+    width: 100%;
 }
 
 .portfolio-box__left-image
@@ -1548,7 +1548,7 @@ ul
 {
     width: 30px;
 }
-@media (min-width: 992px)
+@media (min-width: 1200px)
 {
     .header-menu__language
     {
@@ -1562,17 +1562,6 @@ ul
     }
 }
 @media (max-width: 1199.8px)
-{
-    .portfolio-container
-    {
-        max-width: 90vw;
-    }
-    .contacts-box
-    {
-        gap: 45px;
-    }
-}
-@media (max-width: 991.8px)
 {
     .header-menu
     {
@@ -1651,6 +1640,17 @@ ul
     {
         margin-left: 20px;
     }
+    .portfolio-container
+    {
+        max-width: 90vw;
+    }
+    .contacts-box
+    {
+        gap: 45px;
+    }
+}
+@media (max-width: 991.8px)
+{
     .services-box
     {
         grid-template-columns: repeat(2, 1fr);
