@@ -21,33 +21,61 @@ $(document).ready(function () {
 });
 
 
+// Замена логотипа
+
+const logo = document.querySelector(".header-menu__logo-image");
+
+function logoTime() {
+  logo.setAttribute("src", "assets/img/logo_2.gif")
+  setTimeout(`logo.setAttribute("src", "assets/img/logo_3.png")`, 4000);
+};
+
+setTimeout("logoTime()", 4000);
+
+let setStop = setInterval(() => {
+  logoTime()
+}, 30000);
+
+logo.addEventListener("click", () => logoTime());
 
 
-// // считали DOM элементы
-// const headersList = document.querySelectorAll('.slider__header');
-// const notesList = document.querySelectorAll('.slider__note');
-// const indicatorsList = document.querySelectorAll('.slider__indicator');
-// const descriptionsList = document.querySelectorAll('.slider__description');
+// левая стрелочка в портфолио
+const leftImage = document.querySelector(".portfolio-box__left-image");
+const left = document.querySelector(".portfolio-box__left")
+left.onmouseenter = () => leftImage.setAttribute("src", `assets/img/arrow_left_2.png`);
+left.onmouseleave = () => leftImage.setAttribute("src", `assets/img/arrow_left_1.png`);
 
-// let index = 0;
-// let interval = 5000;
-// let heightsArr = [];
-// let heightMax = null;
+
+// правая стрелочка в портфолио
+const rightImage = document.querySelector(".portfolio-box__right-image");
+const right = document.querySelector(".portfolio-box__right")
+right.onmouseenter = () => rightImage.setAttribute("src", `assets/img/arrow_right_2.png`);
+right.onmouseleave = () => rightImage.setAttribute("src", `assets/img/arrow_right_1.png`);
+
+
+// листает портфолио
+const image = document.querySelector(".portfolio-box__picture")
+
+let y = 1;
 
 // setInterval(() => {
-//   // снимаем классы active для первых элементов
-//   headersList[index].classList.toggle('active');
-//   notesList[index].classList.toggle('active');
-//   indicatorsList[index].classList.toggle('active');
-//   // увеличиваем индекс, пока не превышено количество элементов
-//   index = (index + 1) % headersList.length;
-//   // ставим классы active следующим элементам
-//   headersList[index].classList.toggle('active');
-//   notesList[index].classList.toggle('active');
-//   indicatorsList[index].classList.toggle('active');
-// }, interval);
+//   image.setAttribute("src", `assets/img/${y}.jpg`);
+//   y += 1;
+//   if (y === 12) y = 1;
+// }, 2000);
 
-// // вычисление и изменение высоты блока описания под максимальный текст
-// descriptionsList.forEach(el => heightsArr.push(el.clientHeight));
-// heightMax = Math.max(...heightsArr);
-// descriptionsList.forEach(el => el.style.height = `${heightMax}px`);
+right.addEventListener("click", () => {
+  if (y > 10) y = 0;
+
+  y += 1;
+  image.setAttribute("src", `assets/img/${y}.jpg`);
+  clearInterval(1);
+});
+
+left.addEventListener("click", () => {
+  if (y < 2) y = 12;
+
+  y -= 1;
+  image.setAttribute("src", `assets/img/${y}.jpg`);
+  clearInterval(1);
+});

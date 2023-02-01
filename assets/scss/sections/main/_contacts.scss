@@ -34,9 +34,14 @@
     &-box {
         display: flex;
         gap: 180px;
-        margin-left: 170px;
-        &__text {}
+        flex-wrap: wrap;
+        justify-content: center;
 
+        @include xl {
+            gap: 45px;
+        }
+
+        &__text {}
     }
 
     &-item {
