@@ -23,6 +23,7 @@
     }
 
     &-menu {
+        //background-color: yellow;
         position: absolute;
         top: 3%;
         right: 0;
@@ -74,16 +75,31 @@
                 align-items: center;
 
                 @include xl {
+
                     margin-right: 0;
                     height: 35px;
+                    position: absolute;
+                    z-index: -3;
+                    left: 0;
+                    top: -20px;
+                    right: 50vw;
+                    height: 40vh;
+                    // opacity: 0.5;
+                    display: none;
+                    padding-top: 100px;
+                    padding-bottom: 350px;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, black 86.5%);
+                }
 
+                @include sm {
+                    margin-right: 0;
+                    height: 35px;
                     position: absolute;
                     z-index: 3;
                     left: 0;
                     top: 100%;
-                    right: 50vw;
-                    height: 50vh;
-                    // border-radius: 0 0 12px 12px;
+                    width: 100vw;
+                    height: 500px;
                     background: #000000;
                     opacity: 0.5;
                     display: none;
@@ -96,10 +112,11 @@
                 @include xl {
                     margin-right: 20px;
                     margin-bottom: 11px;
+
                     margin-left: 20px;
                     padding: 8px;
                     border-radius: 12px;
-                    background: black;
+                    // background: black;
                 }
             }
 
@@ -114,6 +131,8 @@
                 opacity: .5;
                 color: white;
 
+
+
                 &:hover {
                     opacity: 1;
                     color: white;
@@ -122,7 +141,11 @@
 
                 @include xl {
                     font-weight: 500;
-                    opacity: 1;
+                    margin-left: 80%;
+                }
+
+                @include sm {
+                    margin-left: 0%;
                 }
             }
         }
@@ -143,17 +166,32 @@
                 @include xl {
                     margin-left: 0;
                     height: 35px;
+                    position: absolute;
+                    z-index: -3;
+                    right: 0;
+                    top: -20px;
+                    left: 50vw;
+                    height: 40vh;
+                    // opacity: 3.5;
+                    display: none;
+                    padding-top: 100px;
+                    padding-bottom: 350px;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, black 86.5%);
+                }
+
+                @include sm {
+                    margin-left: 0;
+                    height: 35px;
 
                     position: absolute;
                     z-index: 3;
-                    left: 50vw;
-                    top: 100%;
-                    right: 0;
-                    height: 50vh;
-                    // border-radius: 0 0 12px 12px;
-                    background: #000000;
+                    //left: 50vw;
+                    top: 250px;
+                    left: 0;
+                    height: 30vh;
+                    width: 100vw;
+                    background: none;
                     opacity: 0.5;
-                    display: none;
                     padding-top: 20px;
                 }
             }
@@ -166,7 +204,7 @@
                     margin-left: 20px;
                     padding: 8px;
                     border-radius: 12px;
-                    background: black;
+                    // background: black;
                 }
             }
 
@@ -184,12 +222,16 @@
                 &:hover {
                     opacity: 1;
                     color: white;
-                    // border-bottom: 3px solid #dc365d;
+
                 }
 
                 @include xl {
                     font-weight: 500;
-                    opacity: 1;
+                    margin-left: 5%;
+                }
+
+                @include sm {
+                    margin-left: 0%;
                 }
             }
         }
