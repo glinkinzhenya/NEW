@@ -73,12 +73,12 @@
                     position: absolute;
                     z-index: -3;
                     left: 0;
-                    top: -20px;
+                    top: -35px;
                     right: 50vw;
                     height: 40vh;
                     // opacity: 0.5;
                     display: none;
-                    padding-top: 100px;
+                    padding-top: 130px;
                     padding-bottom: 350px;
                     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, black 86.5%);
                 }
@@ -87,15 +87,15 @@
                     margin-right: 0;
                     height: 35px;
                     position: absolute;
-                    z-index: 3;
+                    z-index: -3;
                     left: 0;
-                    top: 100%;
+                    top: -25%;
                     width: 100vw;
-                    height: 500px;
+                    height: 100vh;
                     background: #000000;
-                    opacity: 0.5;
+                    opacity: 1;
                     display: none;
-                    padding-top: 20px;
+                    padding-top: 100px;
                 }
             }
 
@@ -108,8 +108,12 @@
                     margin-left: 20px;
                     padding: 8px;
                     border-radius: 12px;
-                    // background: black;
                 }
+
+                @include sm {
+                    margin-left: 15px;
+                }
+
             }
 
             &-link {
@@ -124,7 +128,6 @@
                 color: white;
 
 
-
                 &:hover {
                     opacity: 1;
                     color: white;
@@ -132,11 +135,12 @@
 
                 @include xl {
                     font-weight: 500;
-                    margin-left: 80%;
+                    margin-left: 75%;
                 }
 
                 @include sm {
                     margin-left: 0%;
+                    opacity: 0.8;
                 }
             }
         }
@@ -159,11 +163,11 @@
                     position: absolute;
                     z-index: -3;
                     right: 0;
-                    top: -20px;
+                    top: -35px;
                     left: 50vw;
                     height: 40vh;
                     display: none;
-                    padding-top: 100px;
+                    padding-top: 130px;
                     padding-bottom: 350px;
                     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, black 86.5%);
                 }
@@ -173,11 +177,11 @@
                     top: -20px;
                     position: absolute;
                     z-index: 3;
-                    top: 140px;
                     left: 0;
                     height: 30vh;
                     width: 100vw;
                     background: none;
+                    top: 105px;
                 }
             }
 
@@ -189,6 +193,10 @@
                     margin-left: 20px;
                     padding: 8px;
                     border-radius: 12px;
+                }
+
+                @include sm {
+                    margin-left: 15px;
                 }
             }
 
@@ -203,10 +211,13 @@
                 opacity: .5;
                 color: white;
 
+                @include sm {
+                    opacity: 0.8;
+                }
+
                 &:hover {
                     opacity: 1;
                     color: white;
-
                 }
 
                 @include xl {
@@ -290,7 +301,7 @@
 
             @include sm {
                 text-align: center;
-                font-size: 70px;
+                font-size: 60px;
             }
 
             // &:hover {
@@ -514,4 +525,8 @@
 
         transform: rotate(-135deg);
     }
+}
+
+.none {
+    display: none;
 }

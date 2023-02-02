@@ -81,31 +81,30 @@ left.addEventListener("click", () => {
 });
 
 
-
-
-
+// Первая заставка черного
 let i = 0.9
 function getOpacity() {
-
-const clearBlack = setInterval(() => {
-
+  const clearBlack = setInterval(() => {
     i -= 0.02
-
     if (i > 0.000001 && i < 0.02) {
       clearInterval(clearBlack);
       fix__black.style = "display: none";
     } else {
-        fix__black.style = `opacity: ${i}`;
+      fix__black.style = `opacity: ${i}`;
     }
-
   }, 50);
-
 }
-
 const fix__black = document.querySelector(".fix__black");
-
 setTimeout("getOpacity()", 3000);
 
 
 
 
+const headerNavbarBtn = document.querySelector(".header-navbar__btn");
+const headerContentTitle = document.querySelector(".header-content__title");
+const headerContentDescription = document.querySelector(".header-content__description");
+
+headerNavbarBtn.addEventListener("click", () => {
+  headerContentTitle.classList.toggle("none");
+  headerContentDescription.classList.toggle("none");
+}); 

@@ -669,6 +669,11 @@ ul
             transform: rotate(-135deg);
 }
 
+.none
+{
+    display: none;
+}
+
 .services
 {
     display: -webkit-box;
@@ -1583,7 +1588,7 @@ ul
     {
         position: absolute;
         z-index: -3;
-        top: -20px;
+        top: -35px;
         right: 50vw;
         left: 0;
 
@@ -1592,7 +1597,7 @@ ul
         height: 35px;
         height: 40vh;
         margin-right: 0;
-        padding-top: 100px;
+        padding-top: 130px;
         padding-bottom: 350px;
 
         background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .2)), color-stop(86.5%, black));
@@ -1612,13 +1617,13 @@ ul
     {
         font-weight: 500;
 
-        margin-left: 80%;
+        margin-left: 75%;
     }
     .header-menu__right-list
     {
         position: absolute;
         z-index: -3;
-        top: -20px;
+        top: -35px;
         right: 0;
         left: 50vw;
 
@@ -1627,7 +1632,7 @@ ul
         height: 35px;
         height: 40vh;
         margin-left: 0;
-        padding-top: 100px;
+        padding-top: 130px;
         padding-bottom: 350px;
 
         background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .2)), color-stop(86.5%, black));
@@ -1706,31 +1711,37 @@ ul
     .header-menu__left-list
     {
         position: absolute;
-        z-index: 3;
-        top: 100%;
+        z-index: -3;
+        top: -25%;
         left: 0;
 
         display: none;
 
         width: 100vw;
         height: 35px;
-        height: 500px;
+        height: 100vh;
         margin-right: 0;
-        padding-top: 20px;
+        padding-top: 100px;
 
-        opacity: .5;
+        opacity: 1;
         background: #000;
+    }
+    .header-menu__left-item
+    {
+        margin-left: 15px;
     }
     .header-menu__left-link
     {
         margin-left: 0;
+
+        opacity: .8;
     }
     .header-menu__right-list
     {
         position: absolute;
         z-index: 3;
         top: -20px;
-        top: 140px;
+        top: 105px;
         left: 0;
 
         width: 100vw;
@@ -1738,6 +1749,14 @@ ul
         margin-left: 0;
 
         background: none;
+    }
+    .header-menu__right-item
+    {
+        margin-left: 15px;
+    }
+    .header-menu__right-link
+    {
+        opacity: .8;
     }
     .header-menu__right-link
     {
@@ -1749,7 +1768,7 @@ ul
     }
     .header-content__title
     {
-        font-size: 70px;
+        font-size: 60px;
 
         text-align: center;
     }
