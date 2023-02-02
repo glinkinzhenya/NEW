@@ -1759,6 +1759,10 @@ ul
 
         margin-bottom: 100px;
     }
+    .header-arrow__second-image
+    {
+        width: 50px;
+    }
     .header-arrow__image
     {
         display: none;

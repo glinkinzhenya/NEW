@@ -362,7 +362,6 @@
         position: absolute;
         bottom: 0px;
         left: 50%;
-
         transform: translateX(-50%);
 
         &-image {
@@ -375,6 +374,11 @@
             &:hover {
                 opacity: 1;
             }
+
+            @include sm {
+                width: 50px;
+            }
+
         }
     }
 
