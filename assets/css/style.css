@@ -1706,6 +1706,10 @@ ul
 
         margin-bottom: 100px;
     }
+    .header-arrow__image
+    {
+        display: none;
+    }
     .services__title
     {
         font-size: 35px;
@@ -1803,6 +1807,9 @@ ul
     .footer-container
     {
             flex-direction: column;
+
+        padding-right: 0;
+        padding-left: 0;
 
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
