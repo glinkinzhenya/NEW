@@ -2,7 +2,6 @@
 @use '../../mixins' as *;
 
 .header {
-    // min-height: 100vh;
     height: 100vh;
 
     &-bg {
@@ -12,18 +11,11 @@
         left: 50%;
 
         width: 100vw;
-        // min-height: 100vh;
         height: 100vh;
         transform: translate(-50%, -50%);
-
-        // background-image: url(../img/background.gif);
-        // background-size: cover;
-
-        // filter: blur(3px);
     }
 
     &-menu {
-        //background-color: yellow;
         position: absolute;
         top: 3%;
         right: 0;
@@ -136,7 +128,6 @@
                 &:hover {
                     opacity: 1;
                     color: white;
-                    // border-bottom: 3px solid #dc365d;
                 }
 
                 @include xl {
@@ -151,7 +142,6 @@
         }
 
         &__right {
-            // display: none;
             grid-area: navr;
 
             &-list {
@@ -172,7 +162,6 @@
                     top: -20px;
                     left: 50vw;
                     height: 40vh;
-                    // opacity: 3.5;
                     display: none;
                     padding-top: 100px;
                     padding-bottom: 350px;
@@ -181,18 +170,14 @@
 
                 @include sm {
                     margin-left: 0;
-                    height: 35px;
-
+                    top: -20px;
                     position: absolute;
                     z-index: 3;
-                    //left: 50vw;
-                    top: 250px;
+                    top: 140px;
                     left: 0;
                     height: 30vh;
                     width: 100vw;
                     background: none;
-                    opacity: 0.5;
-                    padding-top: 20px;
                 }
             }
 
@@ -204,7 +189,6 @@
                     margin-left: 20px;
                     padding: 8px;
                     border-radius: 12px;
-                    // background: black;
                 }
             }
 
@@ -268,18 +252,11 @@
                 &:hover {
                     color: white;
                     opacity: 1;
-                    // color: black;
-                    // border-radius: 30px;
-                    // background-color: white;
                 }
 
                 &.action {
                     padding: 5px 5px;
                     opacity: 1;
-                    // color: black;
-                    // border-radius: 30px;
-                    // background-color: white;
-                    // border-right: 1px solid white;
 
                     &:hover {
                         border-bottom: none;
@@ -292,7 +269,6 @@
     &-content {
         display: flex;
         flex-direction: column;
-        //gap: 50px;
         padding-left: 20px;
         padding-right: 20px;
         min-height: 100vh;
@@ -301,7 +277,7 @@
         align-items: center;
 
         &__title {
-            font-size: 90px;
+            font-size: 80px;
             font-weight: 500;
             font-style: normal;
             line-height: 140%;
@@ -384,7 +360,7 @@
 
     &__second {
         position: absolute;
-        bottom: 30px;
+        bottom: 0px;
         left: 50%;
 
         transform: translateX(-50%);

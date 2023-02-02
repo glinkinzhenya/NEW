@@ -457,7 +457,7 @@ ul
 }
 .header-content__title
 {
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 500;
     font-style: normal;
     line-height: 140%;
@@ -531,7 +531,7 @@ ul
 .header-arrow__second
 {
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
     left: 50%;
 
     -webkit-transform: translateX(-50%);
@@ -1729,16 +1729,14 @@ ul
     {
         position: absolute;
         z-index: 3;
-        top: 250px;
+        top: -20px;
+        top: 140px;
         left: 0;
 
         width: 100vw;
-        height: 35px;
         height: 30vh;
         margin-left: 0;
-        padding-top: 20px;
 
-        opacity: .5;
         background: none;
     }
     .header-menu__right-link
