@@ -79,3 +79,33 @@ left.addEventListener("click", () => {
   image.setAttribute("src", `assets/img/${y}.jpg`);
   clearInterval(1);
 });
+
+
+
+
+
+let i = 0.9
+function getOpacity() {
+
+const clearBlack = setInterval(() => {
+
+    i -= 0.01
+
+    if (i > 0.1 && i < 0.2) {
+      clearInterval(clearBlack);
+      fix__black.style = "display: none";
+    } else {
+        fix__black.style = `opacity: ${i}`;
+    }
+
+  }, 50);
+
+}
+
+const fix__black = document.querySelector(".fix__black");
+
+setTimeout("getOpacity()", 3000);
+
+
+
+
