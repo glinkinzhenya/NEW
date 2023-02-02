@@ -1585,7 +1585,8 @@ ul
         margin-right: 0;
         padding-top: 20px;
 
-        background: #b300fe;
+        opacity: .5;
+        background: #000;
     }
     .header-menu__left-item
     {
@@ -1618,7 +1619,8 @@ ul
         margin-left: 0;
         padding-top: 20px;
 
-        background: #b300fe;
+        opacity: .5;
+        background: #000;
     }
     .header-menu__right-item
     {

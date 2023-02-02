@@ -84,7 +84,8 @@
                     right: 50vw;
                     height: 50vh;
                     // border-radius: 0 0 12px 12px;
-                    background: #b300fe;
+                    background: #000000;
+                    opacity: 0.5;
                     display: none;
                     padding-top: 20px;
                 }
@@ -150,7 +151,8 @@
                     right: 0;
                     height: 50vh;
                     // border-radius: 0 0 12px 12px;
-                    background: #b300fe;
+                    background: #000000;
+                    opacity: 0.5;
                     display: none;
                     padding-top: 20px;
                 }
@@ -290,10 +292,10 @@
 
             color: white;
 
-                @include sm {
-                        margin-bottom: 100px;
-                        font-size: 14px;
-                    }
+            @include sm {
+                margin-bottom: 100px;
+                font-size: 14px;
+            }
         }
 
         &__action {
@@ -367,9 +369,10 @@
 
 .header-arrow__image {
     width: 30px;
+
     @include sm {
-           display: none;
-        }
+        display: none;
+    }
 }
 
 .fix {
