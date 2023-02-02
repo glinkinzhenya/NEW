@@ -289,6 +289,11 @@
             letter-spacing: 5px;
 
             color: white;
+
+                @include sm {
+                        margin-bottom: 100px;
+                        font-size: 14px;
+                    }
         }
 
         &__action {
@@ -325,7 +330,7 @@
     position: fixed;
     z-index: 3;
     right: 2%;
-    bottom: 9%;
+    bottom: 6%;
 
     padding: 5px;
 

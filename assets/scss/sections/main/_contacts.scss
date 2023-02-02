@@ -96,6 +96,10 @@
         flex-direction: column;
         width: 400px;
 
+        @include sm {
+                width: 320px;
+            }
+
         &__label {}
 
         &__input {

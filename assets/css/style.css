@@ -518,7 +518,7 @@ ul
     position: fixed;
     z-index: 3;
     right: 2%;
-    bottom: 9%;
+    bottom: 6%;
 
     padding: 5px;
 
@@ -1516,7 +1516,7 @@ ul
     display: flex;
 
     padding-top: 20px;
-    padding-right: 40px;
+    padding-right: 85px;
     padding-bottom: 20px;
     padding-left: 40px;
 
@@ -1700,6 +1700,12 @@ ul
 
         text-align: center;
     }
+    .header-content__description
+    {
+        font-size: 14px;
+
+        margin-bottom: 100px;
+    }
     .services__title
     {
         font-size: 35px;
@@ -1785,6 +1791,10 @@ ul
     .contacts-item__mail
     {
         font-size: 20px;
+    }
+    .contacts-form
+    {
+        width: 320px;
     }
     .contacts-form__button
     {
