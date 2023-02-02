@@ -99,7 +99,7 @@ setTimeout("getOpacity()", 3000);
 
 
 
-
+// Убираем title and description
 const headerNavbarBtn = document.querySelector(".header-navbar__btn");
 const headerContentTitle = document.querySelector(".header-content__title");
 const headerContentDescription = document.querySelector(".header-content__description");
