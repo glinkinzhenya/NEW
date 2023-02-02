@@ -89,9 +89,9 @@ function getOpacity() {
 
 const clearBlack = setInterval(() => {
 
-    i -= 0.01
+    i -= 0.02
 
-    if (i > 0.1 && i < 0.2) {
+    if (i > 0.000001 && i < 0.02) {
       clearInterval(clearBlack);
       fix__black.style = "display: none";
     } else {
