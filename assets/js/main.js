@@ -94,7 +94,7 @@ function getOpacity() {
   }, 50);
 }
 const fix__black = document.querySelector(".fix__black");
-setTimeout("getOpacity()", 1500);
+setTimeout("getOpacity()", 1000);
 
 
 
