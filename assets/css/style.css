@@ -788,7 +788,6 @@ ul
     display: flex;
         flex-direction: row;
 
-    min-height: 200px;
     padding-left: 10px;
 
     -webkit-box-orient: horizontal;
@@ -1797,10 +1796,6 @@ ul
         margin-bottom: 25px;
 
         letter-spacing: 1px;
-    }
-    .portfolio-box
-    {
-        min-height: 400px;
     }
     .portfolio-box__image
     {

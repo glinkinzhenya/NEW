@@ -41,10 +41,10 @@
     padding-left: 10px;
     gap: 10px;
     flex-wrap: wrap;
-    min-height: 200px;
+    // min-height: 200px;
 
     @include sm {
-       min-height: 400px;
+    //    min-height: 400px;
     }
 
     &__image {
