@@ -94,7 +94,7 @@ function getOpacity() {
   }, 50);
 }
 const fix__black = document.querySelector(".fix__black");
-setTimeout("getOpacity()", 1500);
+setTimeout("getOpacity()", 1000);
 
 
 
@@ -121,16 +121,30 @@ const portfolioBox = document.querySelector(".portfolio-box");
 
 function portfolio() {
   let i = 1;
+
   let y = setInterval(() => {
     const div = document.createElement("div");
     const img = document.createElement("img");
     img.setAttribute("src", `assets/img/${i}.jpg`);
+    img.style = `opacity: 0.0`;
     img.classList.add("portfolio-box__image");
     div.append(img);
     portfolioBox.append(div);
+
+    
+    let n = 0.1;
+
+    let x = setInterval(() => {
+      img.style = `opacity: ${n}`;
+      n += 0.02;
+      if (n > 1.1) clearInterval(x);
+    }, 10);
+
     i += 1;
+
     if (i === 10) clearInterval(y);
-  }, 300);
+
+  }, 200);
 };
 
 const height2 = screen.height;
@@ -139,7 +153,7 @@ const height = height1.top - height2;
 
 let tr = false;
 window.addEventListener('scroll', function () {
-console.log(scrollY);
+  console.log(scrollY);
   if (scrollY > height && tr === false) {
     portfolio()
     tr = true;

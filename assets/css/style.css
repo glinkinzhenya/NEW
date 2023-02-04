@@ -759,6 +759,7 @@ ul
 
 .portfolio
 {
+    min-height: 600px;
     padding-top: 70px;
     padding-bottom: 120px;
 
@@ -787,13 +788,12 @@ ul
     display: flex;
         flex-direction: row;
 
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    gap: 10px;
+    padding-left: 10px;
+
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
+    gap: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
@@ -1433,10 +1433,10 @@ ul
 
     width: 400px;
 
-    gap: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    gap: 20px;
 }
 .contacts-form__input
 {
@@ -1785,13 +1785,20 @@ ul
     {
         max-width: 100px;
     }
+    .portfolio
+    {
+        padding-top: 0;
+    }
     .portfolio__title
     {
         font-size: 35px;
+
+        margin-bottom: 25px;
     }
     .portfolio-box__image
     {
-        width: 180px;
+        width: 170px;
+        padding: 0;
     }
     .nextwork__title
     {
