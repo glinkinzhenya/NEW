@@ -28,8 +28,9 @@
         letter-spacing: 4px;
 
         @include sm {
-            font-size: 35px;
+            font-size: 30px;
             margin-bottom: 25px;
+            letter-spacing: 1px;
         }
     }
 }
@@ -40,9 +41,10 @@
     padding-left: 10px;
     gap: 10px;
     flex-wrap: wrap;
+    min-height: 200px;
 
     @include sm {
-        height: 400px;
+       min-height: 400px;
     }
 
     &__image {
