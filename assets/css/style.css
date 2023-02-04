@@ -683,7 +683,6 @@ ul
     padding-top: 105px;
     padding-bottom: 100px;
 
-    opacity: .8;
     background-color: black;
 
     -webkit-box-align: center;
@@ -706,7 +705,7 @@ ul
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
-    gap: 70px 0;
+    gap: 70px;
     justify-items: center;
 }
 .services-box__item
@@ -1708,6 +1707,10 @@ ul
     {
         margin-left: 20px;
     }
+    .header-menu__logo-image
+    {
+        width: 170px;
+    }
     .header-menu__left-list
     {
         position: absolute;
@@ -1777,6 +1780,10 @@ ul
         font-size: 14px;
 
         margin-bottom: 100px;
+    }
+    .header-content__action
+    {
+        display: none;
     }
     .header-arrow__second-image
     {
