@@ -39,46 +39,6 @@ let setStop = setInterval(() => {
 logo.addEventListener("click", () => logoTime());
 
 
-// // левая стрелочка в портфолио
-// const leftImage = document.querySelector(".portfolio-box__left-image");
-// const left = document.querySelector(".portfolio-box__left")
-// left.onmouseenter = () => leftImage.setAttribute("src", `assets/img/arrow_left_2.png`);
-// left.onmouseleave = () => leftImage.setAttribute("src", `assets/img/arrow_left_1.png`);
-
-
-// // правая стрелочка в портфолио
-// const rightImage = document.querySelector(".portfolio-box__right-image");
-// const right = document.querySelector(".portfolio-box__right")
-// right.onmouseenter = () => rightImage.setAttribute("src", `assets/img/arrow_right_2.png`);
-// right.onmouseleave = () => rightImage.setAttribute("src", `assets/img/arrow_right_1.png`);
-
-
-// // листает портфолио
-// const image = document.querySelector(".portfolio-box__picture")
-
-// let y = 1;
-
-// // setInterval(() => {
-// //   image.setAttribute("src", `assets/img/${y}.jpg`);
-// //   y += 1;
-// //   if (y === 12) y = 1;
-// // }, 2000);
-
-// right.addEventListener("click", () => {
-//   if (y > 10) y = 0;
-
-//   y += 1;
-//   image.setAttribute("src", `assets/img/${y}.jpg`);
-//   clearInterval(1);
-// });
-
-// left.addEventListener("click", () => {
-//   if (y < 2) y = 12;
-
-//   y -= 1;
-//   image.setAttribute("src", `assets/img/${y}.jpg`);
-//   clearInterval(1);
-// });
 
 // Первая заставка черного
 let i = 0.9
@@ -131,9 +91,7 @@ function portfolio() {
     div.append(img);
     portfolioBox.append(div);
 
-    
     let n = 0.1;
-
     let x = setInterval(() => {
       img.style = `opacity: ${n}`;
       n += 0.02;
@@ -141,19 +99,16 @@ function portfolio() {
     }, 10);
 
     i += 1;
-
     if (i === 10) clearInterval(y);
-
   }, 200);
 };
 
 const height2 = screen.height;
 const height1 = portfolioBox.getBoundingClientRect()
-const height = height1.top - height2;
+const height = height1.top - height2 + 400;
 
 let tr = false;
 window.addEventListener('scroll', function () {
-  console.log(scrollY);
   if (scrollY > height && tr === false) {
     portfolio()
     tr = true;

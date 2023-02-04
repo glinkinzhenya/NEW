@@ -675,18 +675,16 @@ ul
 
 .services
 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
     padding-top: 105px;
     padding-bottom: 100px;
 
     background-color: black;
-
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+}
+.services-container
+{
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .services__title
 {
@@ -704,8 +702,8 @@ ul
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
     justify-items: center;
+    gap: 30px 0;
 }
 .services-box__item
 {
@@ -714,7 +712,7 @@ ul
     display: flex;
         flex-direction: column;
 
-    max-width: 280px;
+    max-width: 370px;
     padding: 20px;
 
     -webkit-box-orient: vertical;
@@ -727,7 +725,7 @@ ul
 }
 .services-box__item-title
 {
-    font-size: 25px;
+    font-size: 20px;
 
     text-align: center;
 
@@ -753,7 +751,7 @@ ul
 
     text-align: center;
 
-    opacity: .8;
+    opacity: .6;
     color: white;
 }
 
@@ -793,13 +791,13 @@ ul
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
 .portfolio-box__image
 {
-    width: 200px;
+    width: 250px;
 
     cursor: pointer;
 
@@ -917,7 +915,8 @@ ul
 
     text-align: center;
 
-    color: rgb(221, 215, 215);
+    opacity: .8;
+    color: white;
 }
 .nextwork-technology__title
 {
@@ -1647,7 +1646,6 @@ ul
     .services-box
     {
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px 0;
     }
     .nextwork-box
     {
@@ -1771,29 +1769,44 @@ ul
     {
         display: none;
     }
+    .services
+    {
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
     .services__title
     {
-        font-size: 35px;
+        font-size: 25px;
 
-        padding-bottom: 50px;
+        padding-bottom: 30px;
+
+        letter-spacing: 1px;
     }
     .services-box
     {
-        grid-template-columns: 1fr;
+        gap: 0;
     }
     .services-box__item-picture
     {
-        max-width: 100px;
+        max-width: 80px;
+        padding-bottom: 10px;
+    }
+    .services-box__item-description
+    {
+        font-size: 12px;
+        font-weight: 300;
     }
     .portfolio
     {
+        min-height: 650px;
         padding-top: 0;
+        padding-bottom: 20px;
     }
     .portfolio__title
     {
-        font-size: 30px;
+        font-size: 25px;
 
-        margin-bottom: 25px;
+        margin-bottom: 40px;
 
         letter-spacing: 1px;
     }

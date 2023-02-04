@@ -10,6 +10,8 @@
 
     @include sm {
         padding-top: 0px;
+        padding-bottom: 20px;
+        min-height: 650px;
     }
 
 
@@ -28,8 +30,8 @@
         letter-spacing: 4px;
 
         @include sm {
-            font-size: 30px;
-            margin-bottom: 25px;
+            font-size: 25px;
+            margin-bottom: 40px;
             letter-spacing: 1px;
         }
     }
@@ -39,7 +41,7 @@
     display: flex;
     flex-direction: row;
     padding-left: 10px;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     // min-height: 200px;
 
@@ -48,7 +50,7 @@
     }
 
     &__image {
-        width: 200px;
+        width: 250px;
         cursor: pointer;
         border-radius: 10px;
 
