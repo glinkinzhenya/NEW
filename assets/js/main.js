@@ -130,7 +130,7 @@ function portfolio() {
     div.append(img);
     portfolioBox.append(div);
     i += 1;
-    if (i === 11) clearInterval(y);
+    if (i === 10) clearInterval(y);
   }, 300);
 };
 
