@@ -1,12 +1,15 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.portfolio {
+.portfolio
+{
     padding-top: 70px;
     padding-bottom: 120px;
+
     background-color: white;
 
-    &__title {
+    &__title
+    {
         font-size: 40px;
         font-weight: 500;
         font-style: normal;
@@ -20,25 +23,32 @@
         text-align: center;
         letter-spacing: 4px;
 
-        @include sm {
+        @include sm
+        {
             font-size: 35px;
         }
     }
 }
 
-.portfolio-box {
+.portfolio-box
+{
     display: flex;
+    flex-direction: row;
+
     justify-content: center;
     gap: 10px;
-    flex-direction: row;
     flex-wrap: wrap;
 
-    &__image {
+    &__image
+    {
         width: 200px;
-        border-radius: 10px;
+
         cursor: pointer;
 
-        @include sm {
+        border-radius: 10px;
+
+        @include sm
+        {
             width: 180px;
         }
     }
