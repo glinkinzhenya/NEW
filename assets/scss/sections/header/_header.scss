@@ -335,26 +335,25 @@
             position: absolute;
             bottom: 20%;
 
-            @include sm {
-                   display: none;
-                }
-
             &-link {
                 font-size: 16px;
                 font-weight: 400;
                 font-style: normal;
 
-                padding: 10px 10px;
                 padding: 15px 50px;
 
                 transition: .5s;
 
                 opacity: .5;
                 color: black;
-                // transition: .5s;
                 border: 1px solid white;
                 border-radius: 20px;
                 background-color: white;
+
+                @include sm {
+                    padding: 10px 40px;
+                    font-size: 12px;
+                    }
 
                 &:hover {
                     opacity: 1;
