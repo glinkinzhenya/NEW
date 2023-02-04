@@ -1795,6 +1795,10 @@ ul
 
         margin-bottom: 25px;
     }
+    .portfolio-box
+    {
+        height: 400px;
+    }
     .portfolio-box__image
     {
         width: 170px;
