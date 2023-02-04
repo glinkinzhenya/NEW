@@ -80,7 +80,6 @@ logo.addEventListener("click", () => logoTime());
 //   clearInterval(1);
 // });
 
-
 // Первая заставка черного
 let i = 0.9
 function getOpacity() {
