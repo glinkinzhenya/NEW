@@ -142,7 +142,7 @@ function portfolio() {
 
     i += 1;
 
-    if (i === 7) clearInterval(y);
+    if (i === 10) clearInterval(y);
 
   }, 200);
 };
