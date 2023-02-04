@@ -107,4 +107,13 @@ const headerContentDescription = document.querySelector(".header-content__descri
 headerNavbarBtn.addEventListener("click", () => {
   headerContentTitle.classList.toggle("none");
   headerContentDescription.classList.toggle("none");
+});
+
+
+
+
+// Убираем зв`язатися
+const headerContentAction = document.querySelector(".header-content__action");
+headerNavbarBtn.addEventListener("click", () => {
+  headerContentAction.classList.toggle("none");
 }); 
