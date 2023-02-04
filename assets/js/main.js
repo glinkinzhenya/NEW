@@ -39,46 +39,46 @@ let setStop = setInterval(() => {
 logo.addEventListener("click", () => logoTime());
 
 
-// левая стрелочка в портфолио
-const leftImage = document.querySelector(".portfolio-box__left-image");
-const left = document.querySelector(".portfolio-box__left")
-left.onmouseenter = () => leftImage.setAttribute("src", `assets/img/arrow_left_2.png`);
-left.onmouseleave = () => leftImage.setAttribute("src", `assets/img/arrow_left_1.png`);
+// // левая стрелочка в портфолио
+// const leftImage = document.querySelector(".portfolio-box__left-image");
+// const left = document.querySelector(".portfolio-box__left")
+// left.onmouseenter = () => leftImage.setAttribute("src", `assets/img/arrow_left_2.png`);
+// left.onmouseleave = () => leftImage.setAttribute("src", `assets/img/arrow_left_1.png`);
 
 
-// правая стрелочка в портфолио
-const rightImage = document.querySelector(".portfolio-box__right-image");
-const right = document.querySelector(".portfolio-box__right")
-right.onmouseenter = () => rightImage.setAttribute("src", `assets/img/arrow_right_2.png`);
-right.onmouseleave = () => rightImage.setAttribute("src", `assets/img/arrow_right_1.png`);
+// // правая стрелочка в портфолио
+// const rightImage = document.querySelector(".portfolio-box__right-image");
+// const right = document.querySelector(".portfolio-box__right")
+// right.onmouseenter = () => rightImage.setAttribute("src", `assets/img/arrow_right_2.png`);
+// right.onmouseleave = () => rightImage.setAttribute("src", `assets/img/arrow_right_1.png`);
 
 
-// листает портфолио
-const image = document.querySelector(".portfolio-box__picture")
+// // листает портфолио
+// const image = document.querySelector(".portfolio-box__picture")
 
-let y = 1;
+// let y = 1;
 
-// setInterval(() => {
-//   image.setAttribute("src", `assets/img/${y}.jpg`);
+// // setInterval(() => {
+// //   image.setAttribute("src", `assets/img/${y}.jpg`);
+// //   y += 1;
+// //   if (y === 12) y = 1;
+// // }, 2000);
+
+// right.addEventListener("click", () => {
+//   if (y > 10) y = 0;
+
 //   y += 1;
-//   if (y === 12) y = 1;
-// }, 2000);
+//   image.setAttribute("src", `assets/img/${y}.jpg`);
+//   clearInterval(1);
+// });
 
-right.addEventListener("click", () => {
-  if (y > 10) y = 0;
+// left.addEventListener("click", () => {
+//   if (y < 2) y = 12;
 
-  y += 1;
-  image.setAttribute("src", `assets/img/${y}.jpg`);
-  clearInterval(1);
-});
-
-left.addEventListener("click", () => {
-  if (y < 2) y = 12;
-
-  y -= 1;
-  image.setAttribute("src", `assets/img/${y}.jpg`);
-  clearInterval(1);
-});
+//   y -= 1;
+//   image.setAttribute("src", `assets/img/${y}.jpg`);
+//   clearInterval(1);
+// });
 
 
 // Первая заставка черного
@@ -110,10 +110,39 @@ headerNavbarBtn.addEventListener("click", () => {
 });
 
 
-
-
 // Убираем зв`язатися
 const headerContentAction = document.querySelector(".header-content__action");
 headerNavbarBtn.addEventListener("click", () => {
   headerContentAction.classList.toggle("none");
-}); 
+});
+
+
+// Создаем портфолио
+const portfolioBox = document.querySelector(".portfolio-box");
+
+function portfolio() {
+  let i = 1;
+  let y = setInterval(() => {
+    const div = document.createElement("div");
+    const img = document.createElement("img");
+    img.setAttribute("src", `assets/img/${i}.jpg`);
+    img.classList.add("portfolio-box__image");
+    div.append(img);
+    portfolioBox.append(div);
+    i += 1;
+    if (i === 11) clearInterval(y);
+  }, 300);
+};
+
+const height2 = screen.height;
+const height1 = portfolioBox.getBoundingClientRect()
+const height = height1.top - height2;
+
+let tr = false;
+window.addEventListener('scroll', function () {
+console.log(scrollY);
+  if (scrollY > height && tr === false) {
+    portfolio()
+    tr = true;
+  };
+});
