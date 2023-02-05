@@ -757,7 +757,7 @@ ul
 
 .portfolio
 {
-    min-height: 600px;
+    min-height: 67vh;
     padding-top: 70px;
     padding-bottom: 120px;
 
@@ -1641,6 +1641,10 @@ ul
     {
         grid-template-columns: repeat(2, 1fr);
     }
+    .portfolio
+    {
+        min-height: 60vh;
+    }
     .portfolio-box
     {
         grid-template-columns: repeat(4, 1fr);
@@ -1800,7 +1804,7 @@ ul
     }
     .portfolio
     {
-        min-height: 650px;
+        min-height: 100vh;
         padding-top: 0;
         padding-bottom: 20px;
     }
