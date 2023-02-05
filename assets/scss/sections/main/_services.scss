@@ -68,6 +68,10 @@
 
                 opacity: .8;
                 color: white;
+
+                @include sm {
+                        font-weight: 400;
+                    }
             }
 
             &-picture {

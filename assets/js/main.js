@@ -89,13 +89,14 @@ function portfolio() {
     img.style = `opacity: 0.0`;
     img.classList.add("portfolio-box__image");
     div.append(img);
+
     portfolioBox.append(div);
 
     let n = 0.1;
     let x = setInterval(() => {
       img.style = `opacity: ${n}`;
       n += 0.02;
-      if (n > 1.1) clearInterval(x);
+      if (n > 1.01) clearInterval(x);
     }, 10);
 
     i += 1;
@@ -106,7 +107,6 @@ function portfolio() {
 const height2 = screen.height;
 const height1 = portfolioBox.getBoundingClientRect()
 const height = height1.top - height2 + 400;
-
 let tr = false;
 window.addEventListener('scroll', function () {
   if (scrollY > height && tr === false) {
