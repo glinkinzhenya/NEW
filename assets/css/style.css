@@ -1166,7 +1166,6 @@ ul
     padding-bottom: 25px;
 
     text-align: center;
-    letter-spacing: 4px;
 
     color: black;
 }
@@ -1876,6 +1875,64 @@ ul
     .technology-circle__icon--md
     {
         display: none;
+    }
+    .about
+    {
+        padding: 10px 10px 40px 10px;
+    }
+    .about-info__title
+    {
+        font-size: 25px;
+
+        padding-top: 30px;
+    }
+    .about-info__description
+    {
+        font-size: 12px;
+
+        width: 95%;
+        padding-bottom: 40px;
+    }
+    .about-circle
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .about-circle__position
+    {
+        margin: 5px;
+
+        gap: 4px;
+    }
+    .about-circle__icon-name
+    {
+        font-size: 15px;
+
+        padding-left: 0;
+    }
+    .about-circle__icon-work
+    {
+        font-size: 10px;
+
+        padding-left: 0;
+    }
+    .about-circle__icon-description
+    {
+        font-size: 5px;
+
+        padding: 5px;
+    }
+    .icon-box
+    {
+        margin: 2px;
+    }
+    .icon-box__link
+    {
+        margin: 4px;
+    }
+    .icon-box__image
+    {
+        width: 20px;
     }
     .love
     {

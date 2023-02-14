@@ -5,6 +5,10 @@
     background-color: white;
     padding: 50px 75px 130px;
 
+    @include sm {
+        padding: 10px 10px 40px 10px;
+    }
+
     &-info {
         &__title {
             font-size: 40px;
@@ -14,8 +18,13 @@
             padding-top: 100px;
             padding-bottom: 25px;
             text-align: center;
-            letter-spacing: 4px;
             color: black;
+
+
+            @include sm {
+                padding-top: 30px;
+                font-size: 25px;
+            }
         }
 
         &__description {
@@ -26,6 +35,12 @@
             margin-left: auto;
             margin-right: auto;
             color: black;
+
+            @include sm {
+                font-size: 12px;
+                padding-bottom: 40px;
+                width: 95%;
+            }
         }
     }
 
@@ -35,6 +50,11 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
 
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
         &__position {
             position: absolute;
             margin: 10px;
@@ -42,6 +62,11 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+
+            @include sm {
+                margin: 5px;
+                gap: 4px;
+            }
         }
 
         &__icon {
@@ -52,11 +77,21 @@
             font-size: 20px;
             font-weight: 500;
             padding-left: 20px;
+
+            @include sm {
+                padding-left: 0px;
+                font-size: 15px;
+            }
         }
 
         &__icon-work {
             color: darkmagenta;
             padding-left: 20px;
+
+            @include sm {
+                padding-left: 0px;
+                font-size: 10px;
+            }
         }
 
         &__icon-description {
@@ -68,6 +103,12 @@
             font-size: 10px;
             font-style: normal;
             width: 90%;
+
+
+            @include sm {
+                font-size: 5px;
+                padding: 5px;
+            }
         }
 
 
@@ -88,11 +129,22 @@
 
     margin: 10px;
 
+    @include sm {
+        margin: 2px;
+    }
+
     &__link {
         margin: 6px;
+
+        @include sm {
+            margin: 4px;
+            }
     }
 
     &__image {
         width: 30px;
+        @include sm {
+            width: 20px;
+        }
     }
 }
