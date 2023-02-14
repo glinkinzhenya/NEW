@@ -1945,6 +1945,10 @@ ul
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+    .about-circle__icon-description
+    {
+        font-size: 9px;
+    }
     .love
     {
         padding-top: 100px;
