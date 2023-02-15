@@ -343,6 +343,10 @@ ul
     -ms-flex-align: center;
     align-items: center;
 }
+.header-menu__left-itemNone
+{
+    display: none;
+}
 .header-menu__left-link
 {
     font-size: 16px;
@@ -1778,6 +1782,10 @@ ul
         opacity: 1;
         background: #000;
     }
+    .header-menu__left-itemNone
+    {
+        display: block;
+    }
     .header-menu__left-item
     {
         margin-left: 15px;
@@ -1790,17 +1798,7 @@ ul
     }
     .header-menu__right-list
     {
-        position: absolute;
-        z-index: 3;
-        top: -20px;
-        top: 105px;
-        left: 0;
-
-        width: 100vw;
-        height: 30vh;
-        margin-left: 0;
-
-        background: none;
+        display: none;
     }
     .header-menu__right-item
     {

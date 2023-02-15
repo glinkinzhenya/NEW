@@ -16,9 +16,10 @@ $(document).ready(function () {
     // способ 1
     // $('.header-navbar__list').toggleClass('header-navbar__list--active');
     // способ 2
-    $('.header-menu__left-list, .header-menu__right-list').stop(true, true).slideToggle(500);
+    $('.header-menu__left-list').stop(true, true).slideToggle(500);
   });
 });
+
 
 
 // Замена логотипа
@@ -66,13 +67,14 @@ const headerContentDescription = document.querySelector(".header-content__descri
 headerNavbarBtn.addEventListener("click", () => {
   headerContentTitle.classList.toggle("none");
   headerContentDescription.classList.toggle("none");
+
+  // headerMenuRight.classList.toggle("none");
 });
 
 
 // Убираем зв`язатися
 const headerContentAction = document.querySelector(".header-content__action");
 headerNavbarBtn.addEventListener("click", () => {
-  headerContentAction.classList.toggle("none");
 });
 
 
