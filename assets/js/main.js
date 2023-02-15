@@ -67,8 +67,6 @@ const headerContentDescription = document.querySelector(".header-content__descri
 headerNavbarBtn.addEventListener("click", () => {
   headerContentTitle.classList.toggle("none");
   headerContentDescription.classList.toggle("none");
-
-  // headerMenuRight.classList.toggle("none");
 });
 
 
