@@ -1,28 +1,25 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.money
-{
+.money {
     position: relative;
 
     padding-bottom: 80px;
+    background-color: black;
 
-    &-picture
-    {
+    &-picture {
         position: absolute;
         z-index: -3;
         width: 100vw;
     }
 
-    &-img
-    {
+    &-img {
         width: 100%;
 
         object-fit: cover;
     }
 
-    &-title
-    {
+    &-title {
         font-size: 40px;
         font-weight: 500;
         font-style: normal;
@@ -32,38 +29,34 @@
         padding-bottom: 25px;
 
         text-align: center;
-        letter-spacing: 4px;
+        letter-spacing: 2px;
 
         color: white;
 
-        @include sm
-        {
+        @include sm {
             font-size: 35px;
         }
     }
 
-    &-description
-    {
+    &-description {
         font-size: 15px;
         font-weight: 300;
 
         padding-bottom: 30px;
 
         text-align: center;
-
+opacity: 0.6;
         color: white;
     }
 
-    &-box
-    {
+    &-box {
         display: flex;
 
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    &-item
-    {
+    &-item {
         display: flex;
         flex-direction: column;
 
@@ -73,12 +66,10 @@
         gap: 20px;
         align-items: center;
 
-        &__price
-        {
+        &__price {
             display: flex;
 
-            &-number
-            {
+            &-number {
                 font-size: 40px;
                 font-weight: 300;
 
@@ -91,13 +82,11 @@
             }
         }
 
-        &__content
-        {
-            &-text
-            {
+        &__content {
+            &-text {
                 font-size: 14px;
                 font-weight: 300;
-
+                opacity: 0.7;
                 color: white;
             }
         }

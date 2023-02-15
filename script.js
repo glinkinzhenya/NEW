@@ -54,3 +54,19 @@ left.onmouseenter = () => leftImage.setAttribute("src", `assets/img/arrow_left_2
 left.onmouseleave = () => leftImage.setAttribute("src", `assets/img/arrow_left_1.png`);
 
 
+
+const smoothLinks = document.querySelector('a[href="#contacts"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log("huy");
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
+
