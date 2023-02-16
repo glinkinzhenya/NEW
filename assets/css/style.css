@@ -1068,6 +1068,14 @@ ul
     color: white;
     border-bottom: solid 1px rgba(250, 248, 248, .267);
 }
+.money-item__price-arrow
+{
+    display: none;
+}
+.money-item__price-image
+{
+    width: 40px;
+}
 .money-item__content-text
 {
     font-size: 14px;
@@ -1892,7 +1900,34 @@ ul
     }
     .money-title
     {
-        font-size: 35px;
+        font-size: 25px;
+
+        padding-top: 50px;
+
+        letter-spacing: 1px;
+    }
+    .money-description
+    {
+        font-size: 12px;
+    }
+    .money-item__price
+    {
+            flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .money-item__price-arrow
+    {
+        display: block;
+    }
+    .money-item__content-list
+    {
+        display: none;
     }
     .technology-info__title
     {
