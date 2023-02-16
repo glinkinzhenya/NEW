@@ -7,6 +7,10 @@
     padding-bottom: 80px;
     background-color: black;
 
+    @include lg {
+        padding-bottom: 40px;
+    }
+
     &-picture {
         position: absolute;
         z-index: -3;
@@ -33,7 +37,7 @@
 
         color: white;
 
-        @include sm {
+        @include lg {
             padding-top: 50px;
             font-size: 25px;
             letter-spacing: 1px;
@@ -50,7 +54,7 @@
         opacity: 0.6;
         color: white;
 
-        @include sm {
+        @include lg {
             font-size: 12px;
         }
     }
@@ -60,6 +64,12 @@
 
         flex-wrap: wrap;
         justify-content: center;
+
+        @include lg {
+            flex-direction: column;
+        }
+
+
     }
 
     &-item {
@@ -72,14 +82,14 @@
         gap: 20px;
         align-items: center;
 
-        @include sm {
+        @include lg {
             gap: 0px;
-            }
+        }
 
         &__price {
             display: flex;
 
-            @include sm {
+            @include lg {
                 flex-direction: column;
                 align-items: center;
             }
@@ -95,7 +105,7 @@
                 color: white;
                 border-bottom: solid 1px rgba(250, 248, 248, .267);
 
-                @include sm {
+                @include lg {
                     padding-bottom: 5px;
                     padding-left: 10px;
                     padding-right: 10px;
@@ -105,7 +115,7 @@
             &-arrow {
                 display: none;
 
-                @include sm {
+                @include lg {
                     display: block;
                 }
             }
@@ -125,7 +135,7 @@
 
             &-list {
 
-                @include sm {
+                @include lg {
                     display: none;
                 }
 

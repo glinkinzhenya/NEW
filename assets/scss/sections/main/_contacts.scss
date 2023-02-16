@@ -1,15 +1,18 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.contacts
-{
+.contacts {
     padding-top: 150px;
     padding-bottom: 100px;
 
     background-color: white;
 
-    &__title
-    {
+    @include sm {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    &__title {
         font-size: 40px;
         font-weight: 500;
 
@@ -18,14 +21,15 @@
         text-align: center;
         letter-spacing: 3px;
 
-        @include sm
-        {
-            font-size: 35px;
+        @include sm {
+            font-size: 25px;
+            padding-top: 50px;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
         }
     }
 
-    &__description
-    {
+    &__description {
         font-size: 19px;
         font-weight: 300;
         line-height: 37px;
@@ -37,30 +41,34 @@
 
         text-align: center;
         letter-spacing: 1px;
+
+        @include sm {
+            font-size: 12px;
+            line-height: 1.15;
+            letter-spacing: 0px;
+                margin-bottom: 40px;
+        }
     }
 
-    &-box
-    {
+    &-box {
         display: flex;
 
         gap: 180px;
         flex-wrap: wrap;
         justify-content: center;
-        @include xl
-        {
+
+        @include xl {
             gap: 45px;
         }
     }
 
-    &-item
-    {
+    &-item {
         display: flex;
         flex-direction: column;
 
         gap: 5px;
 
-        &__tel
-        {
+        &__tel {
             font-size: 28px;
             font-weight: 300;
 
@@ -68,14 +76,12 @@
 
             color: black;
 
-            @include sm
-            {
+            @include sm {
                 font-size: 25px;
             }
         }
 
-        &__mail
-        {
+        &__mail {
             font-size: 23px;
             font-weight: 300;
 
@@ -83,14 +89,12 @@
 
             color: black;
 
-            @include sm
-            {
+            @include sm {
                 font-size: 20px;
             }
         }
 
-        &__address
-        {
+        &__address {
             font-size: 15px;
             font-weight: 300;
 
@@ -98,32 +102,28 @@
             margin-bottom: 20px;
         }
 
-        &__box
-        {
-            &-image
-            {
+        &__box {
+            &-image {
                 width: 30px;
             }
         }
     }
 
-    &-form
-    {
+    &-form {
         display: flex;
         flex-direction: column;
 
         width: 400px;
 
         gap: 20px;
-        @include sm
-        {
+
+        @include sm {
             width: 320px;
         }
 
 
 
-        &__input
-        {
+        &__input {
             // width: 470px;
             width: 100%;
             max-height: 15vh;
@@ -132,8 +132,12 @@
             border: rgb(191, 189, 189) solid 1px;
             outline: none;
 
-            &::placeholder
-            {
+            @include sm {
+                padding: 10px;
+                border-radius: 15px;
+                }
+
+            &::placeholder {
                 font-size: 15px;
                 font-weight: 300;
 
@@ -143,8 +147,7 @@
 
 
 
-        &__button
-        {
+        &__button {
             // min-width: 150px;
             min-width: 200px;
             padding: 20px;
@@ -152,14 +155,13 @@
             border: 1px solid rgb(191, 189, 189);
             border-radius: 40px;
             background-color: white;
+            color: black;
 
-            @include sm
-            {
+            @include sm {
                 min-width: 150px;
             }
 
-            &:hover
-            {
+            &:hover {
                 color: white;
                 background-color: black;
             }
