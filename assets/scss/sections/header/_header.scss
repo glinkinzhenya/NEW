@@ -106,7 +106,7 @@
                 }
             }
 
-            &-itemNone {
+            &-itemnone {
                 display: none;
 
                 @include xl {
@@ -122,7 +122,6 @@
                     padding: 8px;
 
                     border-radius: 12px;
-
                 }
 
                 @include sm {
@@ -143,14 +142,18 @@
 
                 @include xl {
                     font-weight: 500;
+
                     display: flex;
+
+                    opacity: .8;
+
                     justify-content: center;
-                      opacity: .8;
                 }
 
                 @include sm {
-                    margin-left: 0;
                     display: block;
+
+                    margin-left: 0;
                 }
 
 
@@ -179,7 +182,6 @@
                     // top: -35px;
                     // right: 0;
                     // left: 50vw;
-
                     display: none;
 
                     // height: 35px;

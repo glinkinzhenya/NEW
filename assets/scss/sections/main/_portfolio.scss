@@ -6,15 +6,10 @@
     padding-bottom: 120px;
 
     background-color: white;
-    min-height: 67vh;
-    @include lg {
-        min-height: 60vh;
-    }
 
     @include sm {
-        padding-top: 0px;
+        padding-top: 0;
         padding-bottom: 20px;
-        min-height: 100vh;
     }
 
     &__title {
@@ -33,7 +28,9 @@
 
         @include sm {
             font-size: 25px;
+
             margin-bottom: 40px;
+
             letter-spacing: 1px;
         }
     }
@@ -42,30 +39,26 @@
 
 .portfolio-box {
     display: grid;
+
+    padding: 10px;
+
     grid-template-columns: repeat(6, 1fr);
     gap: 15px;
     justify-items: center;
-    padding: 10px;
 
     @include lg {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    ;
-
     @include sm {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    ;
-
     &__image {
         width: 100%;
+
         cursor: pointer;
+
         border-radius: 10px;
     }
-
-    ;
 }
-
-;

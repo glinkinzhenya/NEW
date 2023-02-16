@@ -1,15 +1,18 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.footer {
+.footer
+{
     opacity: .5;
     background-color: black;
 
-    @include sm {
+    @include sm
+    {
         opacity: 1;
     }
 
-    &-container {
+    &-container
+    {
         display: flex;
 
         padding-top: 20px;
@@ -20,48 +23,56 @@
         gap: 20px;
         justify-content: space-between;
         align-items: center;
-
-        @include sm {
+        @include sm
+        {
             flex-direction: column;
 
             padding-right: 0;
             padding-left: 0;
-            gap: 0px;
+
+            gap: 0;
         }
     }
 
-    &-link {}
 
 
 
-    &-image {
+
+    &-image
+    {
         width: 100px;
 
-        @include sm {
+        @include sm
+        {
             display: none;
         }
     }
 
-    &-security {
+    &-security
+    {
         color: white;
 
-        @include sm {
-            opacity: 0.6;
-                font-weight: 300;
-                font-size: 9px;
+        @include sm
+        {
+            font-size: 9px;
+            font-weight: 300;
+
+            opacity: .6;
         }
     }
 
-    &-box {
+    &-box
+    {
         display: flex;
 
         gap: 20px;
-
-        @include sm {
+        @include sm
+        {
             display: none;
         }
 
-        &__link {
+        &__link
+        {
             // transition: 1s;
 
             // &:hover {
@@ -69,7 +80,8 @@
             // }
         }
 
-        &__image {
+        &__image
+        {
             width: 30px;
         }
     }

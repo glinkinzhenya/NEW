@@ -343,7 +343,7 @@ ul
     -ms-flex-align: center;
     align-items: center;
 }
-.header-menu__left-itemNone
+.header-menu__left-itemnone
 {
     display: none;
 }
@@ -761,7 +761,6 @@ ul
 
 .portfolio
 {
-    min-height: 67vh;
     padding-top: 70px;
     padding-bottom: 120px;
 
@@ -1633,7 +1632,7 @@ ul
         background: -o-linear-gradient(bottom, rgba(0, 0, 0, .2) 0%, black 86.5%);
         background:    linear-gradient(0deg, rgba(0, 0, 0, .2) 0%, black 86.5%);
     }
-    .header-menu__left-itemNone
+    .header-menu__left-itemnone
     {
         display: block;
     }
@@ -1732,10 +1731,6 @@ ul
     .services-box
     {
         grid-template-columns: repeat(2, 1fr);
-    }
-    .portfolio
-    {
-        min-height: 60vh;
     }
     .portfolio-box
     {
@@ -1934,7 +1929,6 @@ ul
     }
     .portfolio
     {
-        min-height: 100vh;
         padding-top: 0;
         padding-bottom: 20px;
     }
