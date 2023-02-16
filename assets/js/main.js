@@ -100,7 +100,7 @@ function portfolio() {
     }, 10);
 
     i += 1;
-    if (i === 10) clearInterval(y);
+    if (i === 9) clearInterval(y);
   }, 200);
 };
 
@@ -116,7 +116,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-// Медленна прокрутка
+// Медленная прокрутка
 document.querySelectorAll('a[href^="#"').forEach(link => {
 
   link.addEventListener('click', function (e) {
