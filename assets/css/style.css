@@ -1972,6 +1972,12 @@ ul
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .nextwork-box__item-description
+    {
+        padding-bottom: 15px;
+
+        border-bottom: 1px solid white;
+    }
     .nextwork::after
     {
         top: -40%;
