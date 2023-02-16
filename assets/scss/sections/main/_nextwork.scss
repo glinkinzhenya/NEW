@@ -110,12 +110,13 @@
 
                 text-align: center;
 
-                opacity: 0.5;
+                opacity: 0.7;
                 color: white;
 
                 @include sm {
                     border-bottom: 1px solid white;
                     padding-bottom: 15px;
+                        font-weight: 300;
                 }
 
 

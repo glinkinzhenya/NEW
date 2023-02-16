@@ -913,7 +913,7 @@ ul
 
     text-align: center;
 
-    opacity: .5;
+    opacity: .7;
     color: white;
 }
 .nextwork-technology__title
@@ -1974,6 +1974,8 @@ ul
     }
     .nextwork-box__item-description
     {
+        font-weight: 300;
+
         padding-bottom: 15px;
 
         border-bottom: 1px solid white;
@@ -2138,6 +2140,9 @@ ul
     }
     .footer-security
     {
+        font-size: 9px;
+        font-weight: 300;
+
         opacity: .6;
     }
     .footer-box
