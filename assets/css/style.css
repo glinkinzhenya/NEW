@@ -1950,16 +1950,31 @@ ul
     {
         grid-template-columns: repeat(2, 1fr);
     }
+    .nextwork
+    {
+        padding-top: 50px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
     .nextwork__title
     {
-        font-size: 35px;
+        font-size: 25px;
 
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+
+        letter-spacing: 1px;
     }
     .nextwork-box
     {
+        margin-bottom: 10px;
+
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+    .nextwork::after
+    {
+        top: -40%;
     }
     .technology-container
     {
