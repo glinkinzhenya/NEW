@@ -1910,6 +1910,10 @@ ul
     {
         font-size: 12px;
     }
+    .money-item
+    {
+        gap: 0;
+    }
     .money-item__price
     {
             flex-direction: column;
@@ -1920,6 +1924,12 @@ ul
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+    .money-item__price-number
+    {
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
     }
     .money-item__price-arrow
     {

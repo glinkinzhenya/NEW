@@ -72,6 +72,10 @@
         gap: 20px;
         align-items: center;
 
+        @include sm {
+            gap: 0px;
+            }
+
         &__price {
             display: flex;
 
@@ -90,6 +94,12 @@
 
                 color: white;
                 border-bottom: solid 1px rgba(250, 248, 248, .267);
+
+                @include sm {
+                    padding-bottom: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
             }
 
             &-arrow {
