@@ -131,10 +131,10 @@
 
             border: rgb(191, 189, 189) solid 1px;
             outline: none;
+                border-radius: 25px;
 
             @include sm {
                 padding: 10px;
-                border-radius: 15px;
                 }
 
             &::placeholder {

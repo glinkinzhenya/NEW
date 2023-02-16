@@ -1493,6 +1493,7 @@ ul
     padding: 20px;
 
     border: rgb(191, 189, 189) solid 1px;
+    border-radius: 25px;
     outline: none;
 }
 .contacts-form__input::-webkit-input-placeholder
@@ -1549,7 +1550,7 @@ ul
 .footer
 {
     opacity: .5;
-    background-color: #171717;
+    background-color: black;
 }
 .footer-container
 {
@@ -1960,24 +1961,39 @@ ul
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .technology-container
+    {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
     .technology-info__title
     {
-        font-size: 35px;
+        font-size: 25px;
+
+        margin-bottom: 25px;
 
         text-align: center;
+        letter-spacing: 1px;
+    }
+    .technology-info__description
+    {
+        font-size: 13px;
+        line-height: 20px;
+
+        letter-spacing: 0;
     }
     .technology-circle
     {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .technology-circle__icon
     {
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
     }
-    .technology-circle__icon--md
+    .technology-circle__icon-image
     {
-        display: none;
+        width: 70px;
     }
     .about
     {
@@ -2074,12 +2090,14 @@ ul
     .contacts-form__input
     {
         padding: 10px;
-
-        border-radius: 15px;
     }
     .contacts-form__button
     {
         min-width: 150px;
+    }
+    .footer
+    {
+        opacity: 1;
     }
     .footer-container
     {
@@ -2091,5 +2109,18 @@ ul
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
+        gap: 0;
+    }
+    .footer-image
+    {
+        display: none;
+    }
+    .footer-security
+    {
+        opacity: .6;
+    }
+    .footer-box
+    {
+        display: none;
     }
 }

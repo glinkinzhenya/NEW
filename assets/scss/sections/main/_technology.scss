@@ -1,12 +1,10 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.technology
-{
+.technology {
     background-color: white;
 
-    &-container
-    {
+    &-container {
         display: flex;
 
         padding-top: 100px;
@@ -17,52 +15,60 @@
         gap: 50px;
         align-items: center;
         justify-content: space-evenly;
-        @include lg
-        {
+
+        @include lg {
             flex-wrap: wrap;
+        }
+
+        @include sm {
+            padding-top: 50px;
+            padding-bottom: 40px;
         }
     }
 
-    &-info
-    {
-        &__title
-        {
+    &-info {
+        &__title {
             font-size: 40px;
             font-weight: 500;
 
             margin-bottom: 40px;
 
-            @include sm
-            {
-                font-size: 35px;
-
+            @include sm {
                 text-align: center;
+                margin-bottom: 25px;
+
+                font-size: 25px;
+
+                letter-spacing: 1px;
             }
         }
 
-        &__description
-        {
+        &__description {
             font-size: 20px;
             font-weight: 300;
             line-height: 33px;
 
             max-width: 500px;
+
+            @include sm {
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: 0px;
+                }
         }
     }
 
-    &-circle
-    {
+    &-circle {
         display: grid;
 
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        @include sm
-        {
-            grid-template-columns: repeat(2, 1fr);
+
+        @include sm {
+            grid-template-columns: repeat(3, 1fr);
         }
 
-        &__icon
-        {
+        &__icon {
             display: flex;
             flex-direction: column-reverse;
 
@@ -74,32 +80,26 @@
 
             justify-content: center;
             align-items: center;
-            @include sm
-            {
-                width: 140px;
-                height: 140px;
+
+            @include sm {
+                width: 100px;
+                height: 100px;
             }
 
-            &-title
-            {
+            &-title {
                 font-size: 20px;
                 font-weight: 500;
 
                 letter-spacing: 1px;
             }
 
-            &-image
-            {
+            &-image {
                 width: 100px;
+                @include sm {
+                        width: 70px;
+                      
+                    }
             }
         }
-    }
-}
-
-.technology-circle__icon--md
-{
-    @include sm
-    {
-        display: none;
     }
 }
