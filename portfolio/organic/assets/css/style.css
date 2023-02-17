@@ -221,6 +221,42 @@ ul {
   grid-template-areas: "nav logo client";
   grid-template-columns: auto 1fr auto;
 }
+.box-back {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 46px;
+
+  opacity: 0.7;
+  background-color: black;
+}
+
+.box-back:hover {
+  opacity: 1;
+}
+
+.link-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-back {
+  height: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  padding-right: 50px;
+}
+
+.link-back__image {
+  width: 50px;
+  padding-top: 7px;
+}
+
 .header-navbar {
   grid-area: nav;
 }
