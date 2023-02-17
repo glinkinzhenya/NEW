@@ -1,0 +1,22 @@
+// *fonts - шрифты
+// !меняем путь относительно файла style.css
+
+@font-face {
+  font-family: "Graphik LCG";
+  font-weight: normal;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"),
+  url("../fonts/GraphikLCG-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Graphik LCG";
+  font-weight: 600;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"),
+  url("../fonts/GraphikLCG-Semibold.woff") format("woff");
+}

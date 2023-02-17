@@ -1,0 +1,111 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    overflow-y: hidden;
+
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+
+        @include sm {
+            font-size: 40px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 30px;
+        max-width: 411px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+
+    &-form {
+
+        margin-bottom: 10px;
+        display: flex;
+
+        @include sm-min {
+            position: relative;
+
+        }
+
+        @include sm {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__input {
+            color: black;
+            width: 492px;
+            height: 44px;
+            border-radius: 50px;
+            border: none;
+            padding-left: 30px;
+            background: #FFFFFF;
+            opacity: 0.55;
+
+            @include sm {
+                width: 300px;
+            }
+        }
+
+        &__btn {
+            cursor: pointer;
+            color: white;
+            right: -1px;
+            width: 160px;
+            height: 44px;
+            background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+            border-radius: 50px;
+            border: none;
+
+            @include sm-min {
+                position: absolute;
+            }
+        }
+    }
+
+    .footer-social {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 20px;
+
+        &__link {}
+
+        &__picture {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+            border-radius: 25px;
+        }
+
+        &__image {}
+    }
+
+    &__notes {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.8;
+        margin-bottom: 30px;
+    }
+}

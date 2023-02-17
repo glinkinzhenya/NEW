@@ -1,0 +1,61 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+// *classes - классы
+
+.container {
+  max-width: $ul;
+  // чтобы контейнер стал по середине
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
+}
+
+a {
+  // замедляет эффект
+  transition: 0.5s;
+}
+
+// a:hover {
+//   background-color: #ffae2b;
+//   // тень при наведении
+//   box-shadow: 0 0 7px $color-accent-orange;
+//   // увеличивает при наведении
+//   transform: scale(1.1);
+// }
+
+.service-box__link:hover {
+  box-shadow: 0 0 7px $color-accent-orange;
+}
+
+// .btn {
+//   display: block;
+//   padding: 0.5em 1em;
+//   // на кнопки при наведении стрелка меняется на пальчик
+//   cursor: pointer;
+//   text-align: center;
+//   border-width: 1px;
+//   border-style: solid;
+//   border-radius: 0;
+//   font-size: 16px;
+//   font-weight: 600;
+// }
+
+// .btn--light {
+//   border-color: $color-gray;
+//   background-color: $color-white;
+// }
+
+// .btn--light:hover {
+//   box-shadow: 0 0 7px $color-accent-orange;
+// }
+
+// .btn--sm {
+//   min-width: 120px;
+//   height: 45px;
+// }
+
+// .btn--md {
+//   min-width: 160px;
+//   height: 60px;

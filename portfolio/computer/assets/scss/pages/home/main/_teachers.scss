@@ -1,0 +1,98 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.teachers {
+    margin-bottom: 200px;
+
+    @include sm {
+        margin-bottom: 100px;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+   margin-bottom: 70px;
+        @include md {
+            flex-wrap: wrap;
+        }
+
+                  @include sm {
+                    gap: 0px;
+                  }
+
+        &__picture {}
+
+        &__image {}
+
+        &__title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 140%;
+            color: #FFFFFF;
+         
+
+            @include sm {
+                text-align: center;
+                font-size: 40px;
+            }
+        }
+    }
+
+    &-box {
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+
+        @include md {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+            &-name {
+                margin: 0;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 140%;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            &-picture {
+                order: -1;
+                margin-bottom: 25px;
+            }
+
+            &-image {}
+
+            &-description {
+                margin-bottom: 15px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                text-align: center;
+                color: #FFFFFF;
+                opacity: 0.8;
+            }
+
+            &-action {}
+
+            &-btn {
+                width: 143px;
+                height: 44px;
+                cursor: pointer;
+                border: 1px solid #FFFFFF;
+                border-radius: 50px;
+                // !прозрачный фон кнопки
+                background-color: transparent;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

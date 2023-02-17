@@ -82,13 +82,25 @@ const portfolioBox = document.querySelector(".portfolio-box");
 function portfolio() {
   let i = 1;
 
+  const data = {
+    1: "../../portfolio/computer/index.html",
+    2: "../../portfolio/organic/index.html",
+  }
+
   let y = setInterval(() => {
     const div = document.createElement("div");
+    const link = document.createElement("a");
+
+    link.setAttribute("href", `${data[i]}`);
+    link.setAttribute("href", `${data[i]}`);
+    
     const img = document.createElement("img");
+
     img.setAttribute("src", `assets/img/${i}.jpg`);
     img.style = `opacity: 0.0`;
     img.classList.add("portfolio-box__image");
-    div.append(img);
+    link.append(img);
+    div.append(link);
 
     portfolioBox.append(div);
 

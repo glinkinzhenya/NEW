@@ -1,0 +1,150 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-info {
+    background: #F3FBF8;
+    position: relative;
+    z-index: -2;
+}
+
+.header-info__container {
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+
+    &__title {
+        font-family: 'Rosario';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 90px;
+
+        @include lg {
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        max-width: 638px;
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #555555;
+        margin-bottom: 40px;
+    }
+}
+
+.header-content__bg {
+    position: absolute;
+    left: -59px;
+    top: -37px;
+    z-index: -1;
+
+    &-image {
+        width: 100%;
+    }
+}
+
+.header-rating {
+    display: flex;
+    gap: 107px;
+
+    @include xl {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include sm {
+        gap: 40px;
+    }
+
+    &__picture {}
+
+    &__image {
+        width: 100%;
+    }
+
+    &__block {
+        @include xl {
+
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 24px;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 116px;
+        background-color: #ffffff;
+        align-items: center;
+        padding-left: 33px;
+
+        &-picture {}
+
+        &-image {}
+
+        &-text {
+            max-width: 104px;
+        }
+
+        &-title {
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &-description {
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__text {}
+
+    &__link {
+        cursor: pointer;
+        width: 64px;
+        height: 64px;
+        border-radius: 60px;
+        background: #09A66D;
+        // background: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // &:hover {
+        //     box-shadow: 0 0 10px #09A66D;
+        // }
+    }
+
+    &__image {}
+}

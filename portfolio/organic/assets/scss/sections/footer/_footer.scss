@@ -1,0 +1,133 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.footer {
+    background: #FCFEFD;
+    padding-top: 67px;
+    padding-bottom: 118px;
+
+    @include sm {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+
+    &-container {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        justify-content: space-between;
+
+        @include xl {
+            flex-direction: column;
+        }
+
+        @include sm {
+            gap: 50px;
+        }
+    }
+
+    &-section {
+        max-width: 345px;
+
+
+        @include xl {
+            max-width: 663px;
+        }
+
+        &__picture {
+            margin-bottom: 30px;
+        }
+
+        &__image {}
+
+        &__description {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #555555;
+
+        }
+    }
+
+    &-box {
+        display: flex;
+        gap: 140px;
+
+        max-width: 663px;
+
+        @include md {
+            gap: 78px;
+        }
+
+        @include sm {
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &-item {
+
+
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__title {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 31px;
+            color: #222222;
+            margin-bottom: 20px;
+        }
+
+        &__link {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #222222;
+
+
+
+        }
+
+        &__description {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #555555;
+            border-radius: 8px;
+            transition: 0.5s;
+
+            &:hover {
+                background: #f3fbf8;
+                box-shadow: 0 0 10px #09A66D;
+                color: #09A66D;
+            }
+        }
+
+        &--md {}
+
+        &__action {}
+
+        &__social {
+            display: flex;
+            gap: 50px;
+
+            &-link {}
+
+            &-image {}
+
+        }
+    }
+}

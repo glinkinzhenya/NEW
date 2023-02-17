@@ -1,0 +1,3 @@
+# IntellijIdea files
+# Git игнорирует только эту папку
+node_modules/

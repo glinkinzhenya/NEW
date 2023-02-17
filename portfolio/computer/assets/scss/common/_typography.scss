@@ -1,0 +1,41 @@
+// *typography - типография
+// *все что касается оформления текста
+
+@use "../presets" as *;
+@use "../mixins" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  // !образает все что заходит за пределы этого блока
+  overflow-x: hidden;
+  // !размер для просчета отступов 
+  font-size: 16px;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  // размер текста по умолчанию
+  font-size: 16px;
+  font-weight: normal;
+
+
+// !задает фон всей странице (клеточки)
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url(../img/main-bg.png);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  // color: $color-primary-black;
+}

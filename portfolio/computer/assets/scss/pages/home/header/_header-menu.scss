@@ -1,0 +1,199 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.header-container {}
+
+.header-menu {
+    position: relative;
+    // background-color: #fff;
+    min-height: 148px;
+    display: flex;
+    
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__logo {
+
+        &-link {}
+
+        &-image {
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.3)
+            }
+
+        }
+    }
+}
+
+.header-menu__navbar {}
+
+.header-navbar {
+    &__btn {}
+
+    &__btn-row {}
+
+    &__list {
+        max-width: 745px;
+        @include unlist;
+        display: grid;
+
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        gap: 20px 55px;
+
+        @include xl {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include md {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 50vh;
+            background-color: #121212;
+            box-shadow: 0 0 10px #7C6AFA;
+        }
+    }
+
+    &__item {
+        @include md {
+            background-color: #7C6AFA;
+            padding: 8px;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+
+        }
+    }
+
+    &__link {
+        line-height: 150%;
+        transition: 0.5s;
+
+        @include md {}
+
+        &:hover {
+            color: #C89AFC;
+        }
+    }
+}
+
+.activ {
+    @include md-min {
+        color: #C89AFC;
+    }
+}
+
+.header-menu__action {
+    @include md {
+        display: none;
+    }
+}
+
+.header-menu__btn {
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 183px;
+    height: 44px;
+    line-height: 150%;
+    text-align: center;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 10px #C89AFC;
+    }
+}
+
+/* Icon 1 */
+// !вместо id #nav-icon1 ставим имя своего класса
+// !обязательно прописываем название класса в файле js
+
+.header-navbar__btn {
+    position: relative;
+    // *уменьшаем физические габариты гамбургерга, уменьшаем в два раза (делим размеры на 2)
+    // width: 60px;
+
+    width: 30px;
+    // height: 45px;
+    height: 22.5px;
+    // margin: 50px auto;
+    // margin: 25px auto;
+
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    transform: rotate(0deg);
+    // гамбургер отображается менше 768px
+
+    @include md-min {
+        display: none;
+    }
+
+    span {
+        position: absolute;
+        left: 0;
+        // *уменьшаем физические размеры шрифта, уменьшаем в два раза (делим размеры на 2)
+
+        display: block;
+
+        width: 100%;
+        // height: 9px;
+        height: 5px;
+
+        transition: 0.25s ease-in-out;
+        transform: rotate(0deg);
+
+        opacity: 1;
+        // border-radius: 9px;
+        border-radius: 3px;
+        background: #7C6AFA;
+
+        // можно поменять цвета
+        &:nth-child(1) {
+            top: 0;
+            // background: #a4a14a;
+        }
+
+        &:nth-child(2) {
+            // top: 18px;
+            top: 9px;
+            // background: #ffc500;
+        }
+
+        &:nth-child(3) {
+            // top: 36px;
+            top: 18px;
+            // background: #ff6336;
+        }
+    }
+
+    &.open span:nth-child(1) {
+        // top: 18px;
+        top: 9px;
+
+        transform: rotate(135deg);
+    }
+
+    &.open span:nth-child(2) {
+        // left: -60px;
+        left: -30px;
+
+        opacity: 0;
+    }
+
+    &.open span:nth-child(3) {
+        // top: 18px;
+        top: 9px;
+        transform: rotate(-135deg);
+    }
+}

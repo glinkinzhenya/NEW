@@ -1,0 +1,171 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.program {
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+
+    @include sm {
+        margin-bottom: 100px;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &__picture {}
+
+        &__image {}
+
+        &__title {
+            margin: 0;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+
+            @include sm {
+                font-size: 40px;
+            }
+        }
+
+        &__description {
+            max-width: 400px;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+    }
+
+    &-box {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include md {
+            grid-template-columns: 1fr;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+
+            @include md {
+                display: none;
+            }
+        }
+
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 95px;
+
+            @include md {
+                padding-left: 60px;
+            }
+
+            &--lf {
+                padding-right: 60px;
+                padding-left: 60px;
+                align-items: flex-end;
+
+                @include md {
+                    align-items: flex-start;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    width: 40px;
+                    height: 2px;
+                    background-color: #808080;
+
+                    @include md {
+                        display: none;
+                    }
+                }
+            }
+
+            &--rt {
+                padding-right: 60px;
+                padding-left: 60px;
+                align-items: flex-start;
+
+                @include md {
+                    align-items: flex-end;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 40px;
+                    height: 2px;
+                    background-color: #808080;
+
+                    @include md {
+                        display: none;
+                    }
+                }
+            }
+
+            &-week {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                color: #FFFFFF;
+                opacity: 0.5;
+            }
+
+            &-description {
+
+                max-width: 228px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+                color: #FFFFFF;
+
+                &--lf {
+                    text-align: end;
+
+                    @include md {
+                        text-align: start;
+                    }
+                }
+
+
+                &--rt {
+                    text-align: start;
+                }
+
+            }
+        }
+    }
+}
+
+.program-box__item--zero {
+    height: 95px;
+    width: 364px;
+
+    @include md {
+        display: none;
+    }
+}

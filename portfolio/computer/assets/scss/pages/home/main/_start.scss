@@ -1,0 +1,107 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.start {
+margin-bottom: 200px;
+
+@include sm {
+    margin-bottom: 100px;
+}
+    &-content {
+        margin-bottom: 80px;
+
+        &__picture {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        &__image {}
+
+        &__title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+
+        &__description {
+            max-width: 411px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+    }
+
+    &-scale {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include lg {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            &-number {
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+
+            &-picture {
+                margin-bottom: 35px;
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            &-bg {
+
+                background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+
+                &--lg {
+                    height: 80px;
+                }
+
+
+                &--md {
+                    height: 60px;
+                }
+
+                &--sm {
+                    height: 30px;
+                }
+
+                &--xs {
+                    height: 10px;
+                }
+            }
+
+
+            &-description {
+                max-width: 306px;
+                padding-right: 20px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                color: #FFFFFF;
+                opacity: 0.5;
+            }
+        }
+
+
+
+    }
+
+
+}

@@ -1,0 +1,172 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+.header-section {
+    background: #121212;
+    // background-color: red;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @include xl {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__action {}
+
+    &__btn {
+        color: #FFFFFF;
+        cursor: pointer;
+        width: 169px;
+        height: 44px;
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+        border-radius: 50px;
+        border: none;
+            transition: 0.5s;
+            
+                &:hover {
+                    box-shadow: 0 0 10px #C89AFC;
+                }
+    }
+
+    &__student {}
+
+}
+
+
+
+
+
+
+.header-student {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+
+    @include sm {
+        order: -1;
+    }
+
+    &__item {
+        display: flex;
+
+
+        &-description {
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        &-number {
+            margin-left: auto;
+            font-weight: 700;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+    }
+
+}
+
+.header-section__money {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include md {
+        align-items: center;
+    }
+}
+
+.header-money {
+    width: 714px;
+
+
+    &__item {
+        display: flex;
+        gap: 30px;
+
+        &-description {}
+
+        &-number {}
+
+    }
+
+
+
+    &__scale {
+        width: 714px;
+        display: flex;
+
+        @include md {
+            width: 500px;
+        }
+
+        @include sm {
+            width: 300px;
+        }
+
+        &-full {
+            width: 440px;
+            height: 6px;
+            background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+
+            @include md {
+                width: 310px;
+            }
+
+            @include sm {
+                width: 186px;
+            }
+        }
+
+        &-empty {
+            width: 274px;
+            height: 6px;
+            background: #FFFFFF;
+
+            @include md {
+                width: 190px;
+            }
+
+            @include sm {
+                width: 114px;
+            }
+        }
+
+    }
+
+
+
+    &__number {
+        display: flex;
+        justify-content: space-between;
+
+        @include md {
+            width: 500px;
+
+        }
+
+        @include sm {
+            width: 300px;
+
+        }
+
+
+        &-item {}
+    }
+
+
+
+}

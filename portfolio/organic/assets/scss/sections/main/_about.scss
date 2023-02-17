@@ -1,0 +1,125 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.about {
+    display: flex;
+    gap: 100px;
+    align-items: flex-end;
+    margin-bottom: 150px;
+
+
+    @include xl {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    &-box {
+
+        &__title {
+            max-width: 640px;
+            font-family: 'Rosario';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 90px;
+            color: #222222;
+            margin-bottom: 30px;
+
+            @include sm {
+                font-size: 50px;
+                text-align: center;
+                line-height: 60px;
+            }
+        }
+
+        &__description {
+            max-width: 587px;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+
+        &__name {
+            @include sm {
+                text-align: center;
+            }
+        }
+
+        &__name-text {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            color: #222222;
+            margin-bottom: 20px;
+        }
+
+        &__name-star {
+            display: flex;
+
+            gap: 20px 165px;
+
+            @include sm {
+
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        &__name-picture {}
+
+        &__name-image {}
+
+        &__name-action {
+
+            display: flex;
+            gap: 20px;
+        }
+
+        &__name-link {
+            width: 55px;
+            height: 55px;
+
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #cccccc;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #09a66d;
+                box-shadow: 0 0 10px #09A66D;
+            }
+
+        }
+
+        &__name-link-image {}
+    }
+
+    &-item {
+        position: relative;
+
+        &__face {}
+
+        &__face-image {
+            width: 100%;
+        }
+
+        &__people {}
+
+        &__people-image {
+            width: 220px;
+            position: absolute;
+            bottom: 55px;
+        }
+    }
+}

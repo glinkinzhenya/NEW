@@ -1,0 +1,11 @@
+@use '../presets' as *;
+@use '../mixins' as *;
+
+.container
+{
+    max-width: $ul;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $gap;
+    padding-left: $gap;
+}

@@ -1,0 +1,91 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.brands {
+margin-bottom: 200px;
+
+    @include sm {
+        margin-bottom: 100px;
+    }
+    &-content {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        &__picture {}
+
+        &__image {}
+
+        &__title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 140%;
+            color: #FFFFFF;
+    @include sm {
+            font-size: 40px;
+            text-align: center;
+        }
+
+
+
+            @include sm {
+                font-size: 40px;
+                    text-align: center;
+            }
+        }
+
+    }
+
+
+
+    &-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include lg {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            border-bottom: 1px solid #525252;
+            border-right: 1px solid #525252;
+            display: flex;
+            justify-content: center;
+
+            @include lg {
+                border: 1px solid #525252;
+            }
+
+            &--md {
+             
+                @include lg-min {
+                       border-bottom: none;
+                }
+
+            }
+
+            &--right {
+                border-right: none;
+      
+                @include lg-min {
+                  border-right: none;
+                    }
+            }
+
+            &-picture {}
+
+            &-image {}
+
+        }
+
+
+    }
+
+
+
+
+}

@@ -1,0 +1,112 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+
+
+
+.apps-picture {
+    position: relative;
+
+}
+
+.apps {
+    display: flex;
+    gap: 113px;
+    justify-content: center;
+
+    align-items: center;
+    // background-color: red;
+
+
+
+    @include xl {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+    &-first__picture {}
+
+    &-first__image {}
+
+    &-secondary__picture {
+        position: absolute;
+        top: 33px;
+        left: -50px;
+
+        z-index: -1;
+    }
+
+    &-secondary__image {}
+
+    &-content {
+
+        &__action {
+            margin-bottom: 16px;
+            background-color: #f3fbf8;
+            max-width: 170px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.5s;
+
+            &:hover {
+                box-shadow: 0 0 10px #09A66D;
+            }
+
+        }
+
+        &__link {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+
+            color: #555555;
+
+
+
+        }
+
+        &__title {
+            margin-bottom: 20px;
+            max-width: 663px;
+
+            font-family: 'Rosario';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 90px;
+            color: #222222;
+
+            @include sm {
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+
+        &__description {
+            margin-bottom: 50px;
+            max-width: 575px;
+
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #555555;
+
+            @include sm {
+                margin-bottom: 7px;
+            }
+
+        }
+
+        &__button {}
+
+        &__button-link {}
+
+        &__button-image {}
+    }
+}

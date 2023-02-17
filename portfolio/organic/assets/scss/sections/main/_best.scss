@@ -1,0 +1,145 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.main {}
+
+.best {
+    margin-bottom: 143px;
+
+    &__title {
+
+        font-family: 'Rosario';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 90px;
+        color: #222222;
+        margin-bottom: 20px;
+
+        @include lg-min {
+            max-width: 700px;
+        }
+
+        @include lg {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        @include sm {
+            line-height: 60px;
+        }
+
+    }
+
+    &__description {
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #555555;
+        margin-bottom: 30px;
+
+        @include lg-min {
+            max-width: 700px;
+        }
+
+        @include lg {
+            text-align: center;
+        }
+    }
+
+}
+
+.best-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+        gap: 20px;
+
+
+
+    @include lg {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.block-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-content__item {
+    max-width: 500px;
+    height: 160px;
+
+    margin-bottom: 20px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 40px 0;
+
+    transition: 0.5s;
+    
+        &:hover {
+                background: #f3fbf8;
+            box-shadow: 0 0 10px #09A66D;
+        }
+
+    
+}
+
+.block-content__item-picture {
+    min-width: 80px;
+    height: 80px;
+    background: #F3FBF8;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+
+}
+
+.block-content__item>div>img:hover {
+    background-color: #555555;
+}
+
+.block-content__item-image {}
+
+
+.block-content__text {
+}
+
+
+.block-content__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.block-content__description {
+    max-width: 278px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+}
+
+.best-block__picture {
+    @include lg {
+        order: -1;
+    }
+}
+
+.best-block__image {
+    max-width: 510px;
+    
+@include sm {
+    width: 100%;
+}
+}
