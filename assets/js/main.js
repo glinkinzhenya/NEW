@@ -83,9 +83,9 @@ function portfolio() {
   let i = 1;
 
   const data = {
-    1: "../../portfolio/computer/computer.html",
-    2: "../../portfolio/organic/index.html",
-    3: "../../portfolio/organic/index.html",
+    1: "portfolio/computer/computer.html",
+    2: "portfolio/organic/index.html",
+    3: "portfolio/organic/index.html",
   }
 
   let y = setInterval(() => {

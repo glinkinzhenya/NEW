@@ -1929,6 +1929,7 @@ ul
     }
     .portfolio
     {
+        height: 100vh;
         padding-top: 0;
         padding-bottom: 20px;
     }
