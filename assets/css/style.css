@@ -2025,9 +2025,14 @@ input[type=file]
 
         padding: 10px 40px;
     }
+    .header-arrow
+    {
+        right: 1%;
+        bottom: 4%;
+    }
     .header-arrow__second-image
     {
-        width: 50px;
+        width: 40px;
     }
     .services
     {

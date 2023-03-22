@@ -393,6 +393,11 @@
 
     opacity: .5;
 
+    @include sm {
+            right: 1%;
+                bottom: 4%;
+        }
+
     &__second {
         position: absolute;
         bottom: 0;
@@ -408,7 +413,7 @@
             opacity: .5;
 
             @include sm {
-                width: 50px;
+                width: 40px;
             }
 
             &:hover {
