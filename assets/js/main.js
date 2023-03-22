@@ -305,6 +305,20 @@ commentButton.addEventListener("click", async () => {
 });
 
 
+// показываем стрелочку при прокрутке
+
+var myElement = document.querySelector('#arrowColor');
+
+window.addEventListener('scroll', function () {
+  var scrollPosition = window.scrollY;
+  var windowHeight = window.innerHeight;
+
+  if (scrollPosition >= windowHeight) {
+    myElement.classList.remove('none');
+  } else {
+    myElement.classList.add('none');
+  }
+});
 
 
 

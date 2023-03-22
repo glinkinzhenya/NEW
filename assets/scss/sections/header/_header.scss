@@ -426,10 +426,6 @@
 
 .header-arrow__image {
     width: 30px;
-
-    @include sm {
-        display: none;
-    }
 }
 
 .fix {
@@ -560,5 +556,5 @@
 }
 
 .body {
-overflow: hidden;
+    overflow: hidden;
 }
