@@ -345,21 +345,25 @@
         &__action {
             position: absolute;
             bottom: 20%;
+            backdrop-filter: blur(25px);
+            padding: 15px 20px;
+            border-radius: 20px;
 
             &-link {
-                font-size: 16px;
+                font-size: 13px;
                 font-weight: 400;
                 font-style: normal;
 
-                padding: 15px 50px;
+                // padding: 15px 50px;
 
                 transition: .5s;
 
-                opacity: .5;
-                color: black;
-                border: 1px solid white;
-                border-radius: 20px;
-                background-color: white;
+                // opacity: .5;
+                color: rgba(255, 255, 255, 0.617);
+                // border: 1px solid white;
+
+                // background-color: white;
+
 
                 @include sm {
                     font-size: 12px;
@@ -368,8 +372,9 @@
                 }
 
                 &:hover {
-                    opacity: 1;
-                    color: black;
+                    // opacity: 1;
+                    // color: black;
+                    padding: 17px 22px;
                 }
             }
         }

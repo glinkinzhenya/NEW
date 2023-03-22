@@ -93,7 +93,7 @@ function portfolio() {
 
     link.setAttribute("href", `${data[i]}`);
     link.setAttribute("href", `${data[i]}`);
-    
+
     const img = document.createElement("img");
 
     img.setAttribute("src", `assets/img/${i}.jpg`);
@@ -164,7 +164,7 @@ let Arrow3counter = 0;
 
 
 priceArrow1.addEventListener('click', function (e) {
-  contentList1.style = `display: block`; 
+  contentList1.style = `display: block`;
   contentList2.style = `display: none`;
   contentList3.style = `display: none`;
 
@@ -207,3 +207,73 @@ priceArrow3.addEventListener('click', function (e) {
     Arrow3counter = 0;
   };
 });
+
+
+
+// Добавление комментариев 
+
+// отправка на сервер
+
+const API = "https://63f0efbb5b7cf4107e299645.mockapi.io";
+
+async function controller(type = "GET", action, body) {
+  const params = {
+    method: type,
+    headers: {
+      'Content-Type': "application/json",
+    }
+  }
+  if (body) {
+    params.body = JSON.stringify(body);
+  }
+  const response = await fetch(action, params);
+  const data = await response.json();
+  return data;
+};
+
+
+// замена фото
+// ! IMAGE BASE 64
+const getBase64 = file => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => resolve("");
+  });
+};
+
+const oldAvatar = document.querySelector(".love-comment__info-image");
+const newAvatar = document.querySelector("#newAvatar");
+const commentButton = document.querySelector(".love-comment__button");
+const infoName = document.querySelector(".love-comment__info-name");
+const commentInput = document.querySelector(".love-comment__input");
+
+// подмена на сайте
+newAvatar.addEventListener('change', function () {
+  if (this.files && this.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      oldAvatar.setAttribute('src', e.target.result);
+    };
+    reader.readAsDataURL(this.files[0]);
+  }
+});
+
+// кнопка отправки
+commentButton.addEventListener("click", async () => {
+
+  const avatar = await getBase64(newAvatar.files[0]);
+
+  const response = await controller("POST", `${API}/comments`, {
+    name: infoName.value,
+    comment: commentInput.value,
+    avatar: avatar,
+  })
+});
+
+
+
+
+
+

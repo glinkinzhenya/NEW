@@ -491,29 +491,29 @@ ul
 {
     position: absolute;
     bottom: 20%;
+
+    padding: 15px 20px;
+
+    border-radius: 20px;
+
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
 }
 .header-content__action-link
 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     font-style: normal;
-
-    padding: 15px 50px;
 
     -webkit-transition: .5s;
          -o-transition: .5s;
             transition: .5s;
 
-    opacity: .5;
-    color: black;
-    border: 1px solid white;
-    border-radius: 20px;
-    background-color: white;
+    color: rgba(255, 255, 255, .617);
 }
 .header-content__action-link:hover
 {
-    opacity: 1;
-    color: black;
+    padding: 17px 22px;
 }
 
 .header-arrow
@@ -679,15 +679,19 @@ ul
 
 .services
 {
-    padding-top: 105px;
+    min-height: 100vh;
+    padding-top: 80px;
     padding-bottom: 100px;
 
-    background-color: black;
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
 }
 .services-container
 {
     max-width: 1360px;
+    margin-top: auto;
     margin-right: auto;
+    margin-bottom: auto;
     margin-left: auto;
 }
 .services__title
@@ -719,6 +723,9 @@ ul
     max-width: 370px;
     padding: 20px;
 
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, .404);
+
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -729,7 +736,7 @@ ul
 }
 .services-box__item-title
 {
-    font-size: 20px;
+    font-size: 18px;
 
     text-align: center;
 
@@ -738,8 +745,8 @@ ul
 }
 .services-box__item-picture
 {
-    max-width: 130px;
-    padding-bottom: 30px;
+    max-width: 100px;
+    padding-bottom: 20px;
 
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
@@ -751,7 +758,7 @@ ul
 }
 .services-box__item-description
 {
-    font-size: 15px;
+    font-size: 12px;
 
     text-align: center;
 
@@ -1385,6 +1392,127 @@ ul
     width: 60px;
 }
 
+.love-comment
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 60px;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.love-comment__input
+{
+    font-size: 15px;
+    font-weight: 300;
+
+    position: relative;
+    z-index: 1;
+
+    width: 600px;
+    padding: 20px;
+
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+.love-comment__info
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 35px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+
+    gap: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.love-comment__info-picture
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+
+    width: 70px;
+    height: 70px;
+
+    cursor: pointer;
+
+    border-radius: 40px;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.love-comment__info-image
+{
+    width: auto;
+    height: 100%;
+}
+.love-comment__info-name
+{
+    height: 30px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+.love-comment__button
+{
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 30px;
+    background-color: grey;
+}
+.love-comment__button:hover
+{
+    background-color: white;
+}
+
+input[type=file]
+{
+    display: none;
+
+    border-radius: 40px;
+}
+
+.love-comment__position
+{
+    position: relative;
+}
+.love-comment__position::after
+{
+    position: absolute;
+    bottom: -32px;
+    left: 90px;
+
+    width: 50px;
+    height: 50px;
+
+    content: '';
+
+    background-image: url(../img/corner.png);
+}
+
 .contacts
 {
     padding-top: 150px;
@@ -1810,6 +1938,10 @@ ul
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
+    .love-comment__input
+    {
+        width: 330px;
+    }
 }
 @media (max-width: 575.8px)
 {
@@ -1909,9 +2041,9 @@ ul
 
         letter-spacing: 1px;
     }
-    .services-box
+    .services-box__item
     {
-        gap: 0;
+        max-width: 180px;
     }
     .services-box__item-title
     {
@@ -2069,6 +2201,10 @@ ul
     .love-box
     {
         margin-left: 0;
+    }
+    .love-comment__input
+    {
+        font-size: 10px;
     }
     .contacts
     {
