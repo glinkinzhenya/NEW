@@ -7,13 +7,13 @@
 
     //background-color: red;
     backdrop-filter: blur(50px);
- min-height: 100vh;
-   
+    min-height: 100vh;
+
 
     @include sm {
         padding-top: 70px;
         padding-bottom: 40px;
-       
+
     }
 
     &-container {
@@ -72,8 +72,8 @@
             background-color: rgba(0, 0, 0, 0.404);
 
             @include sm {
-                    max-width: 180px;
-                }
+                max-width: 180px;
+            }
 
             &-title {
                 font-size: 18px;

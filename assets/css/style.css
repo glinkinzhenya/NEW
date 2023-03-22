@@ -677,6 +677,11 @@ ul
     display: none;
 }
 
+.body
+{
+    overflow: hidden;
+}
+
 .services
 {
     min-height: 100vh;

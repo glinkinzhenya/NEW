@@ -6,20 +6,51 @@
 
 // });
 
+// Убираем title and description, зв`язатися 
+const headerNavbarBtn = document.querySelector(".header-navbar__btn");
+const headerContentTitle = document.querySelector(".header-content__title");
+const headerContentDescription = document.querySelector(".header-content__description");
+const headerContentAction = document.querySelector(".header-content__action");
+
+headerNavbarBtn.addEventListener("click", () => {
+  headerContentTitle.classList.toggle("none");
+  headerContentDescription.classList.toggle("none");
+  headerContentAction.classList.toggle("none");
+});
 
 
-// !для информации значек $ это начит вызов библиотеки jquery
+// Бургер 
+
+// // !для информации значек $ это начит вызов библиотеки jquery
+// $(document).ready(function () {
+//   // !заменили ID на наш клас .header-navbar__btn
+//   $('.header-navbar__btn').click(function () {
+//     $(this).toggleClass('open');
+//     // способ 1
+//     // $('.header-navbar__list').toggleClass('header-navbar__list--active');
+//     // способ 2
+//     $('.header-menu__left-list').stop(true, true).slideToggle(500);
+//   });
+// });
+
 $(document).ready(function () {
-  // !заменили ID на наш клас .header-navbar__btn
+  $(window).scroll(function () {
+    var scrollPosition = $(this).scrollTop();
+    if (scrollPosition > 0 && headerNavbarBtn.classList.contains('open')) {
+      $('.header-navbar__btn').removeClass('open');
+      $('.header-menu__left-list').stop(true, true).slideUp(500);
+
+      headerContentTitle.classList.toggle("none");
+      headerContentDescription.classList.toggle("none");
+      headerContentAction.classList.toggle("none");
+
+    }
+  });
   $('.header-navbar__btn').click(function () {
     $(this).toggleClass('open');
-    // способ 1
-    // $('.header-navbar__list').toggleClass('header-navbar__list--active');
-    // способ 2
     $('.header-menu__left-list').stop(true, true).slideToggle(500);
   });
 });
-
 
 
 // Замена логотипа
@@ -59,21 +90,22 @@ setTimeout("getOpacity()", 1000);
 
 
 
-// Убираем title and description
-const headerNavbarBtn = document.querySelector(".header-navbar__btn");
-const headerContentTitle = document.querySelector(".header-content__title");
-const headerContentDescription = document.querySelector(".header-content__description");
 
-headerNavbarBtn.addEventListener("click", () => {
-  headerContentTitle.classList.toggle("none");
-  headerContentDescription.classList.toggle("none");
-});
+// // Отключаем прокрутку страницы
+// const body = document.querySelector("body");
+// headerNavbarBtn.addEventListener("click", () => {
+//   body.classList.toggle("body");
+// });
 
 
-// Убираем зв`язатися
-const headerContentAction = document.querySelector(".header-content__action");
-headerNavbarBtn.addEventListener("click", () => {
-});
+// window.addEventListener('scroll', function () {
+//   let scrolled = window.scrollY;
+
+//   if (scrolled > 0 && !headerNavbarBtn.classList.contains('clicked')) {
+//     headerNavbarBtn.click();
+//     button.classList.add('clicked');
+//   }
+// });
 
 
 // Создаем портфолио
