@@ -2028,11 +2028,11 @@ input[type=file]
     .header-arrow
     {
         right: 1%;
-        bottom: 4%;
+        bottom: 1%;
     }
     .header-arrow__second-image
     {
-        width: 40px;
+        width: 30px;
     }
     .services
     {
