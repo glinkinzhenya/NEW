@@ -1953,6 +1953,10 @@ input[type=file]
     {
         width: 315px;
     }
+    .love-comment__button
+    {
+        font-weight: 300;
+    }
 }
 @media (max-width: 575.8px)
 {

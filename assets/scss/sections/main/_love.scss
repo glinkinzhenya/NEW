@@ -217,6 +217,12 @@
         font-size: 13px;
         color: black;
 
+        @include md {
+            font-weight: 300;
+        }
+
+
+
         &:hover {
             background-color: white;
         }
