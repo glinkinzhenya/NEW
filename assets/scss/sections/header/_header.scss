@@ -394,9 +394,9 @@
     opacity: .5;
 
     @include sm {
-            right: 1%;
-                bottom: 1%;
-        }
+        right: 1%;
+        bottom: 1%;
+    }
 
     &__second {
         position: absolute;
@@ -431,6 +431,10 @@
 
 .header-arrow__image {
     width: 30px;
+
+    @include sm {
+        width: 20px;
+    }
 }
 
 .fix {

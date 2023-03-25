@@ -2043,6 +2043,10 @@ input[type=file]
     {
         width: 30px;
     }
+    .header-arrow__image
+    {
+        width: 20px;
+    }
     .services
     {
         padding-top: 40px;
@@ -2064,6 +2068,7 @@ input[type=file]
     {
         max-width: 180px;
         margin-bottom: 0;
+        padding: 15px;
     }
     .services-box__item-title
     {
