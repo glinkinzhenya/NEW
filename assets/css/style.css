@@ -1286,7 +1286,7 @@ ul
 {
     padding-top: 100px;
     padding-right: 20px;
-    padding-bottom: 110px;
+    padding-bottom: 90px;
     padding-left: 20px;
 
     background-color: black;
@@ -1296,8 +1296,8 @@ ul
     max-width: 1360px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .love-title
 {
@@ -1406,7 +1406,7 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    margin-top: 60px;
+    margin-top: 90px;
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1421,7 +1421,7 @@ ul
     z-index: 1;
 
     width: 600px;
-    padding: 20px;
+    padding: 15px;
 
     letter-spacing: 1px;
 
@@ -1451,8 +1451,8 @@ ul
     display: flex;
     overflow: hidden;
 
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 
     cursor: pointer;
 
@@ -1481,12 +1481,15 @@ ul
 }
 .love-comment__button
 {
+    font-size: 13px;
+
     margin-top: 10px;
     margin-left: 25px;
     padding: 10px 20px;
 
     cursor: pointer;
 
+    color: black;
     border: none;
     border-radius: 30px;
     background-color: grey;
@@ -1948,7 +1951,7 @@ input[type=file]
     }
     .love-comment__input
     {
-        width: 330px;
+        width: 315px;
     }
 }
 @media (max-width: 575.8px)
@@ -2208,7 +2211,7 @@ input[type=file]
 
         width: 85%;
         margin-bottom: 15px;
-        margin-left: 12%;
+        margin-left: 15%;
         padding: 10px;
 
         letter-spacing: 0;
@@ -2220,6 +2223,10 @@ input[type=file]
     .love-box
     {
         margin-left: 0;
+    }
+    .love-comment
+    {
+        margin-top: 60px;
     }
     .love-comment__input
     {

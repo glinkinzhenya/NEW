@@ -4,7 +4,7 @@
 .love {
     padding-top: 100px;
     padding-right: 20px;
-    padding-bottom: 110px;
+    padding-bottom: 90px;
     padding-left: 20px;
 
     background-color: black;
@@ -18,8 +18,8 @@
         max-width: 1360px;
         margin-right: auto;
         margin-left: auto;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     &-title {
@@ -75,7 +75,7 @@
 
                     width: 85%;
                     margin-bottom: 15px;
-                    margin-left: 12%;
+                    margin-left: 15%;
                     padding: 10px;
 
                     letter-spacing: 0;
@@ -144,11 +144,15 @@
 .love-comment {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 90px;
+
+    @include sm {
+        margin-top: 60px;
+    }
 
     &__input {
         width: 600px;
-        padding: 20px;
+        padding: 15px;
         border-radius: 15px;
         border: none;
         font-size: 15px;
@@ -159,7 +163,7 @@
         z-index: 1;
 
         @include md {
-            width: 330px;
+            width: 315px;
         }
 
         @include sm {
@@ -177,8 +181,8 @@
         margin-bottom: 15px;
 
         &-picture {
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
 
             overflow: hidden;
             display: flex;
@@ -210,6 +214,8 @@
         padding: 10px 20px;
         cursor: pointer;
         background-color: grey;
+        font-size: 13px;
+        color: black;
 
         &:hover {
             background-color: white;
