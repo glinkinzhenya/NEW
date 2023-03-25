@@ -1,36 +1,31 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.money
-{
+.money {
     position: relative;
 
     padding-bottom: 80px;
 
     background-color: black;
 
-    @include lg
-    {
+    @include lg {
         padding-bottom: 40px;
     }
 
-    &-picture
-    {
+    &-picture {
         position: absolute;
         z-index: -3;
 
         width: 100vw;
     }
 
-    &-img
-    {
+    &-img {
         width: 100%;
 
         object-fit: cover;
     }
 
-    &-title
-    {
+    &-title {
         font-size: 40px;
         font-weight: 500;
         font-style: normal;
@@ -44,8 +39,7 @@
 
         color: white;
 
-        @include lg
-        {
+        @include lg {
             font-size: 25px;
 
             padding-top: 50px;
@@ -54,8 +48,7 @@
         }
     }
 
-    &-description
-    {
+    &-description {
         font-size: 15px;
         font-weight: 300;
 
@@ -66,26 +59,25 @@
         opacity: .6;
         color: white;
 
-        @include lg
-        {
+        @include lg {
             font-size: 12px;
         }
     }
 
-    &-box
-    {
+    &-box {
         display: flex;
 
         flex-wrap: wrap;
         justify-content: center;
-        @include lg
-        {
+
+        @include lg {
             flex-direction: column;
+                 display: none;
         }
+
     }
 
-    &-item
-    {
+    &-item {
         display: flex;
         flex-direction: column;
 
@@ -94,24 +86,21 @@
 
         gap: 20px;
         align-items: center;
-        @include lg
-        {
+
+        @include lg {
             gap: 0;
         }
 
-        &__price
-        {
+        &__price {
             display: flex;
 
-            @include lg
-            {
+            @include lg {
                 flex-direction: column;
 
                 align-items: center;
             }
 
-            &-number
-            {
+            &-number {
                 font-size: 40px;
                 font-weight: 300;
 
@@ -122,34 +111,28 @@
                 color: white;
                 border-bottom: solid 1px rgba(250, 248, 248, .267);
 
-                @include lg
-                {
+                @include lg {
                     padding-right: 10px;
                     padding-bottom: 5px;
                     padding-left: 10px;
                 }
             }
 
-            &-arrow
-            {
+            &-arrow {
                 display: none;
 
-                @include lg
-                {
+                @include lg {
                     display: block;
                 }
             }
 
-            &-image
-            {
+            &-image {
                 width: 40px;
             }
         }
 
-        &__content
-        {
-            &-text
-            {
+        &__content {
+            &-text {
                 font-size: 14px;
                 font-weight: 300;
 
@@ -157,10 +140,8 @@
                 color: white;
             }
 
-            &-list
-            {
-                @include lg
-                {
+            &-list {
+                @include lg {
                     display: none;
                 }
             }
@@ -175,5 +156,13 @@
 
 .accordion-button {
     background-color: black;
-        color: white;
+    color: white;
+}
+
+.container-bootstrap {
+    display: none;
+
+    @include lg {
+        display: block;
+    }
 }

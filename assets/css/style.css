@@ -1111,6 +1111,11 @@ ul
     background-color: black;
 }
 
+.container-bootstrap
+{
+    display: none;
+}
+
 .technology
 {
     background-color: white;
@@ -1908,6 +1913,7 @@ input[type=file]
     }
     .money-box
     {
+        display: none;
             flex-direction: column;
 
         -webkit-box-orient: vertical;
@@ -1942,6 +1948,10 @@ input[type=file]
     .money-item__content-list
     {
         display: none;
+    }
+    .container-bootstrap
+    {
+        display: block;
     }
     .technology-container
     {
