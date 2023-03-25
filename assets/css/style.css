@@ -1671,7 +1671,7 @@ input[type=file]
 }
 .contacts-form__button
 {
-    padding: 20px 40px;
+    padding: 15px 30px;
 
     color: black;
     border: 1px solid rgb(191, 189, 189);
@@ -2139,7 +2139,7 @@ input[type=file]
     .technology-container
     {
         padding-top: 50px;
-        padding-bottom: 40px;
+        padding-bottom: 55px;
     }
     .technology-info__title
     {
