@@ -1671,12 +1671,11 @@ input[type=file]
 }
 .contacts-form__button
 {
-    min-width: 200px;
-    padding: 20px;
+    padding: 20px 40px;
 
     color: black;
     border: 1px solid rgb(191, 189, 189);
-    border-radius: 40px;
+    border-radius: 25px;
     background-color: white;
 }
 .contacts-form__button:hover
