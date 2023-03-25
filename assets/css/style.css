@@ -2093,7 +2093,7 @@ input[type=file]
     }
     .nextwork
     {
-        padding-top: 50px;
+        padding-top: 40px;
         padding-right: 0;
         padding-bottom: 0;
         padding-left: 0;
@@ -2112,6 +2112,11 @@ input[type=file]
 
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+    .nextwork-box__item-picture
+    {
+        width: 70px;
+        height: 70px;
     }
     .nextwork-box__item-description
     {

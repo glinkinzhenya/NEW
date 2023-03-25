@@ -1,8 +1,7 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.nextwork
-{
+.nextwork {
     position: relative;
 
     display: flex;
@@ -16,16 +15,15 @@
 
     align-items: center;
     justify-content: center;
-    @include sm
-    {
-        padding-top: 50px;
+
+    @include sm {
+        padding-top: 40px;
         padding-right: 0;
         padding-bottom: 0;
         padding-left: 0;
     }
 
-    &__title
-    {
+    &__title {
         font-size: 40px;
         font-weight: 500;
         font-style: normal;
@@ -40,8 +38,7 @@
 
         color: rgba(233, 228, 228, .953);
 
-        @include sm
-        {
+        @include sm {
             font-size: 25px;
 
             margin-bottom: 10px;
@@ -50,8 +47,7 @@
         }
     }
 
-    &-box
-    {
+    &-box {
         display: grid;
 
         margin-bottom: 50px;
@@ -59,20 +55,19 @@
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
         gap: 20px;
-        @include lg
-        {
+
+        @include lg {
             grid-template-columns: repeat(2, 1fr);
         }
-        @include sm
-        {
+
+        @include sm {
             margin-bottom: 10px;
 
             grid-template-columns: 1fr;
             justify-items: center;
         }
 
-        &__item
-        {
+        &__item {
             display: flex;
             flex-direction: column;
 
@@ -82,8 +77,7 @@
             align-items: center;
             gap: 20px;
 
-            &-title
-            {
+            &-title {
                 font-size: 20px;
                 font-weight: 500;
 
@@ -92,8 +86,7 @@
                 color: white;
             }
 
-            &-picture
-            {
+            &-picture {
                 display: flex;
 
                 width: 100px;
@@ -104,10 +97,14 @@
 
                 order: -1;
                 align-items: center;
+
+                @include sm {
+                    width: 70px;
+                    height: 70px;
+                }
             }
 
-            &-image
-            {
+            &-image {
                 display: block;
 
                 width: 50%;
@@ -115,8 +112,7 @@
                 margin-left: auto;
             }
 
-            &-description
-            {
+            &-description {
                 font-size: 13px;
 
                 text-align: center;
@@ -124,8 +120,7 @@
                 opacity: .7;
                 color: white;
 
-                @include sm
-                {
+                @include sm {
                     font-weight: 300;
 
                     padding-bottom: 15px;
@@ -136,10 +131,8 @@
         }
     }
 
-    &-technology
-    {
-        &__title
-        {
+    &-technology {
+        &__title {
             font-size: 50px;
             font-weight: 500;
             font-style: normal;
@@ -158,15 +151,13 @@
             color: white;
         }
 
-        &__box
-        {
+        &__box {
             display: grid;
 
             grid-template-columns: repeat(5, 1fr);
             gap: 20px;
 
-            &-picture
-            {
+            &-picture {
                 display: flex;
 
                 justify-content: center;
@@ -175,8 +166,7 @@
     }
 }
 
-.nextwork::after
-{
+.nextwork::after {
     position: absolute;
     z-index: -1;
     top: 10%;
@@ -188,8 +178,7 @@
 
     background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, black 86.5%);
 
-    @include sm
-    {
+    @include sm {
         top: -40%;
     }
 }
