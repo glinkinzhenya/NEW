@@ -1099,6 +1099,18 @@ ul
     color: white;
 }
 
+.accordion-body
+{
+    color: white;
+    background-color: black;
+}
+
+.accordion-button
+{
+    color: white;
+    background-color: black;
+}
+
 .technology
 {
     background-color: white;
@@ -2173,7 +2185,7 @@ input[type=file]
     }
     .technology-circle__icon-image
     {
-        width: 70px;
+        width: 60px;
     }
     .about
     {
