@@ -2214,7 +2214,7 @@ input[type=file]
         line-height: 100%;
 
         width: 85%;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         margin-left: 15%;
         padding: 10px;
 
@@ -2277,7 +2277,9 @@ input[type=file]
     }
     .contacts-form__button
     {
-        min-width: 150px;
+        font-size: 13px;
+
+        padding: 15px 30px;
     }
     .footer
     {
