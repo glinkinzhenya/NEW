@@ -151,12 +151,14 @@
 
 .accordion-body {
     background-color: black;
-    color: white;
+    color: rgba(201, 196, 196, 0.739);
+    font-size: 12px;
 }
 
 .accordion-button {
     background-color: black;
     color: white;
+ border-radius: 40px;
 }
 
 .container-bootstrap {
@@ -165,4 +167,9 @@
     @include lg {
         display: block;
     }
+}
+
+.accordion-button:not(.collapsed) {
+background-color: white;
+color: black;
 }
