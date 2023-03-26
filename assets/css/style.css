@@ -1313,7 +1313,7 @@ ul
 {
     padding-top: 100px;
     padding-right: 20px;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     padding-left: 20px;
 
     background-color: black;
@@ -1433,8 +1433,6 @@ ul
     display: -ms-flexbox;
     display: flex;
 
-    margin-top: 90px;
-
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1508,22 +1506,25 @@ ul
 }
 .love-comment__button
 {
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 300;
 
     margin-top: 10px;
     margin-left: 25px;
-    padding: 10px 20px;
+    padding: 8px 30px;
 
     cursor: pointer;
 
-    color: black;
-    border: none;
-    border-radius: 30px;
-    background-color: grey;
+    opacity: .8;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
 }
 .love-comment__button:hover
 {
-    background-color: white;
+    opacity: 1;
+    border-color: darkmagenta;
 }
 
 input[type=file]
@@ -1549,6 +1550,43 @@ input[type=file]
     content: '';
 
     background-image: url(../img/corner.png);
+}
+
+.card-body
+{
+    background-color: black;
+}
+
+.btn-primary
+{
+    font-size: 12px;
+    font-weight: 300;
+
+    margin-top: 40px;
+
+    opacity: .5;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.btn:first-child:active
+{
+    border-color: darkmagenta;
+    background-color: transparent;
+}
+
+.btn-primary:hover
+{
+    opacity: 1;
+    border-color: darkmagenta;
+    background-color: black;
+}
+
+.btn-primary:focus
+{
+    opacity: 1;
+    border-color: darkmagenta;
 }
 
 .contacts
@@ -2263,10 +2301,6 @@ input[type=file]
     .love-box
     {
         margin-left: 0;
-    }
-    .love-comment
-    {
-        margin-top: 60px;
     }
     .love-comment__input
     {

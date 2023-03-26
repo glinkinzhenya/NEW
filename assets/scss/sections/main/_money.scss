@@ -72,7 +72,7 @@
 
         @include lg {
             flex-direction: column;
-                 display: none;
+            display: none;
         }
 
     }
@@ -159,7 +159,7 @@
 .accordion-button {
     background-color: black;
     color: white;
- border-radius: 40px;
+    border-radius: 40px;
 }
 
 .container-bootstrap {
@@ -171,6 +171,6 @@
 }
 
 .accordion-button:not(.collapsed) {
-background-color: white;
-color: black;
+    background-color: white;
+    color: black;
 }

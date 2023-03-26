@@ -4,7 +4,7 @@
 .love {
     padding-top: 100px;
     padding-right: 20px;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     padding-left: 20px;
 
     background-color: black;
@@ -144,11 +144,6 @@
 .love-comment {
     display: flex;
     justify-content: center;
-    margin-top: 90px;
-
-    @include sm {
-        margin-top: 60px;
-    }
 
     &__input {
         width: 600px;
@@ -209,13 +204,15 @@
     &__button {
         margin-left: 25px;
         margin-top: 10px;
-        border-radius: 30px;
-        border: none;
-        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 8px 30px;
         cursor: pointer;
-        background-color: grey;
-        font-size: 13px;
-        color: black;
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: 300;
+        color: white;
+        opacity: 0.8;
 
         @include md {
             font-weight: 300;
@@ -224,7 +221,8 @@
 
 
         &:hover {
-            background-color: white;
+            border-color: darkmagenta;
+            opacity: 1;
         }
     }
 
@@ -251,4 +249,34 @@ input[type=file] {
         background-image: url(../img/corner.png);
 
     }
+}
+
+.card-body {
+    background-color: black;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 40px;
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.btn:first-child:active {
+    background-color: transparent;
+    border-color: darkmagenta;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    opacity: 1;
+    border-color: darkmagenta;
+}
+
+.btn-primary:focus {
+    border-color: darkmagenta;
+    opacity: 1;
 }
