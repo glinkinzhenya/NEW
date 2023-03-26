@@ -322,4 +322,22 @@ window.addEventListener('scroll', function () {
 
 
 
+// появляющееся окно к комментариям 
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+const collapseExample = document.getElementById('collapseExample')
+const myInput = document.querySelector('.love-comment__input');
 
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+    myInput.value = '';
+
+    setTimeout(() => {
+    collapseExample.classList.remove('show')
+    }, 6000);
+
+  })
+}

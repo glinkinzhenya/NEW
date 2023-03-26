@@ -1559,7 +1559,7 @@ input[type=file]
 
 .btn-primary
 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
 
     margin-top: 40px;
@@ -1587,6 +1587,11 @@ input[type=file]
 {
     opacity: 1;
     border-color: darkmagenta;
+}
+
+.rounded
+{
+    width: 140px;
 }
 
 .contacts
@@ -2025,6 +2030,10 @@ input[type=file]
     .love-comment__button
     {
         font-weight: 300;
+    }
+    .btn-primary
+    {
+        font-size: 12px;
     }
 }
 @media (max-width: 575.8px)

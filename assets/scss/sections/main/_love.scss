@@ -261,8 +261,12 @@ input[type=file] {
     border: 1px solid white;
     margin-top: 40px;
     opacity: 0.5;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
+
+    @include md {
+        font-size: 12px;
+    }
 }
 
 .btn:first-child:active {
@@ -279,4 +283,13 @@ input[type=file] {
 .btn-primary:focus {
     border-color: darkmagenta;
     opacity: 1;
+}
+
+// .toast-body {
+// background-color: black;
+// color: gray;
+// }
+
+.rounded {
+width: 140px;
 }

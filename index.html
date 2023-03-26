@@ -773,41 +773,59 @@
         <p class="text-center">
           <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
             aria-expanded="false" aria-controls="collapseExample">
-           Залишити відгук
+            Залишити відгук
           </button>
         </p>
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-          <div class="love-comment">
-          
-            <div>
-              <div class="love-comment__position">
-                <textarea class="love-comment__input" placeholder="Ви можете залишити свій відгук, нам буде приємно"></textarea>
-              </div>
-          
-              <div class="love-comment__info">
-                <label>
-                  <div class="love-comment__info-picture">
-                    <img class="love-comment__info-image" src="assets/img/foto-icon1.png" alt="">
+            <div class="love-comment">
+
+              <div>
+                <div class="love-comment__position">
+                  <textarea class="love-comment__input" value=""
+                    placeholder="Ви можете залишити свій відгук, нам буде приємно"></textarea>
+                </div>
+
+                <div class="love-comment__info">
+                  <label>
+                    <div class="love-comment__info-picture">
+                      <img class="love-comment__info-image" src="assets/img/foto-icon1.png" alt="">
+                    </div>
+
+                    <input id="newAvatar" type="file" accept=".jpg, .jpeg, .png">
+                  </label>
+                  <input class="love-comment__info-name" placeholder="Ім'я" type="text"></input>
+
+                </div>
+
+                <!-- <div class="">
+                  <button class="love-comment__button" type="submit" class="btn btn-secondary" type="button"
+                    data-bs-target="#collapseExample" data-bs-toggle="collapse" aria-expanded="true"
+                    aria-controls="collapseExample">Надіслати</button>
+                </div> -->
+
+                <button class="love-comment__button" type="button" class="btn btn-secondary" type="button"
+                  data-bs-target="#collapseExample" aria-controls="collapseExample" id="liveToastBtn">Надіслати</button>
+
+                <div class="toast-container position-fixed bottom-0 end-0 p-4">
+                  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <!-- <img src="assets/img/love_deepDive.png" class="rounded me-2" alt="..."> -->
+                      <strong class="me-auto"></strong>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Дякуюємо за відгук. Зовсім скоро вім опублікується.
+                    </div>
                   </div>
-          
-                  <input id="newAvatar" type="file" accept=".jpg, .jpeg, .png">
-                </label>
-                <input class="love-comment__info-name" placeholder="Ім'я" type="text"></input>
-          
+                </div>
+
+
               </div>
-          
-              <div class="">
-                <button class="love-comment__button" type="submit">Надіслати</button>
-              </div>
-          
+
             </div>
-          
-          </div>
           </div>
         </div>
-
-
 
 
       </div>
