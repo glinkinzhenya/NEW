@@ -1756,7 +1756,7 @@ input[type=file]
 
 .footer
 {
-    opacity: .5;
+    opacity: .7;
     background-color: black;
 }
 .footer-container
@@ -1780,7 +1780,7 @@ input[type=file]
 }
 .footer-image
 {
-    width: 100px;
+    width: 150px;
 }
 .footer-security
 {
