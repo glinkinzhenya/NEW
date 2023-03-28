@@ -1673,8 +1673,11 @@ input[type=file]
     font-size: 15px;
     font-weight: 300;
 
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.contacts-item__box
+{
+    margin-top: 20px;
 }
 .contacts-item__box-image
 {
