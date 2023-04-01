@@ -1675,6 +1675,8 @@ input[type=file]
     font-weight: 300;
 
     margin-top: 10px;
+
+    color: inherit;
 }
 .contacts-item__box
 {
