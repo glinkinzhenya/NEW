@@ -342,7 +342,7 @@ if (toastTrigger) {
     loveImage.setAttribute('src', 'assets/img/foto-icon1.png');
 
     setTimeout(() => {
-    collapseExample.classList.remove('show')
+      collapseExample.classList.remove('show')
     }, 6000);
 
   })
