@@ -144,7 +144,7 @@ function portfolio() {
     }, 10);
 
     i += 1;
-    if (i === 9) clearInterval(y);
+    if (i === 13) clearInterval(y);
   }, 200);
 };
 
