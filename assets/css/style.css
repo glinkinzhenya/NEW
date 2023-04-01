@@ -2043,8 +2043,8 @@ input[type=file]
 {
     .header-menu
     {
-        grid-template-columns: auto 1fr;
-        grid-template-areas: 'logo burger';
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 'logo lang burger';
     }
     .header-menu__logo
     {
@@ -2096,7 +2096,8 @@ input[type=file]
     }
     .header-menu__language
     {
-        display: none;
+        margin-right: 20px;
+        margin-left: auto;
     }
     .header-content__title
     {
