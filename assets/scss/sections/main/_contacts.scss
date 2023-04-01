@@ -108,6 +108,7 @@
 
         &__box {
             margin-top: 20px;
+
             &-image {
                 width: 30px;
             }
@@ -150,6 +151,12 @@
             }
         }
 
+        &__enter {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
 
 
         &__button {
@@ -169,6 +176,12 @@
                 color: white;
                 background-color: black;
             }
+        }
+
+        &__coment {
+            color: grey;
+            font-size: 10px;
+            font-weight: 300;
         }
     }
 }

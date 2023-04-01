@@ -1743,6 +1743,17 @@ input[type=file]
 
     color: grey;
 }
+.contacts-form__enter
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px;
+}
 .contacts-form__button
 {
     padding: 15px 30px;
@@ -1756,6 +1767,13 @@ input[type=file]
 {
     color: white;
     background-color: black;
+}
+.contacts-form__coment
+{
+    font-size: 10px;
+    font-weight: 300;
+
+    color: grey;
 }
 
 .footer
