@@ -42,6 +42,7 @@
 
             @include sm {
                 margin-left: 20px;
+           
             }
 
             &-image {
@@ -52,6 +53,7 @@
 
                 @include sm {
                     width: 170px;
+                    margin-bottom: 10px;
                 }
             }
         }

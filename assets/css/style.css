@@ -2053,6 +2053,7 @@ input[type=file]
     .header-menu__logo-image
     {
         width: 170px;
+        margin-bottom: 10px;
     }
     .header-menu__left-list
     {
