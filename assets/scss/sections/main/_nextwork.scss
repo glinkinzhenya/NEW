@@ -56,6 +56,10 @@
         justify-content: space-between;
         gap: 20px;
 
+        @include xl {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
         @include lg {
             grid-template-columns: repeat(2, 1fr);
         }

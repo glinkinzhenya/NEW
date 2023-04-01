@@ -1914,6 +1914,10 @@ input[type=file]
     {
         margin-left: 20px;
     }
+    .nextwork-box
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .about
     {
         padding: 0 30px 45px;
