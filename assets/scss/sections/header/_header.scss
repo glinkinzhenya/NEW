@@ -42,7 +42,7 @@
 
             @include sm {
                 margin-left: 20px;
-           
+
             }
 
             &-image {
@@ -310,6 +310,7 @@
             font-weight: 500;
             font-style: normal;
             line-height: 140%;
+            margin-bottom: 10px;
 
             cursor: pointer;
             transition: 3.0s;
@@ -350,21 +351,25 @@
         &__action {
             position: absolute;
             bottom: 20%;
-            backdrop-filter: blur(25px);
-            padding: 15px 20px;
+            // backdrop-filter: blur(25px);
+            padding: 10px 15px;
             border-radius: 20px;
+            border: 1px solid darkmagenta;
+            background-color: white;
+           
+
 
             &-link {
                 font-size: 13px;
                 font-weight: 400;
                 font-style: normal;
-
+                color: darkmagenta;
                 // padding: 15px 50px;
-
+ opacity: .6;
                 transition: .5s;
 
                 // opacity: .5;
-                color: rgba(255, 255, 255, 0.617);
+                // color: rgba(255, 255, 255, 0.617);
                 // border: 1px solid white;
 
                 // background-color: white;

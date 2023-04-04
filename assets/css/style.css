@@ -467,6 +467,8 @@ ul
     font-style: normal;
     line-height: 140%;
 
+    margin-bottom: 10px;
+
     cursor: pointer;
     -webkit-transition: 3s;
          -o-transition: 3s;
@@ -493,12 +495,11 @@ ul
     position: absolute;
     bottom: 20%;
 
-    padding: 15px 20px;
+    padding: 10px 15px;
 
+    border: 1px solid darkmagenta;
     border-radius: 20px;
-
-    -webkit-backdrop-filter: blur(25px);
-            backdrop-filter: blur(25px);
+    background-color: white;
 }
 .header-content__action-link
 {
@@ -510,7 +511,8 @@ ul
          -o-transition: .5s;
             transition: .5s;
 
-    color: rgba(255, 255, 255, .617);
+    opacity: .6;
+    color: darkmagenta;
 }
 .header-content__action-link:hover
 {
@@ -1273,6 +1275,9 @@ ul
     font-weight: 500;
 
     padding-left: 20px;
+
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
 }
 .about-circle__icon-work
 {
@@ -2195,7 +2200,7 @@ input[type=file]
     }
     .portfolio
     {
-        height: 100vh;
+        min-height: 100vh;
         padding-top: 0;
         padding-bottom: 20px;
     }
