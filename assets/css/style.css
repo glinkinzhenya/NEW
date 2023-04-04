@@ -497,13 +497,14 @@ ul
 
     padding: 10px 15px;
 
-    border: 1px solid darkmagenta;
     border-radius: 20px;
-    background-color: white;
+
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
 }
 .header-content__action-link
 {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     font-style: normal;
 
@@ -512,7 +513,7 @@ ul
             transition: .5s;
 
     opacity: .6;
-    color: darkmagenta;
+    color: white;
 }
 .header-content__action-link:hover
 {
