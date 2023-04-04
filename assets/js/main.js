@@ -182,65 +182,6 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
 });
 
 
-// Меню цен
-const priceArrow1 = document.getElementById("price-arrow1");
-const priceArrow2 = document.getElementById("price-arrow2");
-const priceArrow3 = document.getElementById("price-arrow3");
-const contentList1 = document.getElementById("content-list1");
-const contentList2 = document.getElementById("content-list2");
-const contentList3 = document.getElementById("content-list3");
-
-let Arrow1counter = 0;
-let Arrow2counter = 0;
-let Arrow3counter = 0;
-
-
-priceArrow1.addEventListener('click', function (e) {
-  contentList1.style = `display: block`;
-  contentList2.style = `display: none`;
-  contentList3.style = `display: none`;
-
-  Arrow2counter = 0;
-  Arrow3counter = 0;
-
-  Arrow1counter += 1;
-  if (Arrow1counter === 2) {
-    contentList1.style = `display: none`
-    Arrow1counter = 0;
-  };
-});
-
-priceArrow2.addEventListener('click', function (e) {
-  contentList2.style = `display: block`;
-  contentList1.style = `display: none`;
-  contentList3.style = `display: none`;
-
-  Arrow1counter = 0;
-  Arrow3counter = 0;
-
-  Arrow2counter += 1;
-  if (Arrow2counter === 2) {
-    contentList2.style = `display: none`
-    Arrow2counter = 0;
-  };
-});
-
-priceArrow3.addEventListener('click', function (e) {
-  contentList3.style = `display: block`;
-  contentList1.style = `display: none`;
-  contentList2.style = `display: none`;
-
-  Arrow1counter = 0;
-  Arrow2counter = 0;
-
-  Arrow3counter += 1;
-  if (Arrow3counter === 2) {
-    contentList3.style = `display: none`
-    Arrow3counter = 0;
-  };
-});
-
-
 
 // Добавление комментариев 
 
