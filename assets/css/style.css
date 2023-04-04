@@ -806,7 +806,7 @@ ul
 
     padding: 10px;
 
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     justify-items: center;
 }
@@ -1975,7 +1975,7 @@ input[type=file]
     }
     .portfolio-box
     {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .nextwork-box
     {
