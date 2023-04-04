@@ -1275,6 +1275,7 @@ ul
     font-size: 20px;
     font-weight: 500;
 
+    width: 60%;
     padding-left: 20px;
 
     -webkit-backdrop-filter: blur(25px);
@@ -1938,6 +1939,7 @@ input[type=file]
     {
         font-size: 17px;
 
+        width: 200px;
         padding-left: 0;
     }
     .about-circle__icon-work
@@ -2045,6 +2047,11 @@ input[type=file]
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }
+    .about-circle
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
     .love-section
     {
         grid-template-columns: 1fr;
@@ -2054,8 +2061,7 @@ input[type=file]
 {
     .about-circle
     {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 30px;
     }
     .love-comment__input
     {
@@ -2309,7 +2315,6 @@ input[type=file]
     }
     .about-circle
     {
-        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
     .about-circle__icon-description
