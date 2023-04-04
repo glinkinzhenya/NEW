@@ -1275,7 +1275,7 @@ ul
     font-size: 20px;
     font-weight: 500;
 
-    width: 60%;
+    width: 225px;
     padding-left: 20px;
 
     -webkit-backdrop-filter: blur(25px);
@@ -1939,7 +1939,7 @@ input[type=file]
     {
         font-size: 17px;
 
-        width: 200px;
+        width: 175px;
         padding-left: 0;
     }
     .about-circle__icon-work
@@ -2052,6 +2052,10 @@ input[type=file]
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
     }
+    .about-circle__icon-name
+    {
+        width: 175px;
+    }
     .love-section
     {
         grid-template-columns: 1fr;
@@ -2062,6 +2066,10 @@ input[type=file]
     .about-circle
     {
         gap: 30px;
+    }
+    .about-circle__icon-name
+    {
+        width: 175px;
     }
     .love-comment__input
     {
@@ -2316,7 +2324,11 @@ input[type=file]
     .about-circle
     {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 0;
+    }
+    .about-circle__icon
+    {
+        margin: 20px;
     }
     .about-circle__icon-description
     {
