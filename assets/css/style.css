@@ -502,6 +502,10 @@ ul
     -webkit-backdrop-filter: blur(25px);
             backdrop-filter: blur(25px);
 }
+.header-content__action:hover
+{
+    opacity: 1;
+}
 .header-content__action-link
 {
     font-size: 15px;

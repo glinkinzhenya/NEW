@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
@@ -190,4 +191,196 @@
             width: 20px;
         }
     }
+=======
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.about {
+    padding: 50px 75px 130px;
+
+    background-color: white;
+
+    @include xl {
+        padding: 0 30px 45px;
+    }
+
+    @include sm {
+        padding: 10px 10px 40px 10px;
+    }
+
+    &-info {
+        &__title {
+            font-size: 40px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 140%;
+
+            padding-top: 100px;
+            padding-bottom: 25px;
+
+            text-align: center;
+
+            color: black;
+
+            @include sm {
+                font-size: 25px;
+
+                padding-top: 50px;
+            }
+        }
+
+        &__description {
+            font-size: 15px;
+            font-weight: 300;
+
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 50px;
+
+            color: black;
+
+            @include sm {
+                font-size: 12px;
+
+                width: 95%;
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+    &-circle {
+        display: grid;
+        // justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @include lg {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        @include md {
+            gap: 30px;
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+            gap: 0px;
+        }
+
+        &__icon {
+            position: relative;
+
+            @include sm {
+                margin: 20px;
+            }
+        }
+
+        &__position {
+            position: absolute;
+            bottom: 0;
+
+            display: flex;
+            flex-direction: column;
+
+            margin: 10px;
+
+            gap: 10px;
+
+            @include xl {
+                margin: 5px;
+
+                gap: 4px;
+            }
+        }
+
+        &__icon-name {
+            font-size: 20px;
+            font-weight: 500;
+             width: 225px;
+            padding-left: 20px;
+            backdrop-filter: blur(25px);
+
+            @include xl {
+                font-size: 17px;
+                padding-left: 0;
+                width: 175px;
+            }
+
+            @include lg {
+                width: 175px;
+            }
+
+            @include md {
+                width: 175px;
+            }
+        }
+
+        &__icon-work {
+            padding-left: 20px;
+
+            color: darkmagenta;
+
+            @include xl {
+                font-size: 15px;
+
+                padding-left: 0;
+            }
+        }
+
+        &__icon-description {
+            font-size: 10px;
+            font-style: normal;
+
+            width: 90%;
+            padding: 10px 20px 10px 20px;
+
+            opacity: .8;
+            border-radius: 10px;
+            background-color: lightgrey;
+
+            @include xl {
+                width: 95%;
+                padding: 5px;
+            }
+
+            @include sm {
+                font-size: 9px;
+            }
+        }
+
+
+
+        &__icon-image {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.icon-box {
+    margin: 10px;
+
+    @include xl {
+        margin: 2px;
+    }
+
+    &__link {
+        margin: 6px;
+
+        @include xl {
+            margin: 4px;
+        }
+    }
+
+    &__image {
+        width: 30px;
+
+        @include xl {
+            width: 20px;
+        }
+    }
+>>>>>>> 0fd4e658cf743b4b9de149c23dc52687f76e444d
 }
