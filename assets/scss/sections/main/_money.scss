@@ -69,6 +69,7 @@
 
         flex-wrap: wrap;
         justify-content: center;
+        gap: 40px;
 
         @include lg {
             flex-direction: column;
