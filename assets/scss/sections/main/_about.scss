@@ -72,14 +72,14 @@
 
         @include sm {
             grid-template-columns: 1fr;
-            gap: 10px;
+            gap: 0px;
         }
 
         &__icon {
             position: relative;
 
-            @include lg {
-                // max-width: 30vw;
+            @include sm {
+                margin: 20px;
             }
         }
 
@@ -104,16 +104,22 @@
         &__icon-name {
             font-size: 20px;
             font-weight: 500;
-            // width: 200px;
-            width: 60%;
+             width: 225px;
             padding-left: 20px;
             backdrop-filter: blur(25px);
 
             @include xl {
                 font-size: 17px;
-
                 padding-left: 0;
-                width: 200px;
+                width: 175px;
+            }
+
+            @include lg {
+                width: 175px;
+            }
+
+            @include md {
+                width: 175px;
             }
         }
 
