@@ -497,12 +497,6 @@ ul
 
     padding: 10px 15px;
 
-    -webkit-transition: 1s;
-         -o-transition: 1s;
-            transition: 1s;
-
-    opacity: .6;
-    border: 3px solid darkmagenta;
     border-radius: 20px;
 
     -webkit-backdrop-filter: blur(25px);
@@ -511,8 +505,6 @@ ul
 .header-content__action:hover
 {
     opacity: 1;
-    color: darkmagenta;
-    background-color: white;
 }
 .header-content__action-link
 {
@@ -524,11 +516,12 @@ ul
          -o-transition: .5s;
             transition: .5s;
 
+    opacity: .6;
     color: white;
 }
 .header-content__action-link:hover
 {
-    color: darkmagenta;
+    padding: 17px 22px;
 }
 
 .header-arrow
