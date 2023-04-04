@@ -356,7 +356,18 @@
             border-radius: 20px;
             // border: 1px solid darkmagenta;
             // background-color: white;
+            border: 3px solid darkmagenta;
+            transition: 1s;
+            opacity: .6;
 
+            &:hover {
+                // opacity: 1;
+                background-color: white;
+                //  border: 1px solid darkmagenta;
+                color: darkmagenta;
+                opacity: 1;
+                // padding: 17px 22px;
+            }
 
 
             &-link {
@@ -364,9 +375,9 @@
                 font-weight: 400;
                 font-style: normal;
                 color: white;
-                opacity: .6;
+                // opacity: .6;
                 transition: .5s;
-
+               
                 // opacity: .5;
                 // color: rgba(255, 255, 255, 0.617);
                 // border: 1px solid white;
@@ -383,7 +394,11 @@
                 &:hover {
                     // opacity: 1;
                     // color: black;
-                    padding: 17px 22px;
+                    color: darkmagenta;
+                    //  border: 1px solid darkmagenta;
+
+
+                    // padding: 17px 22px;
                 }
             }
         }
