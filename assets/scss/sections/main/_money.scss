@@ -19,7 +19,6 @@
         line-height: 140%;
 
         padding-top: 100px;
-        padding-bottom: 25px;
 
         text-align: center;
         letter-spacing: 2px;
@@ -55,7 +54,7 @@
         display: flex;
 
         justify-content: center;
-        gap: 40px;
+        gap: 50px;
 
         @include lg {
             flex-direction: column;
@@ -75,13 +74,13 @@
         }
 
         &__price {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 300;
             color: white;
             border-bottom: 1px solid rgba(255, 255, 255, 0.206);
             padding-bottom: 20px;
             margin-bottom: 40px;
-            text-align: center;
+            // text-align: center;
 
             @include lg {
                 flex-direction: column;

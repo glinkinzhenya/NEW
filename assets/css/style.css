@@ -1005,7 +1005,6 @@ ul
     line-height: 140%;
 
     padding-top: 100px;
-    padding-bottom: 25px;
 
     text-align: center;
     letter-spacing: 2px;
@@ -1033,7 +1032,7 @@ ul
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
 }
 .money-item
 {
@@ -1044,13 +1043,11 @@ ul
 }
 .money-item__price
 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
 
     margin-bottom: 40px;
     padding-bottom: 20px;
-
-    text-align: center;
 
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, .206);
@@ -1248,7 +1245,7 @@ ul
     font-size: 20px;
     font-weight: 500;
 
-    width: 225px;
+    width: 90%;
     padding-left: 20px;
 
     -webkit-backdrop-filter: blur(25px);
@@ -1256,9 +1253,13 @@ ul
 }
 .about-circle__icon-work
 {
+    width: 50%;
     padding-left: 20px;
 
     color: darkmagenta;
+
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
 }
 .about-circle__icon-description
 {
@@ -1268,9 +1269,10 @@ ul
     width: 90%;
     padding: 10px 20px 10px 20px;
 
-    opacity: .8;
-    border-radius: 10px;
-    background-color: lightgrey;
+    background-color: rgba(255, 255, 255, .316);
+
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
 }
 .about-circle__icon-image
 {
