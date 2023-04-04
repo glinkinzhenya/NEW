@@ -2315,6 +2315,7 @@ input[type=file]
     }
     .about-circle
     {
+        grid-template-columns: 1fr;
         gap: 10px;
     }
     .about-circle__icon-description
