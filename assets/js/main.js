@@ -288,3 +288,25 @@ if (toastTrigger) {
 
   })
 }
+
+
+
+
+const pulseButton = document.querySelector('.pulse-button');
+const pulseButtonImg = document.querySelector('.pulse-button-image');
+const pulseButtonImg2 = document.querySelector('.pulse-button-image2');
+const pulseButtonIcon = document.querySelector('.pulse-button-icon');
+
+pulseButton.addEventListener('click', () => {
+  pulseButtonImg.classList.toggle('rotate');
+  pulseButtonImg.classList.toggle('opacity-image');
+  pulseButtonImg2.classList.toggle('rotate');
+  pulseButtonImg2.classList.toggle('opacity-image');
+  pulseButtonIcon.classList.toggle('pulse-button-icon_bottom');
+  pulseButtonIcon.classList.toggle('opacity-image');
+
+  // setTimeout(() => {
+  //   // pulseButtonImg.classList.remove('rotate');
+  //   // pulseButtonImg.classList.add('cross');
+  // }, 500);
+});
