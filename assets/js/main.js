@@ -304,9 +304,4 @@ pulseButton.addEventListener('click', () => {
   pulseButtonImg2.classList.toggle('opacity-image');
   pulseButtonIcon.classList.toggle('pulse-button-icon_bottom');
   pulseButtonIcon.classList.toggle('opacity-image');
-
-  // setTimeout(() => {
-  //   // pulseButtonImg.classList.remove('rotate');
-  //   // pulseButtonImg.classList.add('cross');
-  // }, 500);
 });

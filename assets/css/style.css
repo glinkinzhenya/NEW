@@ -911,6 +911,8 @@ ul
 .pulse-button-icon_image
 {
     width: 50px;
+
+    cursor: pointer;
 }
 
 .pulse-button-icon_bottom
