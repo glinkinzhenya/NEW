@@ -703,3 +703,12 @@
 .pulse-button-icon_bottom {
 bottom: 140px;
 }
+
+.header-black {
+height: 100vh;
+width: 100vw;
+background-color: black;
+opacity: 0.4;
+position: absolute;
+z-index: 99;
+}

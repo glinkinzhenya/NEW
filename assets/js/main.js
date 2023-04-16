@@ -296,6 +296,7 @@ const pulseButton = document.querySelector('.pulse-button');
 const pulseButtonImg = document.querySelector('.pulse-button-image');
 const pulseButtonImg2 = document.querySelector('.pulse-button-image2');
 const pulseButtonIcon = document.querySelector('.pulse-button-icon');
+const headerBlack = document.querySelector('.header-black');
 
 pulseButton.addEventListener('click', () => {
   pulseButtonImg.classList.toggle('rotate');
@@ -304,4 +305,6 @@ pulseButton.addEventListener('click', () => {
   pulseButtonImg2.classList.toggle('opacity-image');
   pulseButtonIcon.classList.toggle('pulse-button-icon_bottom');
   pulseButtonIcon.classList.toggle('opacity-image');
+  headerBlack.classList.toggle('none');
 });
+
