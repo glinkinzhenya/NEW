@@ -3,14 +3,14 @@
 
 .portfolio {
     padding-top: 70px;
-    padding-bottom: 120px;
 
     background-color: white;
+    min-height: 135vh;
 
     @include sm {
         padding-top: 0;
         padding-bottom: 20px;
-           min-height: 100vh;
+        min-height: 100vh;
     }
 
     &__title {

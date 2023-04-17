@@ -150,10 +150,10 @@ function portfolio() {
 
 const height2 = screen.height;
 const height1 = portfolioBox.getBoundingClientRect()
-const height = height1.top - height2 + 400;
+const heightPortfolio = height1.top - height2 + 400;
 let tr = false;
 window.addEventListener('scroll', function () {
-  if (scrollY > height && tr === false) {
+  if (scrollY > heightPortfolio && tr === false) {
     portfolio()
     tr = true;
   };
@@ -308,3 +308,27 @@ pulseButton.addEventListener('click', () => {
   headerBlack.classList.toggle('none');
 });
 
+
+// меняем положение иконок в последовательности работы
+const work = document.querySelector('.work');
+
+const colorOne = document.querySelector('.color-one');
+const colorTwo = document.querySelector('.color-two');
+const colorThree = document.querySelector('.color-three');
+const colorFour = document.querySelector('.color-four');
+const colorFive = document.querySelector('.color-five');
+const colorSix = document.querySelector('.color-six');
+const workHeight = work.getBoundingClientRect()
+
+const heightWork = workHeight.top - height2 + 1000;
+
+window.addEventListener('scroll', function () {
+  if (scrollY > heightWork) {
+    colorOne.classList.add('work-transform');
+    colorTwo.classList.add('work-transform');
+    colorThree.classList.add('work-transform');
+    colorFour.classList.add('work-transform');
+    colorFive.classList.add('work-transform');
+    colorSix.classList.add('work-transform');
+  };
+});
