@@ -4,6 +4,10 @@
 .work {
     padding-top: 100px;
     padding-bottom: 70px;
+    @include sm {
+        padding-bottom: 40px;
+        padding-top: 60px;
+        }
     background-image: url("../img/Снимок\ экрана\ 2023-04-17\ в\ 08.05.42.jpg");
     background-size: cover;
     background-position: center;
@@ -13,31 +17,10 @@
     text-align: center;
     margin-bottom: 100px;
     color: rgba(255, 255, 255, 0.6);
+    @include sm {
+        margin-bottom: 70px;
+        }
 }
-
-// .color-one {
-//     background-color: #eddef5;
-// }
-
-// .color-two {
-//     background-color: #dab0f0;
-// }
-
-// .color-three {
-//     background-color: #d391f6;
-// }
-
-// .color-four {
-//     background-color: #c66cf6;
-// }
-
-// .color-five {
-//     background-color: #bf5ef4;
-// }
-
-// .color-six {
-//     background-color: #b742f6;
-// }
 
 .work-icon {
     width: 120px;
@@ -61,30 +44,46 @@
 
 .work-icons__wrapper-text {
     margin-left: 20%;
+
+    @include sm {
+        margin-left: 10%;
+    }
 }
 
 .work-icons__wrapper-text>h3 {
     color: white;
+
+    @include sm {
+        font-size: 18px;
+    }
 }
 
 .work-icons__wrapper-text>h3>span {
     color: hsl(279, 91%, 61%);
     font-size: 50px;
+
+    @include sm {
+        font-size: 30px;
+    }
 }
 
 .work-icons__wrapper-text>p {
     color: rgba(255, 255, 255, 0.59);
+
+    @include sm {
+        font-size: 13px;
+    }
 }
 
 .work-icon__text {
     margin-top: 10px;
 }
 
-.work-icon__image{
-width: 70px;
-margin-left: auto;
-margin-right: auto;
-transition: .5s;
+.work-icon__image {
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
 }
 
 .work-one {

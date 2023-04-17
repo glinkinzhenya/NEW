@@ -2447,6 +2447,31 @@ input[type=file]
     {
         grid-template-columns: repeat(2, 1fr);
     }
+    .work
+    {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .work-text
+    {
+        margin-bottom: 70px;
+    }
+    .work-icons__wrapper-text
+    {
+        margin-left: 10%;
+    }
+    .work-icons__wrapper-text > h3
+    {
+        font-size: 18px;
+    }
+    .work-icons__wrapper-text > h3 > span
+    {
+        font-size: 30px;
+    }
+    .work-icons__wrapper-text > p
+    {
+        font-size: 13px;
+    }
     .technology-container
     {
         padding-top: 50px;
