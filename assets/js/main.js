@@ -312,23 +312,75 @@ pulseButton.addEventListener('click', () => {
 // меняем положение иконок в последовательности работы
 const work = document.querySelector('.work');
 
-const colorOne = document.querySelector('.color-one');
-const colorTwo = document.querySelector('.color-two');
-const colorThree = document.querySelector('.color-three');
-const colorFour = document.querySelector('.color-four');
-const colorFive = document.querySelector('.color-five');
-const colorSix = document.querySelector('.color-six');
 const workHeight = work.getBoundingClientRect()
 
-const heightWork = workHeight.top - height2 + 1000;
+const heightWork = workHeight.top - height2 + 800;
+let flagOne = false;
+let flagTwo = false;
+let flagThree = false;
+let flagFour = false;
+let flagFive = false;
+let flagSix = false;
 
 window.addEventListener('scroll', function () {
-  if (scrollY > heightWork) {
-    colorOne.classList.add('work-transform');
-    colorTwo.classList.add('work-transform');
-    colorThree.classList.add('work-transform');
-    colorFour.classList.add('work-transform');
-    colorFive.classList.add('work-transform');
-    colorSix.classList.add('work-transform');
+  if (scrollY > heightWork && flagOne === false) {
+    $("#work-one").addClass('work-one');
+    $("#work-text1").hide().css({ fontSize: 0 });
+    $("#work-image1").fadeOut(200, function () {
+      $(this).attr("src", "assets/img/work-icon-color1.png");
+      $(this).fadeIn(200);
+      $("#work-text1").show().animate({ fontSize: "20px" }, 200);
+    });
+    flagOne = true;
   };
+  if (scrollY > (heightWork+150) && flagTwo === false) {
+    $("#work-two").addClass('work-two');
+    $("#work-text2").hide().css({ fontSize: 0 });
+    $("#work-image2").fadeOut(200, function () {
+      $(this).attr("src", "assets/img/work-icon-color2.png");
+      $(this).fadeIn(200);
+      $("#work-text2").show().animate({ fontSize: "20px" }, 200);
+    });
+    flagTwo = true;
+  }
+  if (scrollY > (heightWork + 250) && flagThree === false) {
+    $("#work-three").addClass('work-three');
+    $("#work-text3").hide().css({ fontSize: 0 });
+    $("#work-image3").fadeOut(200, function () {
+      $(this).attr("src", "assets/img/work-icon-color3.png");
+      $(this).fadeIn(200);
+      $("#work-text3").show().animate({ fontSize: "20px" }, 200);
+    });
+    flagThree = true;
+  }
+  if (scrollY > (heightWork + 350) && flagFour === false) {
+    $("#work-four").addClass('work-four');
+    $("#work-text4").hide().css({ fontSize: 0 });
+    $("#work-image4").fadeOut(200, function () {
+      $(this).attr("src", "assets/img/work-icon-color4.png");
+      $(this).fadeIn(200);
+      $("#work-text4").show().animate({ fontSize: "20px" }, 200);
+    });
+    flagFour = true;
+  }
+  if (scrollY > (heightWork + 450) && flagFive === false) {
+    $("#work-five").addClass('work-five');
+    $("#work-text5").hide().css({ fontSize: 0 });
+    $("#work-image5").fadeOut(200, function () {
+      $(this).attr("src", "assets/img/work-icon-color5.png");
+      $(this).fadeIn(200);
+      $("#work-text5").show().animate({ fontSize: "20px" }, 200);
+    });
+    flagFive = true;
+  }
+  if (scrollY > (heightWork + 600) && flagSix === false) {
+    $("#work-six").addClass('work-six');
+    $("#work-text6").hide().css({ fontSize: 0 });
+    $("#work-image6").fadeOut(200, function () {
+      $(this).attr("src", "assets/img/work-icon-color6.png");
+      $(this).fadeIn(200);
+      $("#work-text6").show().animate({ fontSize: "20px" }, 200);
+    });
+    flagSix = true;
+  }
 });
