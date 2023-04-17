@@ -1140,7 +1140,7 @@ ul
 {
     font-size: 50px;
 
-    color: hsl(279deg, 91%, 61%);
+    color: hsl(280deg, 42%, 45%);
 }
 
 .work-icons__wrapper-text > p
@@ -1183,7 +1183,7 @@ ul
 
     border: none;
     border-radius: 30px;
-    background-color: #dab0f0;
+    background-color: #d5aeea;
 }
 
 .work-three
@@ -1205,7 +1205,7 @@ ul
 
     border: none;
     border-radius: 30px;
-    background-color: #c66cf6;
+    background-color: #c171ec;
 }
 
 .work-five
@@ -1216,7 +1216,7 @@ ul
 
     border: none;
     border-radius: 30px;
-    background-color: #b44ced;
+    background-color: #be61f0;
 }
 
 .work-six
@@ -1227,7 +1227,7 @@ ul
 
     border: none;
     border-radius: 30px;
-    background-color: #9c25dd;
+    background-color: #9940c8;
 }
 
 .money
