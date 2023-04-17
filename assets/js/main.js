@@ -333,7 +333,7 @@ window.addEventListener('scroll', function () {
     });
     flagOne = true;
   };
-  if (scrollY > (heightWork+150) && flagTwo === false) {
+  if (scrollY > (heightWork + 200) && flagTwo === false) {
     $("#work-two").addClass('work-two');
     $("#work-text2").hide().css({ fontSize: 0 });
     $("#work-image2").fadeOut(200, function () {
@@ -343,7 +343,7 @@ window.addEventListener('scroll', function () {
     });
     flagTwo = true;
   }
-  if (scrollY > (heightWork + 250) && flagThree === false) {
+  if (scrollY > (heightWork + 300) && flagThree === false) {
     $("#work-three").addClass('work-three');
     $("#work-text3").hide().css({ fontSize: 0 });
     $("#work-image3").fadeOut(200, function () {
@@ -353,7 +353,7 @@ window.addEventListener('scroll', function () {
     });
     flagThree = true;
   }
-  if (scrollY > (heightWork + 350) && flagFour === false) {
+  if (scrollY > (heightWork + 400) && flagFour === false) {
     $("#work-four").addClass('work-four');
     $("#work-text4").hide().css({ fontSize: 0 });
     $("#work-image4").fadeOut(200, function () {
@@ -363,7 +363,7 @@ window.addEventListener('scroll', function () {
     });
     flagFour = true;
   }
-  if (scrollY > (heightWork + 450) && flagFive === false) {
+  if (scrollY > (heightWork + 500) && flagFive === false) {
     $("#work-five").addClass('work-five');
     $("#work-text5").hide().css({ fontSize: 0 });
     $("#work-image5").fadeOut(200, function () {
