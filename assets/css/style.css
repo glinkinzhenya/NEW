@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html
 {
@@ -1242,6 +1243,9 @@ ul
     padding-bottom: 70px;
 
     background-color: black;
+    background-image: url('../img/Снимок экрана 2023-04-17 в 08.05.42.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .work-text
@@ -1298,9 +1302,6 @@ ul
          -o-transition: .5s;
             transition: .5s;
     text-align: center;
-
-    -webkit-box-shadow: -2px 2px 6px rgb(243, 3, 3);
-            box-shadow: -2px 2px 6px rgb(243, 3, 3);
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
