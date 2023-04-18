@@ -373,7 +373,7 @@ window.addEventListener('scroll', function () {
     });
     flagFive = true;
   }
-  if (scrollY > (heightWork + 600) && flagSix === false) {
+  if (scrollY > (heightWork + 700) && flagSix === false) {
     $("#work-six").addClass('work-six');
     $("#work-text6").hide().css({ fontSize: 0 });
     $("#work-image6").fadeOut(200, function () {
@@ -383,4 +383,48 @@ window.addEventListener('scroll', function () {
     });
     flagSix = true;
   }
+});
+
+
+
+// деньги карточки
+
+$(".money").on("mouseover", function () {
+  $(".basic").addClass("basicAction");
+  $(".medium").addClass("mediumAction");
+});
+
+$(".money").on("mouseout", function () {
+  $(".basic").removeClass("basicAction");
+  $(".medium").removeClass("mediumAction");
+});
+
+// basic
+
+$(".basic").on("mouseover", function () {
+  $(".basic").addClass("basicTouch");
+});
+
+$(".basic").on("mouseout", function () {
+  $(".basic").removeClass("basicTouch");
+});
+
+// pro
+
+$(".pro").on("mouseover", function () {
+  $(".pro").addClass("proTouch");
+});
+
+$(".pro").on("mouseout", function () {
+  $(".pro").removeClass("proTouch");
+});
+
+// medium
+
+$(".medium").on("mouseover", function () {
+  $(".medium").addClass("mediumTouch");
+});
+
+$(".medium").on("mouseout", function () {
+  $(".medium").removeClass("mediumTouch");
 });

@@ -1232,113 +1232,176 @@ ul
 
 .money
 {
+    background-color: black;
+    background-image: url('../img/green1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.money-container
+{
     position: relative;
 
-    padding-bottom: 80px;
-
-    background-color: black;
-}
-.money-title
-{
-    font-size: 40px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 140%;
-
-    padding-top: 100px;
-
-    text-align: center;
-    letter-spacing: 2px;
-
-    color: white;
-}
-.money-description
-{
-    font-size: 15px;
-    font-weight: 300;
-
-    padding-bottom: 30px;
-
-    text-align: center;
-
-    opacity: .6;
-    color: white;
-}
-.money-box
-{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
+    min-height: 90vh;
+    padding-top: 50px;
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 50px;
 }
-.money-item
+
+.money-title
 {
-    min-width: 300px;
+    padding-top: 70px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.money-description
+{
+    font-size: 16px;
+    font-weight: 300;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, .679);
+}
+
+.basic
+{
+    position: absolute;
+    left: 30%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    width: 300px;
+    margin-top: 30px;
     padding: 20px;
 
-    gap: 20px;
-}
-.money-item__price
-{
-    font-size: 30px;
-    font-weight: 300;
+    -webkit-transition: 1.5s;
+         -o-transition: 1.5s;
+            transition: 1.5s;
 
-    margin-bottom: 40px;
-    padding-bottom: 20px;
+    border-radius: 30px;
+    background-color: rgba(168, 178, 251, .705);
 
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, .206);
-}
-.money-item__price-number
-{
-    font-size: 40px;
-    font-weight: 300;
-
-    padding-right: 50px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-
-    color: white;
-    border-bottom: solid 1px rgba(250, 248, 248, .267);
-}
-.money-item__content-text
-{
-    font-size: 14px;
-    font-weight: 300;
-
-    opacity: .7;
-    color: white;
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.accordion-body
+.pro
 {
-    font-size: 11px;
-    font-weight: 300;
+    position: absolute;
+    z-index: 1;
 
-    color: rgba(201, 196, 196, .739);
-    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    width: 300px;
+    height: 400px;
+    margin-top: 15px;
+    padding: 20px;
+
+    -webkit-transition: 1.5s;
+         -o-transition: 1.5s;
+            transition: 1.5s;
+
+    border-radius: 30px;
+    background-color: rgba(220, 173, 249, .658);
+
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.accordion-button
+.medium
 {
-    color: white;
-    border-radius: 40px;
-    background-color: black;
+    position: absolute;
+    right: 30%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    width: 300px;
+    margin-top: 30px;
+    padding: 20px;
+
+    -webkit-transition: 1.5s;
+         -o-transition: 1.5s;
+            transition: 1.5s;
+
+    border-radius: 30px;
+    background-color: rgba(145, 242, 242, .722);
+
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.container-bootstrap
+.basicAction
 {
-    display: none;
+    left: 12%;
 }
 
-.accordion-button:not(.collapsed)
+.mediumAction
 {
-    color: black;
-    background-color: white;
+    right: 12%;
+}
+
+.basicTouch
+{
+    margin-top: 15px;
+}
+
+.mediumTouch
+{
+    margin-top: 15px;
+}
+
+.proTouch
+{
+    margin-top: 0;
+}
+
+.money-button
+{
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
 }
 
 .technology
@@ -2191,60 +2254,6 @@ input[type=file]
     .portfolio-box
     {
         grid-template-columns: repeat(3, 1fr);
-    }
-    .money
-    {
-        padding-bottom: 40px;
-    }
-    .money-title
-    {
-        font-size: 25px;
-
-        padding-top: 50px;
-
-        letter-spacing: 1px;
-    }
-    .money-description
-    {
-        font-size: 12px;
-    }
-    .money-box
-    {
-        display: none;
-            flex-direction: column;
-
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-    }
-    .money-item
-    {
-        gap: 0;
-    }
-    .money-item__price
-    {
-            flex-direction: column;
-
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .money-item__price-number
-    {
-        padding-right: 10px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-    }
-    .money-item__content-list
-    {
-        display: none;
-    }
-    .container-bootstrap
-    {
-        display: block;
     }
     .technology-container
     {
