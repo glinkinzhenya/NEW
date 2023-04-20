@@ -2941,6 +2941,36 @@ input[type=file]
         -webkit-transform: rotateY(270deg) translateX(-50px);
                 transform: rotateY(270deg) translateX(-50px);
     }
+    .wrap:hover .front
+    {
+        -webkit-transform: translateZ(100px);
+                transform: translateZ(100px);
+    }
+    .wrap:hover .back
+    {
+        -webkit-transform: translateZ(-100px) rotateY(180deg);
+                transform: translateZ(-100px) rotateY(180deg);
+    }
+    .wrap:hover .right
+    {
+        -webkit-transform: rotateY(270deg) translateZ(-50px) translateX(50px);
+                transform: rotateY(270deg) translateZ(-50px) translateX(50px);
+    }
+    .wrap:hover .left
+    {
+        -webkit-transform: rotateY(270deg) translateZ(50px) translateX(-50px);
+                transform: rotateY(270deg) translateZ(50px) translateX(-50px);
+    }
+    .wrap:hover .top
+    {
+        -webkit-transform: rotateX(-270deg) translateZ(50px) translateY(-50px);
+                transform: rotateX(-270deg) translateZ(50px) translateY(-50px);
+    }
+    .wrap:hover .bottom
+    {
+        -webkit-transform: rotateX(-270deg) translateZ(-50px) translateY(50px);
+                transform: rotateX(-270deg) translateZ(-50px) translateY(50px);
+    }
     .cube-image
     {
         width: 90px;

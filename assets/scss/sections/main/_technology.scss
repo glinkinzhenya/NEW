@@ -107,18 +107,20 @@
 .back {
     transform: translateZ(-100px) rotateY(180deg);
     transition: 1s;
+
     @include sm {
-            transform: translateZ(-50px) rotateY(180deg);
-        }
+        transform: translateZ(-50px) rotateY(180deg);
+    }
 }
 
 .top {
     transform: rotateX(-270deg) translateY(-100px);
     transform-origin: top center;
     transition: 1s;
+
     @include sm {
-            transform: rotateX(-270deg) translateY(-50px);
-        }
+        transform: rotateX(-270deg) translateY(-50px);
+    }
 }
 
 .bottom {
@@ -163,26 +165,46 @@
 
 .wrap:hover .front {
     transform: translateZ(200px);
+
+    @include sm {
+        transform: translateZ(100px);
+    }
 }
 
 .wrap:hover .back {
     transform: translateZ(-200px) rotateY(180deg);
+
+    @include sm {
+        transform: translateZ(-100px) rotateY(180deg);
+    }
 }
 
 .wrap:hover .right {
     transform: rotateY(270deg) translateZ(-100px) translateX(100px);
+    @include sm {
+        transform: rotateY(270deg) translateZ(-50px) translateX(50px);
+        }
 }
 
 .wrap:hover .left {
     transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+    @include sm {
+            transform: rotateY(270deg) translateZ(50px) translateX(-50px);
+        }
 }
 
 .wrap:hover .top {
     transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+    @include sm {
+            transform: rotateX(-270deg) translateZ(50px) translateY(-50px);
+        }
 }
 
 .wrap:hover .bottom {
     transform: rotateX(-270deg) translateZ(-100px) translateY(100px);
+    @include sm {
+            transform: rotateX(-270deg) translateZ(-50px) translateY(50px);
+        }
 }
 
 .cube-image {
