@@ -423,24 +423,25 @@ $(".medium").on("mouseout", function () {
 
 
 // Открытие карточки
-const elements = document.querySelectorAll(".money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment");
 
 $('#basic-card__button').on('click', function () {
-  $('.money-black').addClass('active');
-  $('.money-card').addClass('active');
-  // $('.money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment').addClass('money-active__form');
-  // Функция для добавления класса "money-active__form" с задержкой
-  function addClassWithDelay(element, className, delay) {
-    setTimeout(() => {
-      element.classList.add(className);
-    }, delay);
-  }
-
-  // Перебираем все элементы и добавляем класс "money-active__form" с задержкой
-  elements.forEach((element, index) => {
-    addClassWithDelay(element, "money-active__form", 50 * index);
-  });
+  const level = "Basic";
+  const money = "10 000";
+  openCard(level, money);
 });
+
+$('#pro-card__button').on('click', function () {
+  const level = "Pro";
+  const money = "25 000";
+  openCard(level, money);
+});
+
+$('#medium-card__button').on('click', function () {
+  const level = "Medium";
+  const money = "17 000";
+  openCard(level, money);
+});
+
 
 // Закрытие карточки
 $('.money-box-card__image').on('click', function () {
@@ -448,3 +449,28 @@ $('.money-box-card__image').on('click', function () {
   $('.money-card').removeClass('active');
   $('.money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment').removeClass('money-active__form');
 });
+
+
+function openCard(level, money) {
+  let levelText = $(".money-box-card__title");
+  let moneyText = $(".money-box-card__cash");
+  
+  levelText.text(level);
+  moneyText.text(money);
+  
+  $('.money-black').addClass('active');
+  $('.money-card').addClass('active');
+
+  // Функция для добавления класса "money-active__form" с задержкой
+  function addClassWithDelay(element, className, delay) {
+    setTimeout(() => {
+      element.classList.add(className);
+    }, delay);
+  }
+  
+  // Перебираем все элементы и добавляем класс "money-active__form" с задержкой
+  const elements = document.querySelectorAll(".money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment");
+  elements.forEach((element, index) => {
+    addClassWithDelay(element, "money-active__form", 50 * index);
+  });
+}

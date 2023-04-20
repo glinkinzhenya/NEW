@@ -148,6 +148,12 @@ p {
     transition: opacity 1s;
     transition: filter 1s;
     filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+.money-box-card__form-input::placeholder {
+    color: rgba(255, 255, 255, 0.592);
+    font-weight: 300;
 }
 
 .money-box-card__form-button {

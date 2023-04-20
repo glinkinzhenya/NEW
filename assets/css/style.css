@@ -1493,9 +1493,45 @@ p
     border: none;
     border-radius: 15px;
     outline: none;
+    background-color: rgba(255, 255, 255, .137);
 
     -webkit-filter: blur(10px);
             filter: blur(10px);
+}
+
+.money-box-card__form-input::-webkit-input-placeholder
+{
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, .592);
+}
+
+.money-box-card__form-input::-moz-placeholder
+{
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, .592);
+}
+
+.money-box-card__form-input:-ms-input-placeholder
+{
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, .592);
+}
+
+.money-box-card__form-input::-ms-input-placeholder
+{
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, .592);
+}
+
+.money-box-card__form-input::placeholder
+{
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, .592);
 }
 
 .money-box-card__form-button
