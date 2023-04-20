@@ -1,156 +1,6 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-// .money {
-//     position: relative;
-
-//     padding-bottom: 80px;
-
-//     background-color: black;
-
-//     @include lg {
-//         padding-bottom: 40px;
-//     }
-
-//     &-title {
-//         font-size: 40px;
-//         font-weight: 500;
-//         font-style: normal;
-//         line-height: 140%;
-
-//         padding-top: 100px;
-
-//         text-align: center;
-//         letter-spacing: 2px;
-
-//         color: white;
-
-//         @include lg {
-//             font-size: 25px;
-
-//             padding-top: 50px;
-
-//             letter-spacing: 1px;
-//         }
-//     }
-
-//     &-description {
-//         font-size: 15px;
-//         font-weight: 300;
-
-//         padding-bottom: 30px;
-
-//         text-align: center;
-
-//         opacity: .6;
-//         color: white;
-
-//         @include lg {
-//             font-size: 12px;
-//         }
-//     }
-
-//     &-box {
-//         display: flex;
-
-//         justify-content: center;
-//         gap: 50px;
-
-//         @include lg {
-//             flex-direction: column;
-//             display: none;
-//         }
-
-//     }
-
-//     &-item {
-//         min-width: 300px;
-//         padding: 20px;
-
-//         gap: 20px;
-
-//         @include lg {
-//             gap: 0;
-//         }
-
-//         &__price {
-//             font-size: 30px;
-//             font-weight: 300;
-//             color: white;
-//             border-bottom: 1px solid rgba(255, 255, 255, 0.206);
-//             padding-bottom: 20px;
-//             margin-bottom: 40px;
-//             // text-align: center;
-
-//             @include lg {
-//                 flex-direction: column;
-
-//                 align-items: center;
-//             }
-
-//             &-number {
-//                 font-size: 40px;
-//                 font-weight: 300;
-
-//                 padding-right: 50px;
-//                 padding-bottom: 20px;
-//                 padding-left: 50px;
-
-//                 color: white;
-//                 border-bottom: solid 1px rgba(250, 248, 248, .267);
-
-//                 @include lg {
-//                     padding-right: 10px;
-//                     padding-bottom: 5px;
-//                     padding-left: 10px;
-//                 }
-//             }
-//         }
-
-//         &__content {
-//             &-text {
-//                 font-size: 14px;
-//                 font-weight: 300;
-
-//                 opacity: .7;
-//                 color: white;
-//             }
-
-//             &-list {
-//                 @include lg {
-//                     display: none;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// .accordion-body {
-//     background-color: black;
-//     color: rgba(201, 196, 196, 0.739);
-//     font-size: 11px;
-//     font-weight: 300;
-// }
-
-// .accordion-button {
-//     background-color: black;
-//     color: white;
-//     border-radius: 40px;
-// }
-
-// .container-bootstrap {
-//     display: none;
-
-//     @include lg {
-//         display: block;
-//     }
-// }
-
-// .accordion-button:not(.collapsed) {
-//     background-color: white;
-//     color: black;
-// }
-
 .money {
     background-color: black;
     background-image: url("../img/green1.jpg");
@@ -158,9 +8,26 @@
     background-position: center;
 }
 
-.money-container {
-    min-height: 90vh;
+.money-black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    z-index: 11;
+    opacity: 0;
+    transition: opacity 1s;
+    pointer-events: none;
+}
 
+.money-black.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.money-container {
+    min-height: 800px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -171,6 +38,7 @@
     color: white;
     text-align: center;
     padding-top: 70px;
+    margin-bottom: 20px;
 }
 
 .money-description {
@@ -180,11 +48,71 @@
     font-size: 16px;
 }
 
+.money-box__title {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.money-box__cash {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.866);
+    margin-bottom: 5px;
+}
+
+.money-box__cash>span {
+    font-size: 20px;
+}
+
+.money-box__cash-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.money-box__check {
+    display: flex;
+    gap: 10px;
+}
+
+.money-box__check>p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-form__input {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
+.card-form__button {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
 .basic {
-    width: 300px;
+    width: 330px;
     background-color: rgba(168, 178, 251, 0.705);
-    backdrop-filter: blur(25px);
-    border-radius: 30px;
+    border-radius: 40px;
     position: absolute;
     left: 30%;
     transition: 1.5s;
@@ -193,16 +121,82 @@
     align-items: center;
     padding: 20px;
     margin-top: 30px;
+    box-shadow: inset 0 0px 45px 29px rgba(255, 255, 255, 0.154);
+    padding-bottom: 30px;
+}
+
+.basic-card {
+    width: 450px;
+    height: 550px;
+    background-color: rgba(42, 59, 85, 0.79);
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.money-box-card__title {
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.money-box-card__description {
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.money-box-card__comment {
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.money-box-card__cash {
+    color: rgba(255, 255, 255, 0.823);
+    font-weight: 500;
+    font-size: 60px;
+}
+
+
+.basic-card.active {
+    opacity: 1;
+    pointer-events: auto;
+    width: 500px;
+}
+
+.basic-card__image {
+    width: 35px;
+    padding: 5px;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: rgba(15, 18, 22, 0.301);
+    cursor: pointer;
 }
 
 .pro {
-    height: 400px;
-    width: 300px;
+    width: 330px;
     background-color: rgba(220, 173, 249, 0.658);
     backdrop-filter: blur(25px);
-    border-radius: 30px;
+    border-radius: 40px;
     position: absolute;
-    backdrop-filter: blur(10px);
     z-index: 1;
     transition: 1.5s;
     display: flex;
@@ -210,13 +204,14 @@
     align-items: center;
     padding: 20px;
     margin-top: 15px;
+    box-shadow: inset 0 0px 45px 29px rgba(255, 255, 255, 0.154);
+    padding-bottom: 30px;
 }
 
 .medium {
-    width: 300px;
-    background-color: rgba(145, 242, 242, 0.722);
-    backdrop-filter: blur(25px);
-    border-radius: 30px;
+    width: 330px;
+    background-color: rgba(145, 242, 242, 0.619);
+    border-radius: 40px;
     position: absolute;
     right: 30%;
     transition: 1.5s;
@@ -226,14 +221,16 @@
     align-items: center;
     padding: 20px;
     margin-top: 30px;
+    box-shadow: inset 0 0px 45px 29px rgba(255, 255, 255, 0.154);
+    padding-bottom: 30px;
 }
 
 .basicAction {
-    left: 12%;
+    left: 8%;
 }
 
 .mediumAction {
-    right: 12%;
+    right: 8%;
 }
 
 .basicTouch {
@@ -252,6 +249,11 @@
 .money-button {
     border: none;
     padding: 10px;
-    border-radius: 10px;
-    
+    border-radius: 15px;
+    transition: .4s;
+    background-color: #ffffff73;
+}
+
+.money-button:hover {
+    box-shadow: 0 0px 35px 8px rgba(255, 255, 255, 0.56);
 }

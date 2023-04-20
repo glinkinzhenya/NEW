@@ -291,21 +291,13 @@ if (toastTrigger) {
 
 
 
+// Кнопка пульс
 
-const pulseButton = document.querySelector('.pulse-button');
-const pulseButtonImg = document.querySelector('.pulse-button-image');
-const pulseButtonImg2 = document.querySelector('.pulse-button-image2');
-const pulseButtonIcon = document.querySelector('.pulse-button-icon');
-const headerBlack = document.querySelector('.header-black');
-
-pulseButton.addEventListener('click', () => {
-  pulseButtonImg.classList.toggle('rotate');
-  pulseButtonImg.classList.toggle('opacity-image');
-  pulseButtonImg2.classList.toggle('rotate');
-  pulseButtonImg2.classList.toggle('opacity-image');
-  pulseButtonIcon.classList.toggle('pulse-button-icon_bottom');
-  pulseButtonIcon.classList.toggle('opacity-image');
-  headerBlack.classList.toggle('none');
+$('.pulse-button').on('click', function () {
+  $('.pulse-button-image').toggleClass('rotate opacity-image');
+  $('.pulse-button-image2').toggleClass('rotate opacity-image');
+  $('.pulse-button-icon').toggleClass('pulse-button-icon_bottom opacity-image');
+  $('.header-black').toggleClass(' active');
 });
 
 
@@ -427,4 +419,19 @@ $(".medium").on("mouseover", function () {
 
 $(".medium").on("mouseout", function () {
   $(".medium").removeClass("mediumTouch");
+});
+
+
+// Открытие карточки
+
+$('#basic-card__button').on('click', function () {
+  $('.money-black').addClass('active');
+  $('.basic-card').addClass('active');
+});
+
+// Закрытие карточки
+
+$('.basic-card__image').on('click', function () {
+  $('.money-black').removeClass('active');
+  $('.basic-card').removeClass('active');
 });

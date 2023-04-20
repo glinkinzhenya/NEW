@@ -1,44 +1,40 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
-.technology
-{
+.technology {
     background-color: white;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
 
-    &-container
-    {
-        display: flex;
-
-        padding-top: 100px;
-        padding-right: 20px;
-        padding-bottom: 100px;
-        padding-left: 20px;
-
-        gap: 50px;
-        align-items: center;
-        justify-content: space-evenly;
-        @include lg
-        {
-            flex-wrap: wrap;
-        }
-        @include sm
-        {
-            padding-top: 50px;
-            padding-bottom: 55px;
-        }
+    @include lg {
+        grid-template-columns: 1fr;
+        align-items: normal
     }
 
-    &-info
-    {
-        &__title
-        {
+    &-info {
+        margin-left: 20%;
+
+        @include lg {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__title {
+            @include lg {
+                text-align: center;
+                margin-top: 60px;
+            }
+
             font-size: 40px;
             font-weight: 500;
 
             margin-bottom: 40px;
 
-            @include sm
-            {
+
+
+            @include sm {
                 font-size: 25px;
 
                 margin-bottom: 25px;
@@ -48,71 +44,161 @@
             }
         }
 
-        &__description
-        {
+        &__description {
             font-size: 20px;
             font-weight: 300;
             line-height: 33px;
-
             max-width: 500px;
 
-            @include sm
-            {
+            @include sm {
                 font-size: 13px;
                 line-height: 20px;
-
+                text-align: center;
                 letter-spacing: 0;
             }
         }
     }
 
-    &-circle
-    {
-        display: grid;
+}
 
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        @include sm
-        {
-            grid-template-columns: repeat(3, 1fr);
-        }
 
-        &__icon
-        {
-            display: flex;
-            flex-direction: column-reverse;
+.wrap {
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
 
-            width: 160px;
-            height: 160px;
+.cube {
+    margin: auto;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
 
-            border-radius: 300px;
-            background-color: #ebebeb;
-
-            justify-content: center;
-            align-items: center;
-            @include sm
-            {
-                width: 90px;
-                height: 90px;
-            }
-
-            &-title
-            {
-                font-size: 20px;
-                font-weight: 500;
-
-                letter-spacing: 1px;
-            }
-
-            &-image
-            {
-                width: 100px;
-
-                @include sm
-                {
-                    width: 60px;
-                }
-            }
-        }
+    @include lg {
+        height: 150px;
+        width: 150px;
     }
+
+    @include sm {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.cube>div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background-color: rgb(210, 235, 255);
+    border: 1px solid rgba(0, 0, 0, 0.413);
+}
+
+.front {
+    transform: translateZ(100px);
+    transition: 1s;
+
+    @include lg {
+        transform: translateZ(50px);
+    }
+}
+
+.back {
+    transform: translateZ(-100px) rotateY(180deg);
+    transition: 1s;
+    @include sm {
+            transform: translateZ(-50px) rotateY(180deg);
+        }
+}
+
+.top {
+    transform: rotateX(-270deg) translateY(-100px);
+    transform-origin: top center;
+    transition: 1s;
+    @include sm {
+            transform: rotateX(-270deg) translateY(-50px);
+        }
+}
+
+.bottom {
+    transform: rotateX(-270deg) translateY(100px);
+    transform-origin: bottom center;
+    transition: 1s;
+
+    @include lg {
+        transform: rotateX(-270deg) translateY(50px);
+    }
+}
+
+.left {
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: left center;
+    transition: 1s;
+
+    @include sm {
+        transform: rotateY(270deg) translateX(-50px);
+    }
+}
+
+.right {
+    transform: rotateY(270deg) translateX(100px);
+    transform-origin: right center;
+    transition: 1s;
+
+    @include lg {
+        transform: rotateY(270deg) translateX(50px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.wrap:hover .front {
+    transform: translateZ(200px);
+}
+
+.wrap:hover .back {
+    transform: translateZ(-200px) rotateY(180deg);
+}
+
+.wrap:hover .right {
+    transform: rotateY(270deg) translateZ(-100px) translateX(100px);
+}
+
+.wrap:hover .left {
+    transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.wrap:hover .top {
+    transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.wrap:hover .bottom {
+    transform: rotateX(-270deg) translateZ(-100px) translateY(100px);
+}
+
+.cube-image {
+    width: 160px;
+
+    @include lg {
+        width: 130px;
+    }
+
+    @include sm {
+        width: 90px;
+    }
+}
+
+.cube-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
