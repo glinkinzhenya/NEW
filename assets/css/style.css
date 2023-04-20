@@ -2804,13 +2804,13 @@ input[type=file]
     }
     .bottom
     {
-        -webkit-transform: rotateX(-270deg) translateY(50px);
-                transform: rotateX(-270deg) translateY(50px);
+        -webkit-transform: rotateX(270deg) translateY(100px);
+                transform: rotateX(270deg) translateY(100px);
     }
     .right
     {
-        -webkit-transform: rotateY(270deg) translateX(50px);
-                transform: rotateY(270deg) translateX(50px);
+        -webkit-transform: rotateY(-270deg) translateX(100px);
+                transform: rotateY(-270deg) translateX(100px);
     }
     .cube-image
     {
@@ -3120,8 +3120,8 @@ input[type=file]
     }
     .wrap:hover .right
     {
-        -webkit-transform: rotateY(270deg) translateZ(-50px) translateX(50px);
-                transform: rotateY(270deg) translateZ(-50px) translateX(50px);
+        -webkit-transform: rotateY(-270deg) translateZ(50px) translateX(50px);
+                transform: rotateY(-270deg) translateZ(50px) translateX(50px);
     }
     .wrap:hover .left
     {
@@ -3135,8 +3135,8 @@ input[type=file]
     }
     .wrap:hover .bottom
     {
-        -webkit-transform: rotateX(-270deg) translateZ(-50px) translateY(50px);
-                transform: rotateX(-270deg) translateZ(-50px) translateY(50px);
+        -webkit-transform: rotateX(270deg) translateZ(50px) translateY(50px);
+                transform: rotateX(270deg) translateZ(50px) translateY(50px);
     }
     .cube-image
     {

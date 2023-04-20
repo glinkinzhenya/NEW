@@ -132,7 +132,7 @@
     transition: 1s;
 
     @include lg {
-        transform: rotateX(-270deg) translateY(50px);
+        transform: rotateX(270deg) translateY(100px);
     }
 }
 
@@ -152,7 +152,7 @@
     transition: 1s;
 
     @include lg {
-        transform: rotateY(270deg) translateX(50px);
+        transform: rotateY(-270deg) translateX(100px);
     }
 }
 
@@ -185,7 +185,7 @@
 .wrap:hover .right {
     transform: rotateY(-270deg) translateZ(100px) translateX(100px);
     @include sm {
-        transform: rotateY(270deg) translateZ(-50px) translateX(50px);
+        transform: rotateY(-270deg) translateZ(50px) translateX(50px);
         }
 }
 
@@ -206,7 +206,7 @@
 .wrap:hover .bottom {
     transform: rotateX(270deg) translateZ(100px) translateY(100px);
     @include sm {
-            transform: rotateX(-270deg) translateZ(-50px) translateY(50px);
+            transform: rotateX(270deg) translateZ(50px) translateY(50px);
         }
 }
 
