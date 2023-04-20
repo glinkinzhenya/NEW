@@ -379,6 +379,32 @@ window.addEventListener('scroll', function () {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  var screenWidth = window.innerWidth;
+  // Получаем ширину экрана устройства
+
+  var breakpoint = 768; // Задаем ширину экрана, при которой считаем, что устройство является мобильным
+  var buttons = document.querySelectorAll('button'); // Выбираем все кнопки на странице
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function (event) {
+      if (screenWidth <= breakpoint) {
+        event.preventDefault(); // Отменяем действие по умолчанию (например, переход по ссылке или отправку формы)
+        // Вместо этого можно добавить свою новую логику обработки нажатия кнопки на мобильном устройстве
+        // Например, можно показать сообщение или выполнить другие действия
+        console.log('Нажатие на кнопку на мобильном устройстве');
+      } else {
+        // Выполняем существующую логику нажатия на кнопку на устройствах с шириной экрана выше 768 пикселей
+        console.log('Нажатие на кнопку на устройстве с шириной экрана выше 768 пикселей');
+      }
+    });
+  }
+});
+
+
+
+
+
 // деньги карточки
 
 $(".money").on("mouseover", function () {
@@ -450,7 +476,7 @@ $('.money-box-card__image').on('click', function () {
   $('.money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment').removeClass('money-active__form');
 });
 
-
+// моторчик карточки
 function openCard(level, money) {
   let levelText = $(".money-box-card__title");
   let moneyText = $(".money-box-card__cash");
