@@ -3040,7 +3040,7 @@ input[type=file]
     .basic
     {
         z-index: 1;
-        top: 80px;
+        top: 130px;
         left: auto;
 
         -webkit-box-shadow: 0 -3px 11px rgba(0, 0, 0, .249);
@@ -3049,7 +3049,7 @@ input[type=file]
     .pro
     {
         z-index: 0;
-        top: 5px;
+        top: 30px;
 
         -webkit-box-shadow: 0 -3px 11px rgba(0, 0, 0, .249);
                 box-shadow: 0 -3px 11px rgba(0, 0, 0, .249);
@@ -3057,7 +3057,7 @@ input[type=file]
     .medium
     {
         z-index: 0;
-        top: 35px;
+        top: 70px;
         right: auto;
 
         -webkit-box-shadow: 0 -3px 11px rgba(0, 0, 0, .249);

@@ -230,7 +230,7 @@ p {
 
     @include sm {
         left: auto;
-        top: 80px;
+        top: 130px;
         z-index: 1;
         box-shadow: 0 -3px 11px rgba(0, 0, 0, 0.249);
     }
@@ -255,7 +255,7 @@ p {
 
     @include sm {
         z-index: 0;
-        top: 5px;
+        top: 30px;
         box-shadow: 0 -3px 11px rgba(0, 0, 0, 0.249);
     }
 }
@@ -278,7 +278,7 @@ p {
 
     @include sm {
         right: auto;
-        top: 35px;
+        top: 70px;
         z-index: 0;
         box-shadow: 0 -3px 11px rgba(0, 0, 0, 0.249);
     }
