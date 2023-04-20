@@ -7,6 +7,9 @@
     display: grid;
     grid-template-columns: 45% 55%;
     align-items: center;
+        background-image: url("../img/tehnology-background.jpg");
+            background-size: cover;
+            background-position: center;
 
     @include lg {
         grid-template-columns: 1fr;
@@ -92,7 +95,7 @@
     width: 100%;
     opacity: 0.9;
     background-color: rgb(210, 235, 255);
-    border: 1px solid rgba(0, 0, 0, 0.413);
+    border: 0.5px solid rgba(0, 0, 0, 0.413);
 }
 
 .front {
