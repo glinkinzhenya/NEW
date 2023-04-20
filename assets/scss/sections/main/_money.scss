@@ -86,45 +86,101 @@ p {
     margin-bottom: 0;
 }
 
-.card__form {
+.money-box-card__image {
+    width: 35px;
+    padding: 5px;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: rgba(15, 18, 22, 0.301);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.money-box-card__title {
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: 300;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+    transition: filter 1s;
+    filter: blur(10px);
+}
+
+.money-box-card__cash {
+    color: rgba(255, 255, 255, 0.823);
+    font-weight: 500;
+    font-size: 60px;
+    opacity: 0;
+    transition: opacity 1s;
+    backdrop-filter: blur(15px);
+    transition: filter 1s;
+    filter: blur(10px);
+}
+
+.money-box-card__description {
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+    transition: filter 1s;
+    filter: blur(10px);
+}
+
+.money-box-card__form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.card-form__input {
+.money-box-card__form-input {
     padding: 10px;
     border-radius: 15px;
     border: none;
     outline: none;
     width: 400px;
+    opacity: 0;
+    transition: opacity 1s;
+    transition: filter 1s;
+    filter: blur(10px);
 }
 
-.card-form__button {
+.money-box-card__form-button {
     padding: 10px;
     border-radius: 15px;
     border: none;
     outline: none;
     width: 400px;
+    opacity: 0;
+    transition: opacity 1s;
+    transition: filter 1s;
+    filter: blur(10px);
 }
 
-.basic {
-    width: 330px;
-    background-color: rgba(168, 178, 251, 0.705);
-    border-radius: 40px;
-    position: absolute;
-    left: 30%;
-    transition: 1.5s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.money-box-card__comment {
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 20px;
     padding: 20px;
-    margin-top: 30px;
-    box-shadow: inset 0 0px 45px 29px rgba(255, 255, 255, 0.154);
-    padding-bottom: 30px;
+    opacity: 0;
+    transition: opacity 1s;
+    transition: filter 1s;
+    filter: blur(10px);
+    width: 420px;
 }
 
-.basic-card {
+.money-active__form {
+    opacity: 1 !important;
+    filter: blur(0px) !important;
+}
+
+.money-card {
     width: 450px;
     height: 550px;
     background-color: rgba(42, 59, 85, 0.79);
@@ -144,51 +200,28 @@ p {
     padding: 30px;
 }
 
-.money-box-card__title {
-    color: rgba(255, 255, 255, 0.664);
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.money-box-card__description {
-    color: rgba(255, 255, 255, 0.664);
-    font-weight: 300;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-.money-box-card__comment {
-    color: rgba(255, 255, 255, 0.664);
-    font-weight: 300;
-    font-size: 15px;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-.money-box-card__cash {
-    color: rgba(255, 255, 255, 0.823);
-    font-weight: 500;
-    font-size: 60px;
-}
-
-
-.basic-card.active {
+.money-card.active {
     opacity: 1;
     pointer-events: auto;
     width: 500px;
 }
 
-.basic-card__image {
-    width: 35px;
-    padding: 5px;
-    border: 0.5px solid white;
-    border-radius: 20px;
+.basic {
+    width: 330px;
+    background-color: rgba(168, 178, 251, 0.705);
+    border-radius: 40px;
     position: absolute;
-    right: -15px;
-    top: -15px;
-    background-color: rgba(15, 18, 22, 0.301);
-    cursor: pointer;
+    left: 30%;
+    transition: 1.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: inset 0 0px 45px 29px rgba(255, 255, 255, 0.154);
+    padding-bottom: 30px;
 }
+
 
 .pro {
     width: 330px;
@@ -254,5 +287,5 @@ p {
 }
 
 .money-button:hover {
-    box-shadow: 0 0px 35px 8px rgba(255, 255, 255, 0.56);
+    box-shadow: 0 0 17px 0px rgba(255, 255, 255, .56);
 }

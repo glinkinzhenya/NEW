@@ -293,7 +293,7 @@ if (toastTrigger) {
 
 // Кнопка пульс
 
-$('.pulse-button').on('click', function () {
+$('.pulse-button, .header-black').on('click', function () {
   $('.pulse-button-image').toggleClass('rotate opacity-image');
   $('.pulse-button-image2').toggleClass('rotate opacity-image');
   $('.pulse-button-icon').toggleClass('pulse-button-icon_bottom opacity-image');
@@ -423,15 +423,28 @@ $(".medium").on("mouseout", function () {
 
 
 // Открытие карточки
+const elements = document.querySelectorAll(".money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment");
 
 $('#basic-card__button').on('click', function () {
   $('.money-black').addClass('active');
-  $('.basic-card').addClass('active');
+  $('.money-card').addClass('active');
+  // $('.money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment').addClass('money-active__form');
+  // Функция для добавления класса "money-active__form" с задержкой
+  function addClassWithDelay(element, className, delay) {
+    setTimeout(() => {
+      element.classList.add(className);
+    }, delay);
+  }
+
+  // Перебираем все элементы и добавляем класс "money-active__form" с задержкой
+  elements.forEach((element, index) => {
+    addClassWithDelay(element, "money-active__form", 50 * index);
+  });
 });
 
 // Закрытие карточки
-
-$('.basic-card__image').on('click', function () {
+$('.money-box-card__image').on('click', function () {
   $('.money-black').removeClass('active');
-  $('.basic-card').removeClass('active');
+  $('.money-card').removeClass('active');
+  $('.money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment').removeClass('money-active__form');
 });

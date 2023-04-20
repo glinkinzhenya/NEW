@@ -1375,7 +1375,94 @@ p
     margin-bottom: 0;
 }
 
-.card__form
+.money-box-card__image
+{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+
+    width: 35px;
+    padding: 5px;
+
+    cursor: pointer;
+    -webkit-transition: opacity 2s;
+         -o-transition: opacity 2s;
+            transition: opacity 2s;
+
+    opacity: 0;
+    border: .5px solid white;
+    border-radius: 20px;
+    background-color: rgba(15, 18, 22, .301);
+}
+
+.money-box-card__title
+{
+    font-size: 20px;
+    font-weight: 300;
+
+    -webkit-transition: opacity 1s;
+    -webkit-transition: -webkit-filter 1s;
+         -o-transition: opacity 1s;
+         -o-transition:         filter 1s;
+            transition: opacity 1s;
+            transition: -webkit-filter 1s;
+            transition:         filter 1s;
+            transition:         filter 1s, -webkit-filter 1s;
+
+    opacity: 0;
+    color: rgba(255, 255, 255, .664);
+
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+}
+
+.money-box-card__cash
+{
+    font-size: 60px;
+    font-weight: 500;
+
+    -webkit-transition: opacity 1s;
+    -webkit-transition: -webkit-filter 1s;
+         -o-transition: opacity 1s;
+         -o-transition:         filter 1s;
+            transition: opacity 1s;
+            transition: -webkit-filter 1s;
+            transition:         filter 1s;
+            transition:         filter 1s, -webkit-filter 1s;
+
+    opacity: 0;
+    color: rgba(255, 255, 255, .823);
+
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+}
+
+.money-box-card__description
+{
+    font-size: 15px;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+
+    -webkit-transition: opacity 1s;
+    -webkit-transition: -webkit-filter 1s;
+         -o-transition: opacity 1s;
+         -o-transition:         filter 1s;
+            transition: opacity 1s;
+            transition: -webkit-filter 1s;
+            transition:         filter 1s;
+            transition:         filter 1s, -webkit-filter 1s;
+
+    opacity: 0;
+    color: rgba(255, 255, 255, .664);
+
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+}
+
+.money-box-card__form
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1388,59 +1475,86 @@ p
     gap: 10px;
 }
 
-.card-form__input
+.money-box-card__form-input
 {
     width: 400px;
     padding: 10px;
 
+    -webkit-transition: opacity 1s;
+    -webkit-transition: -webkit-filter 1s;
+         -o-transition: opacity 1s;
+         -o-transition:         filter 1s;
+            transition: opacity 1s;
+            transition: -webkit-filter 1s;
+            transition:         filter 1s;
+            transition:         filter 1s, -webkit-filter 1s;
+
+    opacity: 0;
     border: none;
     border-radius: 15px;
     outline: none;
+
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
 }
 
-.card-form__button
+.money-box-card__form-button
 {
     width: 400px;
     padding: 10px;
 
+    -webkit-transition: opacity 1s;
+    -webkit-transition: -webkit-filter 1s;
+         -o-transition: opacity 1s;
+         -o-transition:         filter 1s;
+            transition: opacity 1s;
+            transition: -webkit-filter 1s;
+            transition:         filter 1s;
+            transition:         filter 1s, -webkit-filter 1s;
+
+    opacity: 0;
     border: none;
     border-radius: 15px;
     outline: none;
+
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
 }
 
-.basic
+.money-box-card__comment
 {
-    position: absolute;
-    left: 30%;
+    font-size: 15px;
+    font-weight: 300;
 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-        flex-direction: column;
-
-    width: 330px;
-    margin-top: 30px;
+    width: 420px;
+    margin-bottom: 20px;
     padding: 20px;
-    padding-bottom: 30px;
 
-    -webkit-transition: 1.5s;
-         -o-transition: 1.5s;
-            transition: 1.5s;
+    -webkit-transition: opacity 1s;
+    -webkit-transition: -webkit-filter 1s;
+         -o-transition: opacity 1s;
+         -o-transition:         filter 1s;
+            transition: opacity 1s;
+            transition: -webkit-filter 1s;
+            transition:         filter 1s;
+            transition:         filter 1s, -webkit-filter 1s;
 
-    border-radius: 40px;
-    background-color: rgba(168, 178, 251, .705);
-    -webkit-box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
-            box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
+    opacity: 0;
+    color: rgba(255, 255, 255, .664);
 
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
 }
 
-.basic-card
+.money-active__form
+{
+    opacity: 1 !important;
+
+    -webkit-filter: blur(0px) !important;
+            filter: blur(0px) !important;
+}
+
+.money-card
 {
     position: fixed;
     z-index: 12;
@@ -1479,44 +1593,7 @@ p
     align-items: center;
 }
 
-.money-box-card__title
-{
-    font-size: 20px;
-    font-weight: 300;
-
-    color: rgba(255, 255, 255, .664);
-}
-
-.money-box-card__description
-{
-    font-size: 15px;
-    font-weight: 300;
-
-    margin-bottom: 20px;
-
-    color: rgba(255, 255, 255, .664);
-}
-
-.money-box-card__comment
-{
-    font-size: 15px;
-    font-weight: 300;
-
-    margin-bottom: 20px;
-    padding: 20px;
-
-    color: rgba(255, 255, 255, .664);
-}
-
-.money-box-card__cash
-{
-    font-size: 60px;
-    font-weight: 500;
-
-    color: rgba(255, 255, 255, .823);
-}
-
-.basic-card.active
+.money-card.active
 {
     width: 500px;
 
@@ -1525,20 +1602,36 @@ p
     opacity: 1;
 }
 
-.basic-card__image
+.basic
 {
     position: absolute;
-    top: -15px;
-    right: -15px;
+    left: 30%;
 
-    width: 35px;
-    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
 
-    cursor: pointer;
+    width: 330px;
+    margin-top: 30px;
+    padding: 20px;
+    padding-bottom: 30px;
 
-    border: .5px solid white;
-    border-radius: 20px;
-    background-color: rgba(15, 18, 22, .301);
+    -webkit-transition: 1.5s;
+         -o-transition: 1.5s;
+            transition: 1.5s;
+
+    border-radius: 40px;
+    background-color: rgba(168, 178, 251, .705);
+    -webkit-box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
+            box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .pro
@@ -1649,15 +1742,15 @@ p
 
 .money-button:hover
 {
-    -webkit-box-shadow: 0 0 35px 8px rgba(255, 255, 255, .56);
-            box-shadow: 0 0 35px 8px rgba(255, 255, 255, .56);
+    -webkit-box-shadow: 0 0 17px 0 rgba(255, 255, 255, .56);
+            box-shadow: 0 0 17px 0 rgba(255, 255, 255, .56);
 }
 
 .technology
 {
     display: grid;
 
-    height: 90vh;
+    height: 100vh;
 
     background-color: white;
     background-image: url('../img/tehnology-background.jpg');
