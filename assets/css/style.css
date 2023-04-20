@@ -3065,12 +3065,10 @@ input[type=file]
     }
     .basicAction
     {
-        top: 255px;
         left: auto;
     }
     .mediumAction
     {
-        top: 115px;
         right: auto;
     }
     .technology-info__title
