@@ -127,7 +127,7 @@
 }
 
 .bottom {
-    transform: rotateX(-270deg) translateY(100px);
+    transform: rotateX(270deg) translateY(100px);
     transform-origin: bottom center;
     transition: 1s;
 
@@ -147,7 +147,7 @@
 }
 
 .right {
-    transform: rotateY(270deg) translateX(100px);
+    transform: rotateY(-270deg) translateX(100px);
     transform-origin: right center;
     transition: 1s;
 
@@ -183,7 +183,7 @@
 }
 
 .wrap:hover .right {
-    transform: rotateY(270deg) translateZ(-100px) translateX(100px);
+    transform: rotateY(-270deg) translateZ(100px) translateX(100px);
     @include sm {
         transform: rotateY(270deg) translateZ(-50px) translateX(50px);
         }
@@ -204,7 +204,7 @@
 }
 
 .wrap:hover .bottom {
-    transform: rotateX(-270deg) translateZ(-100px) translateY(100px);
+    transform: rotateX(270deg) translateZ(100px) translateY(100px);
     @include sm {
             transform: rotateX(-270deg) translateZ(-50px) translateY(50px);
         }
