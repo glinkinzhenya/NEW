@@ -7,13 +7,17 @@
     display: grid;
     grid-template-columns: 45% 55%;
     align-items: center;
-        background-image: url("../img/tehnology-background.jpg");
-            background-size: cover;
-            background-position: center;
+    background-image: url("../img/tehnology-background.jpg");
+    background-size: cover;
+    background-position: center;
 
     @include lg {
         grid-template-columns: 1fr;
         align-items: normal
+    }
+
+    @include sm {
+    height: 80vh;
     }
 
     &-info {
@@ -179,30 +183,34 @@
 
 .wrap:hover .right {
     transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+
     @include sm {
         transform: rotateY(-270deg) translateZ(50px) translateX(50px);
-        }
+    }
 }
 
 .wrap:hover .left {
     transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+
     @include sm {
-            transform: rotateY(270deg) translateZ(50px) translateX(-50px);
-        }
+        transform: rotateY(270deg) translateZ(50px) translateX(-50px);
+    }
 }
 
 .wrap:hover .top {
     transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+
     @include sm {
-            transform: rotateX(-270deg) translateZ(50px) translateY(-50px);
-        }
+        transform: rotateX(-270deg) translateZ(50px) translateY(-50px);
+    }
 }
 
 .wrap:hover .bottom {
     transform: rotateX(270deg) translateZ(100px) translateY(100px);
+
     @include sm {
-            transform: rotateX(270deg) translateZ(50px) translateY(50px);
-        }
+        transform: rotateX(270deg) translateZ(50px) translateY(50px);
+    }
 }
 
 .cube-image {

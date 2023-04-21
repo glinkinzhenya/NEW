@@ -452,19 +452,19 @@ $(".medium").on("mouseout", function () {
 
 $('#basic-card__button').on('click', function () {
   const level = "Basic";
-  const money = "10 000";
+  const money = "₴ 10 000";
   openCard(level, money);
 });
 
 $('#pro-card__button').on('click', function () {
   const level = "Pro";
-  const money = "25 000";
+  const money = "₴ 25 000";
   openCard(level, money);
 });
 
 $('#medium-card__button').on('click', function () {
   const level = "Medium";
-  const money = "17 000";
+  const money = "₴ 17 000";
   openCard(level, money);
 });
 
@@ -480,7 +480,7 @@ $('.money-box-card__image').on('click', function () {
 function openCard(level, money) {
   let levelText = $(".money-box-card__title");
   let moneyText = $(".money-box-card__cash");
-  
+
   levelText.text(level);
   moneyText.text(money);
   

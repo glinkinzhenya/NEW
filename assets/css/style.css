@@ -1433,8 +1433,6 @@ p
     opacity: 0;
     color: rgba(255, 255, 255, .823);
 
-    -webkit-backdrop-filter: blur(15px);
-            backdrop-filter: blur(15px);
     -webkit-filter: blur(10px);
             filter: blur(10px);
 }
@@ -3086,6 +3084,10 @@ input[type=file]
     .mediumAction
     {
         right: auto;
+    }
+    .technology
+    {
+        height: 80vh;
     }
     .technology-info__title
     {

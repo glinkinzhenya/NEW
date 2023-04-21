@@ -116,9 +116,12 @@ p {
     font-size: 60px;
     opacity: 0;
     transition: opacity 1s;
-    backdrop-filter: blur(15px);
     transition: filter 1s;
     filter: blur(10px);
+}
+
+.money-box-card__cash > span {
+
 }
 
 .money-box-card__description {
