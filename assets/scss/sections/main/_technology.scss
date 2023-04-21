@@ -78,10 +78,10 @@
     transform-style: preserve-3d;
     animation: rotate 20s linear infinite;
 
-    @include lg {
-        height: 150px;
-        width: 150px;
-    }
+    // @include lg {
+    //     height: 150px;
+    //     width: 150px;
+    // }
 
     @include sm {
         height: 100px;
@@ -102,7 +102,7 @@
     transform: translateZ(100px);
     transition: 1s;
 
-    @include lg {
+    @include sm {
         transform: translateZ(50px);
     }
 }
@@ -131,8 +131,8 @@
     transform-origin: bottom center;
     transition: 1s;
 
-    @include lg {
-        transform: rotateX(270deg) translateY(100px);
+    @include sm {
+        transform: rotateX(270deg) translateY(50px);
     }
 }
 
@@ -151,8 +151,8 @@
     transform-origin: right center;
     transition: 1s;
 
-    @include lg {
-        transform: rotateY(-270deg) translateX(100px);
+    @include sm {
+        transform: rotateY(-270deg) translateX(50px);
     }
 }
 
@@ -213,9 +213,9 @@
 .cube-image {
     width: 160px;
 
-    @include lg {
-        width: 130px;
-    }
+    // @include lg {
+    //     width: 130px;
+    // }
 
     @include sm {
         width: 90px;
