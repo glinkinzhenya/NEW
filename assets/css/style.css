@@ -3033,6 +3033,8 @@ input[type=file]
     }
     .money-box-card__form-button
     {
+        font-size: 15px;
+
         width: 100%;
     }
     .money-box-card__comment
