@@ -377,29 +377,26 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// Движение карточек на мобильной версии
 
+// // Получаем текущую ширину окна браузера
+// var windowWidth = $(window).width();
 
-document.addEventListener('DOMContentLoaded', function () {
-  var screenWidth = window.innerWidth;
-  // Получаем ширину экрана устройства
+// // Обработчик события для кнопки
+// $('.pro').on('click', function () {
 
-  var breakpoint = 768; // Задаем ширину экрана, при которой считаем, что устройство является мобильным
-  var buttons = document.querySelectorAll('button'); // Выбираем все кнопки на странице
+//   // Проверяем, если ширина окна меньше 575px
+//   if (windowWidth < 575) {
+//     // Ваш код, который будет выполняться только при размере экрана ниже 575px
+//     console.log('Button clicked on screen width below 575px');
 
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function (event) {
-      if (screenWidth <= breakpoint) {
-        event.preventDefault(); // Отменяем действие по умолчанию (например, переход по ссылке или отправку формы)
-        // Вместо этого можно добавить свою новую логику обработки нажатия кнопки на мобильном устройстве
-        // Например, можно показать сообщение или выполнить другие действия
-        console.log('Нажатие на кнопку на мобильном устройстве');
-      } else {
-        // Выполняем существующую логику нажатия на кнопку на устройствах с шириной экрана выше 768 пикселей
-        console.log('Нажатие на кнопку на устройстве с шириной экрана выше 768 пикселей');
-      }
-    });
-  }
-});
+//     $(".pro").addClass("");
+
+//   } else {
+//     // Ваш код, который будет выполняться при размере экрана 575px и выше
+//     console.log('Button clicked on screen width 575px and above');
+//   }
+// });
 
 
 
@@ -415,36 +412,6 @@ $(".money").on("mouseover", function () {
 $(".money").on("mouseout", function () {
   $(".basic").removeClass("basicAction");
   $(".medium").removeClass("mediumAction");
-});
-
-// basic
-
-$(".basic").on("mouseover", function () {
-  $(".basic").addClass("basicTouch");
-});
-
-$(".basic").on("mouseout", function () {
-  $(".basic").removeClass("basicTouch");
-});
-
-// pro
-
-$(".pro").on("mouseover", function () {
-  $(".pro").addClass("proTouch");
-});
-
-$(".pro").on("mouseout", function () {
-  $(".pro").removeClass("proTouch");
-});
-
-// medium
-
-$(".medium").on("mouseover", function () {
-  $(".medium").addClass("mediumTouch");
-});
-
-$(".medium").on("mouseout", function () {
-  $(".medium").removeClass("mediumTouch");
 });
 
 
@@ -483,7 +450,7 @@ function openCard(level, money) {
 
   levelText.text(level);
   moneyText.text(money);
-  
+
   $('.money-black').addClass('active');
   $('.money-card').addClass('active');
 
@@ -493,7 +460,7 @@ function openCard(level, money) {
       element.classList.add(className);
     }, delay);
   }
-  
+
   // Перебираем все элементы и добавляем класс "money-active__form" с задержкой
   const elements = document.querySelectorAll(".money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment");
   elements.forEach((element, index) => {

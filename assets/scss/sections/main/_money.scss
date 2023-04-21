@@ -118,10 +118,10 @@ p {
     transition: opacity 1s;
     transition: filter 1s;
     filter: blur(10px);
-}
 
-.money-box-card__cash > span {
-
+    @include sm {
+        font-size: 40px;
+    }
 }
 
 .money-box-card__description {
@@ -268,7 +268,7 @@ p {
 
     @include sm {
         left: auto;
-        top: 130px;
+        margin-top: 107px;
         z-index: 1;
         box-shadow: 0 -3px 11px rgba(0, 0, 0, 0.249);
     }
@@ -316,7 +316,7 @@ p {
 
     @include sm {
         right: auto;
-        top: 70px;
+        margin-top: 50px;
         z-index: 0;
         box-shadow: 0 -3px 11px rgba(0, 0, 0, 0.249);
     }
@@ -338,17 +338,22 @@ p {
     }
 }
 
-.basicTouch {
-    margin-top: 15px;
-
+.basic:hover {
+    @include md-min {
+        margin-top: 15px;
+    }
 }
 
-.mediumTouch {
-    margin-top: 15px;
+.medium:hover {
+    @include md-min {
+        margin-top: 15px;
+    }
 }
 
-.proTouch {
-    margin-top: 0px;
+.pro:hover {
+    @include md-min {
+        margin-top: 0px;
+    }
 }
 
 .money-button {

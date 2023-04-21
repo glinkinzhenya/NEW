@@ -1750,21 +1750,6 @@ p
     right: 8%;
 }
 
-.basicTouch
-{
-    margin-top: 15px;
-}
-
-.mediumTouch
-{
-    margin-top: 15px;
-}
-
-.proTouch
-{
-    margin-top: 0;
-}
-
 .money-button
 {
     padding: 10px;
@@ -2627,6 +2612,21 @@ input[type=file]
 {
     width: 30px;
 }
+@media (min-width: 768px)
+{
+    .basic:hover
+    {
+        margin-top: 15px;
+    }
+    .medium:hover
+    {
+        margin-top: 15px;
+    }
+    .pro:hover
+    {
+        margin-top: 0;
+    }
+}
 @media (min-width: 1200px)
 {
     .header-menu__language
@@ -3013,6 +3013,10 @@ input[type=file]
     {
         font-size: 13px;
     }
+    .money-box-card__cash
+    {
+        font-size: 40px;
+    }
     .money-box-card__description
     {
         width: 90%;
@@ -3054,8 +3058,9 @@ input[type=file]
     .basic
     {
         z-index: 1;
-        top: 130px;
         left: auto;
+
+        margin-top: 107px;
 
         -webkit-box-shadow: 0 -3px 11px rgba(0, 0, 0, .249);
                 box-shadow: 0 -3px 11px rgba(0, 0, 0, .249);
@@ -3071,8 +3076,9 @@ input[type=file]
     .medium
     {
         z-index: 0;
-        top: 70px;
         right: auto;
+
+        margin-top: 50px;
 
         -webkit-box-shadow: 0 -3px 11px rgba(0, 0, 0, .249);
                 box-shadow: 0 -3px 11px rgba(0, 0, 0, .249);
