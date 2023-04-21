@@ -78,11 +78,6 @@
     transform-style: preserve-3d;
     animation: rotate 20s linear infinite;
 
-    // @include lg {
-    //     height: 150px;
-    //     width: 150px;
-    // }
-
     @include sm {
         height: 100px;
         width: 100px;
@@ -212,10 +207,6 @@
 
 .cube-image {
     width: 160px;
-
-    // @include lg {
-    //     width: 130px;
-    // }
 
     @include sm {
         width: 90px;

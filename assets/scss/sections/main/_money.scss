@@ -130,12 +130,21 @@ p {
     transition: opacity 1s;
     transition: filter 1s;
     filter: blur(10px);
+
+    @include sm {
+        width: 80%;
+    }
 }
 
 .money-box-card__form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @include sm {
+        align-items: center;
+        width: 90%;
+    }
 }
 
 .money-box-card__form-input {
@@ -149,6 +158,10 @@ p {
     transition: filter 1s;
     filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.137);
+
+    @include sm {
+        width: 100%;
+    }
 }
 
 .money-box-card__form-input::placeholder {
@@ -166,6 +179,10 @@ p {
     transition: opacity 1s;
     transition: filter 1s;
     filter: blur(10px);
+
+    @include sm {
+        width: 100%;
+    }
 }
 
 .money-box-card__comment {
@@ -179,6 +196,11 @@ p {
     transition: filter 1s;
     filter: blur(10px);
     width: 420px;
+
+    @include sm {
+        width: 100%;
+        font-size: 10px;
+    }
 }
 
 .money-active__form {
@@ -204,12 +226,20 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 30px;
+
+    @include sm {
+        width: 85%;
+    }
 }
 
 .money-card.active {
     opacity: 1;
     pointer-events: auto;
     width: 500px;
+
+    @include sm {
+        width: 90%;
+    }
 }
 
 .basic {

@@ -3013,6 +3013,40 @@ input[type=file]
     {
         font-size: 13px;
     }
+    .money-box-card__description
+    {
+        width: 80%;
+    }
+    .money-box-card__form
+    {
+        width: 90%;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .money-box-card__form-input
+    {
+        width: 100%;
+    }
+    .money-box-card__form-button
+    {
+        width: 100%;
+    }
+    .money-box-card__comment
+    {
+        font-size: 10px;
+
+        width: 100%;
+    }
+    .money-card
+    {
+        width: 85%;
+    }
+    .money-card.active
+    {
+        width: 90%;
+    }
     .basic
     {
         z-index: 1;
