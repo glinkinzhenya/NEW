@@ -1549,9 +1549,11 @@ p
             transition:         filter 1s, -webkit-filter 1s;
 
     opacity: 0;
+    color: rgba(0, 0, 0, .804);
     border: none;
     border-radius: 15px;
     outline: none;
+    background-color: rgba(255, 255, 255, .6);
 
     -webkit-filter: blur(10px);
             filter: blur(10px);
@@ -3015,11 +3017,11 @@ input[type=file]
     }
     .money-box-card__description
     {
-        width: 80%;
+        width: 90%;
     }
     .money-box-card__form
     {
-        width: 90%;
+        width: 100%;
 
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3037,11 +3039,13 @@ input[type=file]
     {
         font-size: 10px;
 
-        width: 100%;
+        width: 112%;
+        margin-bottom: 0;
     }
     .money-card
     {
         width: 85%;
+        height: auto;
     }
     .money-card.active
     {
