@@ -383,11 +383,12 @@ window.addEventListener('scroll', function () {
 
 // Получаем текущую ширину окна браузера
 var windowWidth = $(window).width();
+// переключатель
 let cubMobileOn = true;
 // Обработчик события для кнопки
 $('.wrap').on('click', function () {
-  // Проверяем, если ширина окна меньше 575px
-  if (windowWidth < 575 && cubMobileOn) {
+
+  if (windowWidth < 768 && cubMobileOn) {
     $(".front").css({ 'transform': 'translateZ(100px)' });
     $(".back").css({ 'transform': 'translateZ(-100px) rotateY(180deg)' });
     $(".right").css({ 'transform': 'rotateY(-270deg) translateZ(50px) translateX(50px)' });
@@ -396,7 +397,7 @@ $('.wrap').on('click', function () {
     $(".bottom").css({ 'transform': 'rotateX(270deg) translateZ(50px) translateY(50px)' });
     cubMobileOn = false;
 
-  } else if (windowWidth < 575 && !cubMobileOn) {
+  } else if (windowWidth < 768 && !cubMobileOn) {
     $(".front").css({ 'transform': 'translateZ(50px)' });
     $(".back").css({ 'transform': 'translateZ(-50px) rotateY(180deg)' });
     $(".right").css({ 'transform': 'rotateY(-270deg) translateX(50px)' });
@@ -407,33 +408,10 @@ $('.wrap').on('click', function () {
   }
 });
 
-// Движение карточек на мобильной версии
-
-// // Получаем текущую ширину окна браузера
-// var windowWidth = $(window).width();
-
-// // Обработчик события для кнопки
-// $('.pro').on('click', function () {
-
-//   // Проверяем, если ширина окна меньше 575px
-//   if (windowWidth < 575) {
-//     // Ваш код, который будет выполняться только при размере экрана ниже 575px
-//     console.log('Button clicked on screen width below 575px');
-
-//     $(".pro").addClass("");
-
-//   } else {
-//     // Ваш код, который будет выполняться при размере экрана 575px и выше
-//     console.log('Button clicked on screen width 575px and above');
-//   }
-// });
 
 
 
-
-
-// деньги карточки разъезжаются
-
+// Деньги карточки разъезжаются
 $(".money").on("mouseover", function () {
   $(".basic").addClass("basicAction");
   $(".medium").addClass("mediumAction");
@@ -446,7 +424,6 @@ $(".money").on("mouseout", function () {
 
 
 // Открытие карточки
-
 $('#basic-card__button').on('click', function () {
   const level = "Basic";
   const money = "₴ 10 000";
@@ -466,12 +443,6 @@ $('#medium-card__button').on('click', function () {
 });
 
 
-// Закрытие карточки
-$('.money-box-card__image').on('click', function () {
-  $('.money-black').removeClass('active');
-  $('.money-card').removeClass('active');
-  $('.money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment').removeClass('money-active__form');
-});
 
 // моторчик плавного появления карточки
 function openCard(level, money) {
@@ -490,10 +461,73 @@ function openCard(level, money) {
       element.classList.add(className);
     }, delay);
   }
-
   // Перебираем все элементы и добавляем класс "money-active__form" с задержкой
   const elements = document.querySelectorAll(".money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment");
   elements.forEach((element, index) => {
     addClassWithDelay(element, "money-active__form", 50 * index);
   });
 }
+
+// Закрытие карточки
+$('.money-box-card__image').on('click', function () {
+  $('.money-black').removeClass('active');
+  $('.money-card').removeClass('active');
+  $('.money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment').removeClass('money-active__form');
+});
+
+
+// Движение карточек на мобильной версии
+
+$('.pro').on('click', function () {
+  if (windowWidth <= 575) {
+    $(".pro").addClass("blur-money");
+    $(".basic").addClass("blur-money");
+    $(".medium").addClass("blur-money");
+
+    $(".pro").css({ 'margin-top': '107px', 'z-index': '3' });
+    $(".medium").css({ 'margin-top': '0px', 'z-index': '1' });
+    $(".basic").css({ 'margin-top': '50px', 'z-index': '2' });
+
+    setTimeout(function () {
+      $(".pro").removeClass("blur-money");
+      $(".basic").removeClass("blur-money");
+      $(".medium").removeClass("blur-money");
+    }, 400);
+  }
+});
+
+$('.basic').on('click', function () {
+  if (windowWidth <= 575) {
+    $(".pro").addClass("blur-money");
+    $(".basic").addClass("blur-money");
+    $(".medium").addClass("blur-money");
+
+    $(".pro").css({ 'margin-top': '0px', 'z-index': '1' });
+    $(".medium").css({ 'margin-top': '50px', 'z-index': '2' });
+    $(".basic").css({ 'margin-top': '107px', 'z-index': '3' });
+
+    setTimeout(function () {
+      $(".pro").removeClass("blur-money");
+      $(".basic").removeClass("blur-money");
+      $(".medium").removeClass("blur-money");
+    }, 400);
+  }
+});
+
+$('.medium').on('click', function () {
+  if (windowWidth <= 575) {
+    $(".pro").addClass("blur-money");
+    $(".basic").addClass("blur-money");
+    $(".medium").addClass("blur-money");
+    
+    $(".pro").css({ 'margin-top': '0px', 'z-index': '1' });
+    $(".medium").css({ 'margin-top': '107px', 'z-index': '3' });
+    $(".basic").css({ 'margin-top': '50px', 'z-index': '2' });
+
+    setTimeout(function () {
+      $(".pro").removeClass("blur-money");
+      $(".basic").removeClass("blur-money");
+      $(".medium").removeClass("blur-money");
+    }, 400);
+  }
+});

@@ -269,7 +269,7 @@ p {
     @include sm {
         left: auto;
         margin-top: 107px;
-        z-index: 1;
+        z-index: 3;
         box-shadow: 0 -3px 11px rgba(0, 0, 0, 0.249);
     }
 }
@@ -292,8 +292,8 @@ p {
     padding-bottom: 30px;
 
     @include sm {
-        z-index: 0;
-        top: 30px;
+        z-index: 1;
+        margin-top: 0px;
         box-shadow: 0 -3px 11px rgba(0, 0, 0, 0.249);
     }
 }
@@ -317,7 +317,7 @@ p {
     @include sm {
         right: auto;
         margin-top: 50px;
-        z-index: 0;
+        z-index: 2;
         box-shadow: 0 -3px 11px rgba(0, 0, 0, 0.249);
     }
 }
@@ -366,4 +366,8 @@ p {
 
 .money-button:hover {
     box-shadow: 0 0 17px 0px rgba(255, 255, 255, .56);
+}
+
+.blur-money {
+    filter: blur(5px);
 }
