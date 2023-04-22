@@ -1769,12 +1769,6 @@ p
             box-shadow: 0 0 17px 0 rgba(255, 255, 255, .56);
 }
 
-.blur-money
-{
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-}
-
 .technology
 {
     display: grid;

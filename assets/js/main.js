@@ -478,56 +478,46 @@ $('.money-box-card__image').on('click', function () {
 
 // Движение карточек на мобильной версии
 
+let proMedium = false;
+
 $('.pro').on('click', function () {
   if (windowWidth <= 575) {
-    $(".pro").addClass("blur-money");
-    $(".basic").addClass("blur-money");
-    $(".medium").addClass("blur-money");
-
-    $(".pro").css({ 'margin-top': '107px', 'z-index': '3' });
-    $(".medium").css({ 'margin-top': '0px', 'z-index': '1' });
-    $(".basic").css({ 'margin-top': '50px', 'z-index': '2' });
-
     setTimeout(function () {
-      $(".pro").removeClass("blur-money");
-      $(".basic").removeClass("blur-money");
-      $(".medium").removeClass("blur-money");
-    }, 400);
+      $(".pro").css({ 'margin-top': '50px', 'z-index': '2' });
+      $(".medium").css({ 'margin-top': '0px', 'z-index': '1' });
+      setTimeout(function () {
+        $(".pro").css({ 'margin-top': '107px', 'z-index': '3' });
+        $(".basic").css({ 'margin-top': '50px', 'z-index': '2' });
+      }, 500);
+    }, 500);
+    proMedium = true;
   }
 });
 
 $('.basic').on('click', function () {
   if (windowWidth <= 575) {
-    $(".pro").addClass("blur-money");
-    $(".basic").addClass("blur-money");
-    $(".medium").addClass("blur-money");
-
     $(".pro").css({ 'margin-top': '0px', 'z-index': '1' });
     $(".medium").css({ 'margin-top': '50px', 'z-index': '2' });
     $(".basic").css({ 'margin-top': '107px', 'z-index': '3' });
-
-    setTimeout(function () {
-      $(".pro").removeClass("blur-money");
-      $(".basic").removeClass("blur-money");
-      $(".medium").removeClass("blur-money");
-    }, 400);
   }
 });
 
 $('.medium').on('click', function () {
   if (windowWidth <= 575) {
-    $(".pro").addClass("blur-money");
-    $(".basic").addClass("blur-money");
-    $(".medium").addClass("blur-money");
-    
-    $(".pro").css({ 'margin-top': '0px', 'z-index': '1' });
-    $(".medium").css({ 'margin-top': '107px', 'z-index': '3' });
-    $(".basic").css({ 'margin-top': '50px', 'z-index': '2' });
-
-    setTimeout(function () {
-      $(".pro").removeClass("blur-money");
-      $(".basic").removeClass("blur-money");
-      $(".medium").removeClass("blur-money");
-    }, 400);
+    if (proMedium) {
+      setTimeout(function () {
+        $(".medium").css({ 'margin-top': '50px', 'z-index': '2' });
+        $(".basic").css({ 'margin-top': '0px', 'z-index': '1' });
+        setTimeout(function () {
+          $(".medium").css({ 'margin-top': '107px', 'z-index': '3' });
+          $(".pro").css({ 'margin-top': '50px', 'z-index': '2' });
+        }, 500);
+      }, 500);
+      proMedium = false;
+    } else {
+      $(".pro").css({ 'margin-top': '0px', 'z-index': '1' });
+      $(".medium").css({ 'margin-top': '107px', 'z-index': '3' });
+      $(".basic").css({ 'margin-top': '50px', 'z-index': '2' });
+    }
   }
 });
