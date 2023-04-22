@@ -17,7 +17,7 @@
     }
 
     @include sm {
-    height: 80vh;
+        height: 80vh;
     }
 
     &-info {
@@ -166,50 +166,38 @@
 }
 
 .wrap:hover .front {
-    transform: translateZ(200px);
-
-    @include sm {
-        transform: translateZ(100px);
+    @include md-min {
+        transform: translateZ(200px);
     }
 }
 
 .wrap:hover .back {
-    transform: translateZ(-200px) rotateY(180deg);
-
-    @include sm {
-        transform: translateZ(-100px) rotateY(180deg);
+    @include md-min {
+        transform: translateZ(-200px) rotateY(180deg);
     }
 }
 
 .wrap:hover .right {
-    transform: rotateY(-270deg) translateZ(100px) translateX(100px);
-
-    @include sm {
-        transform: rotateY(-270deg) translateZ(50px) translateX(50px);
+    @include md-min {
+        transform: rotateY(-270deg) translateZ(100px) translateX(100px);
     }
 }
 
 .wrap:hover .left {
-    transform: rotateY(270deg) translateZ(100px) translateX(-100px);
-
-    @include sm {
-        transform: rotateY(270deg) translateZ(50px) translateX(-50px);
+    @include md-min {
+        transform: rotateY(270deg) translateZ(100px) translateX(-100px);
     }
 }
 
 .wrap:hover .top {
-    transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
-
-    @include sm {
-        transform: rotateX(-270deg) translateZ(50px) translateY(-50px);
+    @include md-min {
+        transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
     }
 }
 
 .wrap:hover .bottom {
-    transform: rotateX(270deg) translateZ(100px) translateY(100px);
-
-    @include sm {
-        transform: rotateX(270deg) translateZ(50px) translateY(50px);
+    @include md-min {
+        transform: rotateX(270deg) translateZ(100px) translateY(100px);
     }
 }
 

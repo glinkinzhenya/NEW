@@ -377,6 +377,36 @@ window.addEventListener('scroll', function () {
   }
 });
 
+
+
+// Технологии открытия куба на мобильной версии
+
+// Получаем текущую ширину окна браузера
+var windowWidth = $(window).width();
+let cubMobileOn = true;
+// Обработчик события для кнопки
+$('.wrap').on('click', function () {
+  // Проверяем, если ширина окна меньше 575px
+  if (windowWidth < 575 && cubMobileOn) {
+    $(".front").css({ 'transform': 'translateZ(100px)' });
+    $(".back").css({ 'transform': 'translateZ(-100px) rotateY(180deg)' });
+    $(".right").css({ 'transform': 'rotateY(-270deg) translateZ(50px) translateX(50px)' });
+    $(".left").css({ 'transform': 'rotateY(270deg) translateZ(50px) translateX(-50px)' });
+    $(".top").css({ 'transform': 'rotateX(-270deg) translateZ(50px) translateY(-50px)' });
+    $(".bottom").css({ 'transform': 'rotateX(270deg) translateZ(50px) translateY(50px)' });
+    cubMobileOn = false;
+
+  } else if (windowWidth < 575 && !cubMobileOn) {
+    $(".front").css({ 'transform': 'translateZ(50px)' });
+    $(".back").css({ 'transform': 'translateZ(-50px) rotateY(180deg)' });
+    $(".right").css({ 'transform': 'rotateY(-270deg) translateX(50px)' });
+    $(".left").css({ 'transform': 'rotateY(270deg) translateX(-50px)' });
+    $(".top").css({ 'transform': 'rotateX(-270deg) translateY(-50px)' });
+    $(".bottom").css({ 'transform': 'rotateX(270deg) translateY(50px)' });
+    cubMobileOn = true;
+  }
+});
+
 // Движение карточек на мобильной версии
 
 // // Получаем текущую ширину окна браузера
@@ -402,7 +432,7 @@ window.addEventListener('scroll', function () {
 
 
 
-// деньги карточки
+// деньги карточки разъезжаются
 
 $(".money").on("mouseover", function () {
   $(".basic").addClass("basicAction");
@@ -443,7 +473,7 @@ $('.money-box-card__image').on('click', function () {
   $('.money-box-card__image, .money-box-card__title, .money-box-card__cash, .money-box-card__description, .money-box-card__form-input, .money-box-card__form-button, .money-box-card__comment').removeClass('money-active__form');
 });
 
-// моторчик карточки
+// моторчик плавного появления карточки
 function openCard(level, money) {
   let levelText = $(".money-box-card__title");
   let moneyText = $(".money-box-card__cash");
