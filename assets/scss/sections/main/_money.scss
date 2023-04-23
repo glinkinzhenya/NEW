@@ -181,6 +181,7 @@ p {
     opacity: 0;
     transition: opacity 1s;
     transition: filter 1s;
+    transition: background-color 0.2s;
     filter: blur(10px);
     color: rgba(0, 0, 0, 0.804);
     background-color: #ffffff99;
@@ -189,6 +190,10 @@ p {
         width: 100%;
         font-size: 15px;
     }
+}
+
+.money-box-card__form-button:hover {
+    background-color: #ffffffc5;
 }
 
 .money-box-card__comment {
@@ -365,5 +370,6 @@ p {
 }
 
 .money-button:hover {
-    box-shadow: 0 0 17px 0px rgba(255, 255, 255, .56);
+    // box-shadow: 0 0 17px 0px rgba(255, 255, 255, .56);
+    background-color: #ffffffa9;
 }

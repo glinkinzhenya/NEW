@@ -1539,12 +1539,15 @@ p
 
     -webkit-transition: opacity 1s;
     -webkit-transition: -webkit-filter 1s;
+    -webkit-transition: background-color .2s;
          -o-transition: opacity 1s;
          -o-transition:         filter 1s;
+         -o-transition: background-color .2s;
             transition: opacity 1s;
             transition: -webkit-filter 1s;
             transition:         filter 1s;
             transition:         filter 1s, -webkit-filter 1s;
+            transition: background-color .2s;
 
     opacity: 0;
     color: rgba(0, 0, 0, .804);
@@ -1555,6 +1558,11 @@ p
 
     -webkit-filter: blur(10px);
             filter: blur(10px);
+}
+
+.money-box-card__form-button:hover
+{
+    background-color: rgba(255, 255, 255, .7725490196);
 }
 
 .money-box-card__comment
@@ -1765,8 +1773,7 @@ p
 
 .money-button:hover
 {
-    -webkit-box-shadow: 0 0 17px 0 rgba(255, 255, 255, .56);
-            box-shadow: 0 0 17px 0 rgba(255, 255, 255, .56);
+    background-color: rgba(255, 255, 255, .662745098);
 }
 
 .technology
@@ -3046,6 +3053,40 @@ input[type=file]
     .work-icons__wrapper-text > p
     {
         font-size: 13px;
+    }
+    .work-icon__image
+    {
+        width: 50px;
+    }
+    .work-one
+    {
+        width: 120px;
+        height: 120px;
+    }
+    .work-two
+    {
+        width: 120px;
+        height: 120px;
+    }
+    .work-three
+    {
+        width: 120px;
+        height: 120px;
+    }
+    .work-four
+    {
+        width: 120px;
+        height: 120px;
+    }
+    .work-five
+    {
+        width: 120px;
+        height: 120px;
+    }
+    .work-six
+    {
+        width: 120px;
+        height: 120px;
     }
     .money-box-card__cash
     {

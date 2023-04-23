@@ -4,10 +4,12 @@
 .work {
     padding-top: 100px;
     padding-bottom: 70px;
+
     @include sm {
         padding-bottom: 40px;
         padding-top: 60px;
-        }
+    }
+
     background-image: url("../img/Снимок\ экрана\ 2023-04-17\ в\ 08.05.42.jpg");
     background-size: cover;
     background-position: center;
@@ -17,9 +19,10 @@
     text-align: center;
     margin-bottom: 100px;
     color: rgba(255, 255, 255, 0.6);
+
     @include sm {
         margin-bottom: 70px;
-        }
+    }
 }
 
 .work-icon {
@@ -84,6 +87,10 @@
     margin-left: auto;
     margin-right: auto;
     transition: .5s;
+
+    @include sm {
+        width: 50px;
+    }
 }
 
 .work-one {
@@ -93,6 +100,11 @@
     background-color: white;
     border: none;
     padding-top: 0px;
+
+    @include sm {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .work-two {
@@ -102,6 +114,11 @@
     background-color: #d5aeea;
     border: none;
     padding-top: 0px;
+
+    @include sm {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .work-three {
@@ -111,6 +128,11 @@
     background-color: #d391f6;
     border: none;
     padding-top: 0px;
+
+    @include sm {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .work-four {
@@ -120,6 +142,11 @@
     background-color: #c171ec;
     border: none;
     padding-top: 0px;
+
+    @include sm {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .work-five {
@@ -129,6 +156,11 @@
     background-color: #be61f0;
     border: none;
     padding-top: 0px;
+
+    @include sm {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .work-six {
@@ -138,4 +170,9 @@
     background-color: #9940c8;
     border: none;
     padding-top: 0px;
+
+    @include sm {
+        width: 120px;
+        height: 120px;
+    }
 }

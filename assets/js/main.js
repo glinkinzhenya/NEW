@@ -321,7 +321,7 @@ window.addEventListener('scroll', function () {
     $("#work-image1").fadeOut(200, function () {
       $(this).attr("src", "assets/img/work-icon-color1.png");
       $(this).fadeIn(200);
-      $("#work-text1").show().animate({ fontSize: "20px" }, 200);
+      $("#work-text1").show().animate({ fontSize: "18px" }, 200);
     });
     flagOne = true;
   };
@@ -331,7 +331,7 @@ window.addEventListener('scroll', function () {
     $("#work-image2").fadeOut(200, function () {
       $(this).attr("src", "assets/img/work-icon-color2.png");
       $(this).fadeIn(200);
-      $("#work-text2").show().animate({ fontSize: "20px" }, 200);
+      $("#work-text2").show().animate({ fontSize: "18px" }, 200);
     });
     flagTwo = true;
   }
@@ -341,7 +341,7 @@ window.addEventListener('scroll', function () {
     $("#work-image3").fadeOut(200, function () {
       $(this).attr("src", "assets/img/work-icon-color3.png");
       $(this).fadeIn(200);
-      $("#work-text3").show().animate({ fontSize: "20px" }, 200);
+      $("#work-text3").show().animate({ fontSize: "18px" }, 200);
     });
     flagThree = true;
   }
@@ -351,7 +351,7 @@ window.addEventListener('scroll', function () {
     $("#work-image4").fadeOut(200, function () {
       $(this).attr("src", "assets/img/work-icon-color4.png");
       $(this).fadeIn(200);
-      $("#work-text4").show().animate({ fontSize: "20px" }, 200);
+      $("#work-text4").show().animate({ fontSize: "18px" }, 200);
     });
     flagFour = true;
   }
@@ -361,7 +361,7 @@ window.addEventListener('scroll', function () {
     $("#work-image5").fadeOut(200, function () {
       $(this).attr("src", "assets/img/work-icon-color5.png");
       $(this).fadeIn(200);
-      $("#work-text5").show().animate({ fontSize: "20px" }, 200);
+      $("#work-text5").show().animate({ fontSize: "18px" }, 200);
     });
     flagFive = true;
   }
@@ -371,7 +371,7 @@ window.addEventListener('scroll', function () {
     $("#work-image6").fadeOut(200, function () {
       $(this).attr("src", "assets/img/work-icon-color6.png");
       $(this).fadeIn(200);
-      $("#work-text6").show().animate({ fontSize: "20px" }, 200);
+      $("#work-text6").show().animate({ fontSize: "18px" }, 200);
     });
     flagSix = true;
   }
