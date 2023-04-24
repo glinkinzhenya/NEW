@@ -999,7 +999,8 @@ ul
     padding: 20px;
 
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, .404);
+    background: -o-linear-gradient(269deg, rgba(119, 13, 194, .1) 13.57%, rgba(0, 0, 0, .57) 98.38%);
+    background:    linear-gradient(181deg, rgba(119, 13, 194, .1) 13.57%, rgba(0, 0, 0, .57) 98.38%);
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1043,11 +1044,25 @@ ul
 
 .portfolio
 {
-    min-height: 135vh;
-    padding-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
 
-    background-color: white;
+    height: 100vh;
+
+    background-image: url('../img/tehnology-background.jpg');
+    background-position: center;
+    background-size: cover;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
+
 .portfolio__title
 {
     font-size: 40px;
@@ -1055,32 +1070,85 @@ ul
     font-style: normal;
     line-height: 140%;
 
-    position: relative;
-
-    margin-bottom: 85px;
-    padding-top: 30px;
+    padding-top: 70px;
 
     text-align: center;
-    letter-spacing: 4px;
+
+    color: rgba(0, 0, 0, .801);
 }
 
-.portfolio-box
+.portfolio-wrapper
 {
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
-    padding: 10px;
+    width: 60%;
+    height: 50%;
+    margin-top: 10px;
 
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-.portfolio-box__image
-{
-    width: 100%;
 
-    cursor: pointer;
+.portfolio-item
+{
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+
+    -webkit-transition: .4s;
+         -o-transition: .4s;
+            transition: .4s;
+
+    color: white;
+    border-radius: 20px;
+    background: -o-linear-gradient(240.79deg, rgb(29, 19, 36) 13.57%, rgb(0, 35, 124) 98.38%);
+    background:    linear-gradient(209.21deg, rgb(29, 19, 36) 13.57%, rgb(0, 35, 124) 98.38%);
+}
+
+.portfolio-item:hover
+{
+    width: 270px;
+    height: 370px;
+}
+
+.portfolio-item__pic
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 20px;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.portfolio-item__img
+{
+    width: 230px;
+
+    -webkit-transition: .4s;
+         -o-transition: .4s;
+            transition: .4s;
 
     border-radius: 10px;
+}
+
+.portfolio-item__text
+{
+    font-size: 20px;
+    line-height: 140%;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, .63);
 }
 
 .work
@@ -1666,7 +1734,9 @@ p
             transition: 1.5s;
 
     border-radius: 40px;
-    background-color: rgba(157, 168, 251, .644);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(133, 249, 206, .416)), to(rgba(152, 183, 246, .62)));
+    background: -o-linear-gradient(rgba(133, 249, 206, .416) 0%, rgba(152, 183, 246, .62) 100%);
+    background:    linear-gradient(rgba(133, 249, 206, .416) 0%, rgba(152, 183, 246, .62) 100%);
     -webkit-box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
             box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
 
@@ -1700,7 +1770,9 @@ p
             transition: 1.5s;
 
     border-radius: 40px;
-    background-color: rgba(220, 173, 249, .586);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 92, 233, .573)), to(rgb(135, 149, 227)));
+    background: -o-linear-gradient(rgba(186, 92, 233, .573) 0%, rgb(135, 149, 227) 100%);
+    background:    linear-gradient(rgba(186, 92, 233, .573) 0%, rgb(135, 149, 227) 100%);
     -webkit-box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
             box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
 
@@ -1734,7 +1806,9 @@ p
             transition: 1.5s;
 
     border-radius: 40px;
-    background-color: rgba(145, 242, 242, .589);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(11.94%, rgba(96, 171, 242, .754)), color-stop(80.98%, rgb(142, 162, 198)));
+    background: -o-linear-gradient(rgba(96, 171, 242, .754) 11.94%, rgb(142, 162, 198) 80.98%);
+    background:    linear-gradient(rgba(96, 171, 242, .754) 11.94%, rgb(142, 162, 198) 80.98%);
     -webkit-box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
             box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
 
@@ -2772,10 +2846,6 @@ input[type=file]
     {
         grid-template-columns: repeat(2, 1fr);
     }
-    .portfolio-box
-    {
-        grid-template-columns: repeat(3, 1fr);
-    }
     .technology
     {
         grid-template-columns: 1fr;
@@ -3010,24 +3080,6 @@ input[type=file]
     {
         font-size: 12px;
         font-weight: 300;
-    }
-    .portfolio
-    {
-        min-height: 100vh;
-        padding-top: 0;
-        padding-bottom: 20px;
-    }
-    .portfolio__title
-    {
-        font-size: 25px;
-
-        margin-bottom: 40px;
-
-        letter-spacing: 1px;
-    }
-    .portfolio-box
-    {
-        grid-template-columns: repeat(2, 1fr);
     }
     .work
     {

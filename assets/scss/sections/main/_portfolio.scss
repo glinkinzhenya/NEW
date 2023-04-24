@@ -1,65 +1,133 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
+// .portfolio {
+//     padding-top: 70px;
+
+//     background-color: white;
+//     min-height: 135vh;
+
+//     @include sm {
+//         padding-top: 0;
+//         padding-bottom: 20px;
+//         min-height: 100vh;
+//     }
+
+//     &__title {
+//         font-size: 40px;
+//         font-weight: 500;
+//         font-style: normal;
+//         line-height: 140%;
+
+//         position: relative;
+
+//         margin-bottom: 85px;
+//         padding-top: 30px;
+
+//         text-align: center;
+//         letter-spacing: 4px;
+
+//         @include sm {
+//             font-size: 25px;
+
+//             margin-bottom: 40px;
+
+//             letter-spacing: 1px;
+//         }
+//     }
+// }
+
+
+// .portfolio-box {
+//     display: grid;
+
+//     padding: 10px;
+
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 15px;
+//     justify-items: center;
+
+//     @include lg {
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+
+//     @include sm {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+
+//     &__image {
+//         width: 100%;
+
+//         cursor: pointer;
+
+//         border-radius: 10px;
+//     }
+// }
+
 .portfolio {
-    padding-top: 70px;
-
-    background-color: white;
-    min-height: 135vh;
-
-    @include sm {
-        padding-top: 0;
-        padding-bottom: 20px;
-        min-height: 100vh;
-    }
-
-    &__title {
-        font-size: 40px;
-        font-weight: 500;
-        font-style: normal;
-        line-height: 140%;
-
-        position: relative;
-
-        margin-bottom: 85px;
-        padding-top: 30px;
-
-        text-align: center;
-        letter-spacing: 4px;
-
-        @include sm {
-            font-size: 25px;
-
-            margin-bottom: 40px;
-
-            letter-spacing: 1px;
-        }
-    }
+    height: 100vh;
+    background-image: url("../img/tehnology-background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.portfolio__title {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.801);
+    text-align: center;
+    padding-top: 70px;
+}
 
-.portfolio-box {
-    display: grid;
+.portfolio-wrapper {
+    margin-top: 10px;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    padding: 10px;
+.portfolio-item {
+    width: 250px;
+    height: 350px;
+    background: linear-gradient(209.21deg, rgb(29, 19, 36) 13.57%, rgb(0, 35, 124) 98.38%);
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.4s;
+    color: white;
+}
 
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    justify-items: center;
+.portfolio-item:hover {
+    width: 270px;
+    height: 370px;
+}
 
-    @include lg {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.portfolio-item__pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-    @include sm {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.portfolio-item__img {
+    width: 230px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
 
-    &__image {
-        width: 100%;
+// .portfolio-item__img:hover {
+//     width: 180px;
+// }
 
-        cursor: pointer;
+.portfolio-item__text {
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.63);
 
-        border-radius: 10px;
-    }
 }

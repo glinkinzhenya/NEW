@@ -108,56 +108,55 @@ setTimeout("getOpacity()", 1000);
 // });
 
 
-// Создаем портфолио
-const portfolioBox = document.querySelector(".portfolio-box");
+// // Создаем портфолио
+// const portfolioBox = document.querySelector(".portfolio-box");
 
-function portfolio() {
-  let i = 1;
+// function portfolio() {
+//   let i = 1;
 
-  const data = {
-    1: "portfolio/computer/computer.html",
-    2: "portfolio/organic/index.html",
-  }
+//   const data = {
+//     1: "portfolio/computer/computer.html",
+//     2: "portfolio/organic/index.html",
+//   }
 
-  let y = setInterval(() => {
-    const div = document.createElement("div");
-    const link = document.createElement("a");
+//   let y = setInterval(() => {
+//     const div = document.createElement("div");
+//     const link = document.createElement("a");
 
-    link.setAttribute("href", `${data[i]}`);
-    link.setAttribute("href", `${data[i]}`);
+//     link.setAttribute("href", `${data[i]}`);
 
-    const img = document.createElement("img");
+//     const img = document.createElement("img");
 
-    img.setAttribute("src", `assets/img/${i}.jpg`);
-    img.style = `opacity: 0.0`;
-    img.classList.add("portfolio-box__image");
-    link.append(img);
-    div.append(link);
+//     img.setAttribute("src", `assets/img/${i}.jpg`);
+//     img.style = `opacity: 0.0`;
+//     img.classList.add("portfolio-box__image");
+//     link.append(img);
+//     div.append(link);
 
-    portfolioBox.append(div);
+//     portfolioBox.append(div);
 
-    let n = 0.1;
-    let x = setInterval(() => {
-      img.style = `opacity: ${n}`;
-      n += 0.02;
-      if (n > 1.01) clearInterval(x);
-    }, 10);
+//     let n = 0.1;
+//     let x = setInterval(() => {
+//       img.style = `opacity: ${n}`;
+//       n += 0.02;
+//       if (n > 1.01) clearInterval(x);
+//     }, 10);
 
-    i += 1;
-    if (i === 13) clearInterval(y);
-  }, 200);
-};
+//     i += 1;
+//     if (i === 13) clearInterval(y);
+//   }, 200);
+// };
 
-const height2 = screen.height;
-const height1 = portfolioBox.getBoundingClientRect()
-const heightPortfolio = height1.top - height2 + 400;
-let tr = false;
-window.addEventListener('scroll', function () {
-  if (scrollY > heightPortfolio && tr === false) {
-    portfolio()
-    tr = true;
-  };
-});
+// const height2 = screen.height;
+// const height1 = portfolioBox.getBoundingClientRect()
+// const heightPortfolio = height1.top - height2 + 400;
+// let tr = false;
+// window.addEventListener('scroll', function () {
+//   if (scrollY > heightPortfolio && tr === false) {
+//     portfolio()
+//     tr = true;
+//   };
+// });
 
 
 // Медленная прокрутка
@@ -302,6 +301,7 @@ $('.pulse-button, .header-black').on('click', function () {
 
 
 // меняем положение иконок в последовательности работы
+const height2 = screen.height;
 const work = document.querySelector('.work');
 
 const workHeight = work.getBoundingClientRect()

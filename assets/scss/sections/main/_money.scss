@@ -257,7 +257,7 @@ p {
 
 .basic {
     width: 330px;
-    background-color: rgba(157, 168, 251, 0.644);
+    background: linear-gradient(rgba(133, 249, 206, 0.416) 0%, rgba(152, 183, 246, 0.62) 100%);
     border-radius: 40px;
     position: absolute;
     left: 30%;
@@ -282,7 +282,7 @@ p {
 
 .pro {
     width: 330px;
-    background-color: rgba(220, 173, 249, 0.586);
+    background: linear-gradient(rgba(186, 92, 233, 0.573) 0%, rgb(135, 149, 227) 100%);
     backdrop-filter: blur(12px);
     border-radius: 40px;
     position: absolute;
@@ -305,7 +305,7 @@ p {
 
 .medium {
     width: 330px;
-    background-color: rgba(145, 242, 242, 0.589);
+    background: linear-gradient(rgba(96, 171, 242, 0.754) 11.94%, rgb(142, 162, 198) 80.98%);
     border-radius: 40px;
     position: absolute;
     right: 30%;
