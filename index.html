@@ -1054,11 +1054,17 @@
             <form class="contacts-box__enter-form contacts-form" action="">
 
               <div class="contacts-form__label">
-                <input class="contacts-form__input" type="text" name="имя" placeholder="Ім'я">
+                <input class="contacts-form__input" name="phone" type="text" name="имя" placeholder="Ім'я">
               </div>
 
               <div class="contacts-form__label">
-                <input class="contacts-form__input" type="number" name="имя" placeholder="Телефон">
+                <!-- <input class="contacts-form__input" type="number" name="имя" placeholder="Телефон"> -->
+
+                <!-- <input class="contacts-form__input" type="text" name="phone" placeholder="Телефон"
+                pattern="^\+[0-9]{2}\(([0][5-9][0-9])\)\s\d{3}-\d{2}\d{2}" required> -->
+
+                <input class="contacts-form__input" id="phone" type="text" name="phone" placeholder="Телефон">
+
               </div>
 
               <div class="contacts-form__label">
@@ -1115,6 +1121,9 @@
     crossorigin="anonymous"></script>
   <!-- !ссылка на jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/imask"></script>
+
   <!-- !ссылка наш файл js -->
   <script src="assets/js/main.js"></script>
 

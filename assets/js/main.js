@@ -521,3 +521,18 @@ $('.medium').on('click', function () {
     }
   }
 });
+
+// Контакты
+let element = document.getElementById('phone');
+
+element.addEventListener("click", e => {
+  let maskOptions = {
+    mask: '+38 (000) 000-00-00',
+    lazy: false
+  }
+  let mask = new IMask(element, maskOptions);
+});
+
+
+
+
