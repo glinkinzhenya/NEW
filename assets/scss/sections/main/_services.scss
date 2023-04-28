@@ -4,16 +4,14 @@
 .services {
     padding-top: 80px;
     padding-bottom: 100px;
-
-    //background-color: red;
     backdrop-filter: blur(50px);
     min-height: 100vh;
-
 
     @include sm {
         padding-top: 40px;
         padding-bottom: 40px;
-
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     &-container {
@@ -56,8 +54,8 @@
         }
 
         @include sm {
+            grid-template-columns: 1fr;
             padding: 0px 10px;
-
         }
 
         &__item {
@@ -72,10 +70,10 @@
             margin-bottom: 20px;
 
             border-radius: 30px;
-        background: linear-gradient(181deg, rgba(119, 13, 194, 0.1) 13.57%, rgb(0 0 0 / 57%) 98.38%);
+            background: linear-gradient(181deg, rgba(119, 13, 194, 0.1) 13.57%, rgb(0 0 0 / 57%) 98.38%);
 
             @include sm {
-                max-width: 180px;
+                //max-width: 180px;
                 margin-bottom: 0px;
                 padding: 15px;
             }
