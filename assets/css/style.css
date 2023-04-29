@@ -1077,6 +1077,20 @@ ul
     color: rgba(0, 0, 0, .801);
 }
 
+.portfolio__description
+{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+
+    max-width: 600px;
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, .801);
+}
+
 .portfolio-wrapper
 {
     display: -webkit-box;
