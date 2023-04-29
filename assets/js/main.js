@@ -533,6 +533,25 @@ element.addEventListener("click", e => {
   let mask = new IMask(element, maskOptions);
 });
 
+// Potrfolio
 
+const time = 5000;
+const step = 1;
+
+function outNum(num, elem) {
+  let l = document.querySelector('#' + elem);
+  let n = 0;
+  let t = Math.round(time / (num / step));
+  let interval = setInterval(() => {
+    n = n + step;
+    if (n == num) {
+      clearInterval(interval);
+    }
+    l.innerHTML = n;
+  },
+    t);
+}
+
+outNum(875, 'out-1');
 
 

@@ -1091,6 +1091,18 @@ ul
     color: rgba(0, 0, 0, .801);
 }
 
+.portfolio__text
+{
+    font-size: 50px;
+}
+
+.portfolio__number
+{
+    font-size: 200px;
+
+    color: red;
+}
+
 .portfolio-wrapper
 {
     display: -webkit-box;
