@@ -6,6 +6,8 @@
     padding-bottom: 100px;
     backdrop-filter: blur(50px);
     min-height: 100vh;
+    background-image: url("../img/WEB_final-02.png");
+        background-size: 100% 100%;
 
     @include sm {
         padding-top: 40px;
