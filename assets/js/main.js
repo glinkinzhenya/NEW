@@ -73,20 +73,20 @@ logo.addEventListener("click", () => logoTime());
 
 
 // Первая заставка черного
-let i = 0.9
-function getOpacity() {
-  const clearBlack = setInterval(() => {
-    i -= 0.02
-    if (i > 0.000001 && i < 0.02) {
-      clearInterval(clearBlack);
-      fix__black.style = "display: none";
-    } else {
-      fix__black.style = `opacity: ${i}`;
-    }
-  }, 50);
-}
-const fix__black = document.querySelector(".fix__black");
-setTimeout("getOpacity()", 1000);
+// function getOpacity() {
+
+//   header.classList.add("header-background__image");
+
+// }
+// const header = document.querySelector(".header");
+// setTimeout("getOpacity()", 1000);
+// const header = document.querySelector(".header");
+// window.addEventListener('load', function () {
+//   setTimeout(function () {
+//     header.style.backgroundImage = "url('../img/WEB_final-01.png')";
+//     header.style.transition = "background-image 1s ease-in-out";
+//   }, 1000); // 1000 миллисекунд = 1 секунда
+// });
 
 
 
@@ -555,3 +555,55 @@ element.addEventListener("click", e => {
 // outNum(875, 'out-1');
 
 
+// Портфолио
+const cards = [
+  {
+    name: '1',
+    image: 'img/1.jpg',
+  },
+  {
+    name: '2',
+    image: 'img/2.jpg',
+  },
+  {
+    name: '3',
+    image: 'img/3.jpg',
+  },
+  {
+    name: '4',
+    image: 'img/4.jpg',
+  },
+  {
+    name: '5',
+    image: 'img/5.jpg',
+  },
+  {
+    name: '6',
+    image: 'img/6.jpg',
+  },
+  {
+    name: '7',
+    image: 'img/7.jpg',
+  }
+];
+
+
+function createCard() {
+  cards.forEach((card, index) => {
+    if (index === 0) {
+      $('.title').text(`${card.name}`);
+      $('.first').css('background-image', `url(${card.image})`);
+    }
+    if (index === 1) $('.second').css('background-image', `url(${card.image})`);
+    if (index === 2) $('.third').css('background-image', `url(${card.image})`);
+    if (index === 3) $('.fourth').css('background-image', `url(${card.image})`);
+  });
+};
+
+createCard()
+
+$('.portfolio-click').on("click", () => {
+  const firstCard = cards.shift();  // Удаляем первый элемент и сохраняем его в переменной
+  cards.push(firstCard);  // Добавляем удаленный элемент в конец массива
+  createCard()
+});
