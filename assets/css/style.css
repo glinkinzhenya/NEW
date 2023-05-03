@@ -1341,24 +1341,28 @@ ul
     top: 50%;
     left: 50%;
 
-    width: 94vw;
+    display: none;
+
+    width: 90vw;
     height: 93vh;
     padding: 30px;
 
-    -webkit-transition: opacity 1s ease-in-out;
     -webkit-transition: width 1s ease-in-out;
-         -o-transition: opacity 1s ease-in-out;
          -o-transition: width 1s ease-in-out;
-            transition: opacity 1s ease-in-out;
             transition: width 1s ease-in-out;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    pointer-events: none;
 
-    opacity: 0;
     border-radius: 30px;
     background-color: rgba(42, 59, 85, .79);
+}
+
+.portfolio-window.active
+{
+    display: block;
+
+    width: 96vw;
 }
 
 .portfolio-window__image-wrapper
@@ -1368,17 +1372,6 @@ ul
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 20px;
-}
-
-.portfolio-window.active
-{
-    display: block;
-
-    width: 96vw;
-
-    pointer-events: auto;
-
-    opacity: 1;
 }
 
 .portfolio-window__image
@@ -1486,6 +1479,9 @@ ul
 
 .work-icons__wrapper-text > h3
 {
+    font-size: 25px;
+    font-weight: 300;
+
     color: white;
 }
 
@@ -1498,6 +1494,8 @@ ul
 
 .work-icons__wrapper-text > p
 {
+    font-weight: 300;
+
     color: rgba(255, 255, 255, .59);
 }
 
@@ -1637,16 +1635,19 @@ ul
 
 .money-title
 {
+    font-size: 38px;
+    font-weight: 300;
+
     margin-bottom: 20px;
 
     text-align: center;
 
-    color: white;
+    color: rgba(255, 255, 255, .723);
 }
 
 .money-description
 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
 
     text-align: center;
@@ -2004,11 +2005,11 @@ p
             transition: 1.5s;
 
     border-radius: 40px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(133, 249, 206, .416)), to(rgba(152, 183, 246, .62)));
-    background: -o-linear-gradient(rgba(133, 249, 206, .416) 0%, rgba(152, 183, 246, .62) 100%);
-    background:    linear-gradient(rgba(133, 249, 206, .416) 0%, rgba(152, 183, 246, .62) 100%);
-    -webkit-box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
-            box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
+    background: -webkit-gradient(linear, left top, left bottom, from(#4a467b), to(#272542));
+    background: -o-linear-gradient(top, #4a467b, #272542);
+    background:    linear-gradient(180deg, #4a467b, #272542);
+    -webkit-box-shadow: inset 0 0 45px 29px rgba(0, 0, 0, .154);
+            box-shadow: inset 0 0 45px 29px rgba(0, 0, 0, .154);
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

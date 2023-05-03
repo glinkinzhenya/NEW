@@ -629,6 +629,7 @@ $('.portfolio-click').on("click", () => {
   createCard()
 });
 
+// кнопка открыть все портфолио
 $('.portfolio-wrapper__info-button-all').on("click", () => {
   $('.portfolio-window__image-wrapper').empty();
   $('.money-black').addClass('active');
@@ -643,7 +644,7 @@ $('.portfolio-wrapper__info-button-all').on("click", () => {
     setTimeout(function () {
       $('.portfolio-window__image-link').css('filter', 'none');
       $('.portfolio-window__image-link').css('opacity', '1');
-    }, 200);
+    }, 1);
   });
 });
 

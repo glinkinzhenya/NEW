@@ -175,18 +175,20 @@
 .portfolio-window {
     position: fixed;
     height: 93vh;
-    width: 94vw;
+    width: 90vw;
     z-index: 100;
     border-radius: 30px;
     background-color: rgba(42, 59, 85, .79);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    display: none;
     transition: width 1s ease-in-out;
     padding: 30px;
+}
+.portfolio-window.active {
+    width: 96vw;
+    display: block;
 }
 
 .portfolio-window__image-wrapper {
@@ -194,13 +196,6 @@
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 20px;
-}
-
-.portfolio-window.active {
-    opacity: 1;
-    width: 96vw;
-    display: block;
-    pointer-events: auto;
 }
 
 .portfolio-window__image {
