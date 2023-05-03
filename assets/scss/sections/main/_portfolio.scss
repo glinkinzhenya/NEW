@@ -2,7 +2,7 @@
 @use '../../mixins' as *;
 
 .portfolio {
-    height: 100vh;
+    height: 120vh;
     background-image: url("../img/WEB_final-03.png");
     background-size: 100% 100%;
     display: flex;
@@ -28,16 +28,13 @@
     line-height: 140%;
     color: rgba(0, 0, 0, 0.801);
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.portfolio-wrapper {
-    margin-top: 10px;
-    width: 60%;
-    height: 50%;
+.portfolio-wrapper__cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 150px;
 }
 
 .portfolio-item {
@@ -75,65 +72,142 @@
 }
 
 .portfolio-image {
-    width: 70%;
-    background-color: rgb(165, 192, 230);
+    position: relative;
+    height: 400px;
+    width: 600px;
 }
 
-.card {
+.portfolio-card {
     margin: 10px;
-    width: 360px;
-    height: 240px;
+    width: 460px;
+    height: 250px;
     border-radius: 30px;
-    position: absolute;
     font-size: 30px;
     transition: .3s;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
 }
 
-.first {
-    left: 8%;
-    top: 25%;
+.portfolio-first {
+    left: 5%;
+    top: 20%;
     z-index: 10;
     box-shadow: 25px 25px 50px rgb(9, 9, 9);
 }
 
-.second {
-    left: 20%;
+.portfolio-second {
+    left: 18%;
     top: 32%;
     z-index: 9;
     filter: blur(1px);
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 76%);
 }
 
-.third {
+.portfolio-third {
     left: 23%;
-    top: 35%;
+    top: 37%;
     z-index: 8;
     filter: blur(2px);
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 76%);
 }
 
-.fourth {
-    left: 26%;
-    top: 40%;
+.portfolio-fourth {
+    left: 28%;
+    top: 42%;
     z-index: 7;
     filter: blur(3px);
 }
 
-.section2 {}
+.portfolio-wrapper__info {
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+}
 
-.title {}
-
-.description {}
-
-.button {}
+.portfolio-wrapper__info-button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #5c5a86;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 16px;
+    font-weight: 300;
+    width: 200px;
+    margin-bottom: 10px;
+}
 
 .portfolio-click {
-    width: 440px;
-    height: 350px;
     position: absolute;
+    z-index: 10;
     top: 33%;
     left: 20%;
-    z-index: 10;
+    width: 530px;
+    height: 310px;
     cursor: pointer;
+}
+
+.portfolio-wrapper__info-description {
+    width: 300px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.portfolio-wrapper__info-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.portfolio-wrapper__info-button-all {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #5c5a86;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 11px;
+    font-weight: 300;
+    width: 115px;
+    position: absolute;
+    bottom: -21%;
+    right: -5%;
+    display: none;
+}
+
+.portfolio-window {
+    position: fixed;
+    height: 95vh;
+    width: 92vw;
+    z-index: 100;
+    border-radius: 30px;
+    background-color: rgba(42, 59, 85, .79);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+.portfolio-window.active {
+    opacity: 1;
+    width: 95vw;
+    display: block;
+    pointer-events: auto;
+}
+
+.portfolio-window__image {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 35px;
+    padding: 5px;
+    cursor: pointer;
+    transition: opacity 2s;
+    // opacity: 0;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    background-color: rgba(15, 18, 22, .301);
 }

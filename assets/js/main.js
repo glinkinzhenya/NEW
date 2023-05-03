@@ -558,31 +558,38 @@ element.addEventListener("click", e => {
 // Портфолио
 const cards = [
   {
-    name: '1',
+    name: 'Gym Team',
+    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/1.jpg',
   },
   {
-    name: '2',
+    name: 'Gym Team',
+    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/2.jpg',
   },
   {
-    name: '3',
+    name: 'Gym Team',
+    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/3.jpg',
   },
   {
-    name: '4',
+    name: 'Gym Team',
+    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/4.jpg',
   },
   {
-    name: '5',
+    name: 'Gym Team',
+    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/5.jpg',
   },
   {
-    name: '6',
+    name: 'Gym Team',
+    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/6.jpg',
   },
   {
-    name: '7',
+    name: 'Gym Team',
+    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/7.jpg',
   }
 ];
@@ -591,19 +598,34 @@ const cards = [
 function createCard() {
   cards.forEach((card, index) => {
     if (index === 0) {
-      $('.title').text(`${card.name}`);
-      $('.first').css('background-image', `url(${card.image})`);
+      $('.portfolio-wrapper__info-title').text(`${card.name}`);
+      $('.portfolio-wrapper__info-description').text(`${card.description}`);
+      $('.portfolio-first').css('background-image', `url(assets/${card.image})`);
     }
-    if (index === 1) $('.second').css('background-image', `url(${card.image})`);
-    if (index === 2) $('.third').css('background-image', `url(${card.image})`);
-    if (index === 3) $('.fourth').css('background-image', `url(${card.image})`);
+    if (index === 1) $('.portfolio-second').css('background-image', `url(assets/${card.image})`);
+    if (index === 2) $('.portfolio-third').css('background-image', `url(assets/${card.image})`);
+    if (index === 3) $('.portfolio-fourth').css('background-image', `url(assets/${card.image})`);
   });
 };
 
 createCard()
-
+let numberCard = 0;
 $('.portfolio-click').on("click", () => {
+  numberCard += 1;
+  if (numberCard === 2) $('.portfolio-wrapper__info-button-all').css('display', 'block');
+  
   const firstCard = cards.shift();  // Удаляем первый элемент и сохраняем его в переменной
   cards.push(firstCard);  // Добавляем удаленный элемент в конец массива
   createCard()
+});
+
+$('.portfolio-wrapper__info-button-all').on("click", () => {
+  $('.money-black').addClass('active');
+  $('.portfolio-window').addClass('active');
+  
+});
+
+$('.portfolio-window__image').on('click', function () {
+  $('.money-black').removeClass('active');
+  $('.portfolio-window').removeClass('active');
 });
