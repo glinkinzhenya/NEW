@@ -633,16 +633,18 @@ $('.portfolio-wrapper__info-button-all').on("click", () => {
   $('.portfolio-window__image-wrapper').empty();
   $('.money-black').addClass('active');
   $('.portfolio-window').addClass('active');
-  cards.forEach((card, index) => {
-    const portfolioWindowLink = document.createElement("a");
-    portfolioWindowLink.setAttribute("href", `${card.link}`);
-    portfolioWindowLink.setAttribute("target", "_blank");
-    const portfolioWindowImg = document.createElement("img");
-    portfolioWindowImg.setAttribute("src", `assets/${card.image}`);
-    portfolioWindowImg.classList.add("portfolio-window__image-link");
+  $.each(cards, function (index, card) {
+    const portfolioWindowLink = $("<a>").attr("href", card.link).attr("target", "_blank");
+    const portfolioWindowImg = $("<img>").attr("src", "assets/" + card.image).addClass("portfolio-window__image-link");
     portfolioWindowLink.append(portfolioWindowImg);
-    $('.portfolio-window__image-wrapper').append(portfolioWindowLink);
-  })
+    $(".portfolio-window__image-wrapper").append(portfolioWindowLink);
+    $('.portfolio-window__image-link').css('filter', 'blur(5px)');
+    $('.portfolio-window__image-link').css('opacity', '0.7');
+    setTimeout(function () {
+      $('.portfolio-window__image-link').css('filter', 'none');
+      $('.portfolio-window__image-link').css('opacity', '1');
+    }, 200);
+  });
 });
 
 $('.portfolio-window__image').on('click', function () {
