@@ -558,57 +558,67 @@ element.addEventListener("click", e => {
 // Портфолио
 const cards = [
   {
-    name: 'Gym Team',
-    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
+    name: 'Hillel',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit porro soluta blanditiis.',
     image: 'img/1.jpg',
+    link:'https://lms.ithillel.ua/auth',
   },
   {
-    name: 'Gym Team',
-    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
+    name: 'Gramofon',
+    description: 'fvnkjnvkrn nvgkrj envr nvkjt nvjt nktj nkvjn jtnjtn ',
     image: 'img/2.jpg',
+    link: 'https://gramofon.ua/photocard',
   },
   {
-    name: 'Gym Team',
-    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
+    name: 'Netflix',
+    description: 'jrnevkrjnerkjnkejnkjetrnnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/3.jpg',
+    link: 'https://www.netflix.com/browse',
   },
   {
-    name: 'Gym Team',
-    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
+    name: 'Translate',
+    description: 'frkkr fnkjrnkrrfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/4.jpg',
+    link: 'https://translate.google.com/?hl=ru',
   },
   {
-    name: 'Gym Team',
-    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
+    name: 'Github',
+    description: 'frkkr frfrnfr f rf rfrrf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/5.jpg',
+    link: 'https://github.com',
   },
   {
-    name: 'Gym Team',
-    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
+    name: 'Docs',
+    description: 'frkkr frfrnfr f rf rfccfcfcfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/6.jpg',
+    link: 'https://docs.google.com/spreadsheets/u/0/',
   },
   {
-    name: 'Gym Team',
-    description: 'frkkr frfrnfr f rf rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
+    name: 'Revenuebot',
+    description: 'frkkr vfvfvfv rfr f rf rfjrfnorfnr frf 4irjf4ifj54 5jf v tnvj rt gbr yj5 6gj65h6',
     image: 'img/7.jpg',
+    link: 'https://revenuebot.io',
   }
 ];
 
-
+// функция которая собирает 4 карточки
 function createCard() {
   cards.forEach((card, index) => {
     if (index === 0) {
       $('.portfolio-wrapper__info-title').text(`${card.name}`);
       $('.portfolio-wrapper__info-description').text(`${card.description}`);
       $('.portfolio-first').css('background-image', `url(assets/${card.image})`);
+      $('.portfolio-wrapper__info-button').attr('href', `${card.link}`);
     }
     if (index === 1) $('.portfolio-second').css('background-image', `url(assets/${card.image})`);
     if (index === 2) $('.portfolio-third').css('background-image', `url(assets/${card.image})`);
     if (index === 3) $('.portfolio-fourth').css('background-image', `url(assets/${card.image})`);
   });
 };
-
+// вызов функции
 createCard()
+
+// появляется кнопка на 3 клике 
 let numberCard = 0;
 $('.portfolio-click').on("click", () => {
   numberCard += 1;
@@ -620,12 +630,24 @@ $('.portfolio-click').on("click", () => {
 });
 
 $('.portfolio-wrapper__info-button-all').on("click", () => {
+  $('.portfolio-window__image-wrapper').empty();
   $('.money-black').addClass('active');
   $('.portfolio-window').addClass('active');
-  
+  cards.forEach((card, index) => {
+    const portfolioWindowLink = document.createElement("a");
+    portfolioWindowLink.setAttribute("href", `${card.link}`);
+    portfolioWindowLink.setAttribute("target", "_blank");
+    const portfolioWindowImg = document.createElement("img");
+    portfolioWindowImg.setAttribute("src", `assets/${card.image}`);
+    portfolioWindowImg.classList.add("portfolio-window__image-link");
+    portfolioWindowLink.append(portfolioWindowImg);
+    $('.portfolio-window__image-wrapper').append(portfolioWindowLink);
+  })
 });
 
 $('.portfolio-window__image').on('click', function () {
   $('.money-black').removeClass('active');
   $('.portfolio-window').removeClass('active');
 });
+
+

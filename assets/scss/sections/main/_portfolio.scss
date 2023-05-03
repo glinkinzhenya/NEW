@@ -136,6 +136,7 @@
     font-weight: 300;
     width: 200px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .portfolio-click {
@@ -158,6 +159,7 @@
 .portfolio-wrapper__info-title {
     font-size: 28px;
     font-weight: 400;
+    transition: 1s;
 }
 
 .portfolio-wrapper__info-button-all {
@@ -189,6 +191,14 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
     transition: width 1s ease-in-out;
+    padding: 30px;
+}
+
+.portfolio-window__image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
 }
 
 .portfolio-window.active {
@@ -210,4 +220,9 @@
     border: 0.5px solid white;
     border-radius: 20px;
     background-color: rgba(15, 18, 22, .301);
+}
+
+.portfolio-window__image-link {
+    width: 300px;
+    border-radius: 10px;
 }
