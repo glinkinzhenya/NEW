@@ -2,6 +2,7 @@
 @use '../../mixins' as *;
 
 .work {
+    padding-top: 100px;
     padding-bottom: 10px;
 
     @include sm {
@@ -9,13 +10,11 @@
         padding-top: 60px;
     }
 
-    background-image: url("../img/WEB_final-04.png");
-    background-size: 100% 100%;
+         background-image: url("../img/WEB_final-04.png");
+         background-size: 100% 100%;
 }
 
 .work-text {
-    font-size: 38px;
-    font-weight: 300;
     text-align: center;
     margin-bottom: 100px;
     color: rgba(255, 255, 255, 0.6);
@@ -55,8 +54,6 @@
 
 .work-icons__wrapper-text>h3 {
     color: white;
-    font-weight: 300;
-    font-size: 25px;
 
     @include sm {
         font-size: 18px;
@@ -74,7 +71,6 @@
 
 .work-icons__wrapper-text>p {
     color: rgba(255, 255, 255, 0.59);
-    font-weight: 300;
 
     @include sm {
         font-size: 13px;
