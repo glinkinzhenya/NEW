@@ -200,34 +200,6 @@ template
 {
     display: none;
 }
-
-@font-face
-{
-    font-family: 'TT Norms';
-    font-weight: bold;
-    font-style: normal;
-
-    src: url('TTNorms-Bold.eot');
-    src: local('TT Norms Bold'), local('TTNorms-Bold'), url('../fonts/TTNorms-Bold.woff2') format('woff2');
-}
-@font-face
-{
-    font-family: 'TT Norms';
-    font-weight: 500;
-    font-style: normal;
-
-    src: url('TTNorms-Medium.eot');
-    src: local('TT Norms Medium'), local('TTNorms-Medium'), url('../fonts/TTNorms-Medium.woff2') format('woff2');
-}
-@font-face
-{
-    font-family: 'TT Norms';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('TTNorms-Regular.eot');
-    src: local('TT Norms Regular'), local('TTNorms-Regular'), url('../fonts/TTNorms-Regular.woff2') format('woff2');
-}
 *,
 *::before,
 *::after
@@ -245,8 +217,8 @@ html
 
 body
 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 
     overflow-x: hidden;
 }
@@ -1635,7 +1607,7 @@ ul
 
 .money-title
 {
-    font-size: 38px;
+    font-size: 34px;
     font-weight: 300;
 
     margin-bottom: 20px;
@@ -1650,6 +1622,8 @@ ul
     font-size: 17px;
     font-weight: 300;
 
+    margin-bottom: 30px;
+
     text-align: center;
 
     color: rgba(255, 255, 255, .679);
@@ -1657,20 +1631,30 @@ ul
 
 .money-box__title
 {
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 200;
 
-    margin-bottom: 20px;
+    color: rgba(255, 255, 255, .723);
+}
+
+.money-box__money
+{
+    font-size: 32px;
+    font-weight: 300;
+
+    height: 40px;
+
+    color: rgba(255, 255, 255, .723);
 }
 
 .money-box__cash
 {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 300;
 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
-    color: rgba(0, 0, 0, .866);
+    color: rgba(255, 255, 255, .723);
 }
 
 .money-box__cash > span
@@ -1685,7 +1669,7 @@ ul
     display: flex;
         flex-direction: column;
 
-    margin-right: 20px;
+    width: 193px;
     margin-bottom: 20px;
 
     -webkit-box-orient: vertical;
@@ -1705,8 +1689,10 @@ ul
 
 .money-box__check > p
 {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 100;
+
+    color: rgba(255, 255, 255, .721);
 }
 
 p
@@ -1988,7 +1974,7 @@ p
 .basic
 {
     position: absolute;
-    left: 30%;
+    left: 20%;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1997,19 +1983,18 @@ p
 
     width: 330px;
     margin-top: 30px;
-    padding: 20px;
-    padding-bottom: 30px;
+    padding: 33px;
 
     -webkit-transition: 1.5s;
          -o-transition: 1.5s;
             transition: 1.5s;
 
-    border-radius: 40px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#4a467b), to(#272542));
-    background: -o-linear-gradient(top, #4a467b, #272542);
-    background:    linear-gradient(180deg, #4a467b, #272542);
-    -webkit-box-shadow: inset 0 0 45px 29px rgba(0, 0, 0, .154);
-            box-shadow: inset 0 0 45px 29px rgba(0, 0, 0, .154);
+    border: 1px solid rgba(255, 255, 255, .332);
+    border-radius: 42px;
+    background: -o-linear-gradient(234deg, #514a9e, #12111d);
+    background:    linear-gradient(216deg, #514a9e, #12111d);
+    -webkit-box-shadow: inset 0 0 45px 29px rgba(22, 17, 34, .338), 0 0 50px rgba(0, 0, 0, .36);
+            box-shadow: inset 0 0 45px 29px rgba(22, 17, 34, .338), 0 0 50px rgba(0, 0, 0, .36);
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2017,8 +2002,6 @@ p
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-backdrop-filter: blur(12px);
-            backdrop-filter: blur(12px);
 }
 
 .pro
@@ -2032,23 +2015,20 @@ p
         flex-direction: column;
 
     width: 330px;
-    margin-top: 15px;
-    padding: 20px;
-    padding-bottom: 30px;
+    margin-top: 48px;
+    padding: 33px;
 
     -webkit-transition: 1.5s;
          -o-transition: 1.5s;
             transition: 1.5s;
 
-    border-radius: 40px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 92, 233, .573)), to(rgb(135, 149, 227)));
-    background: -o-linear-gradient(rgba(186, 92, 233, .573) 0%, rgb(135, 149, 227) 100%);
-    background:    linear-gradient(rgba(186, 92, 233, .573) 0%, rgb(135, 149, 227) 100%);
-    -webkit-box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
-            box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
+    border: 1px solid rgba(255, 255, 255, .332);
+    border-radius: 42px;
+    background: -o-linear-gradient(294deg, #8047ae, #231131);
+    background:    linear-gradient(156deg, #8047ae, #231131);
+    -webkit-box-shadow: inset 0 0 45px 29px rgba(22, 17, 34, .338), 0 0 50px rgba(0, 0, 0, .36);
+            box-shadow: inset 0 0 45px 29px rgba(22, 17, 34, .338), 0 0 50px rgba(0, 0, 0, .36);
 
-    -webkit-backdrop-filter: blur(12px);
-            backdrop-filter: blur(12px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2060,7 +2040,7 @@ p
 .medium
 {
     position: absolute;
-    right: 30%;
+    right: 20%;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2069,22 +2049,19 @@ p
 
     width: 330px;
     margin-top: 30px;
-    padding: 20px;
-    padding-bottom: 30px;
+    padding: 33px;
 
     -webkit-transition: 1.5s;
          -o-transition: 1.5s;
             transition: 1.5s;
 
-    border-radius: 40px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(11.94%, rgba(96, 171, 242, .754)), color-stop(80.98%, rgb(142, 162, 198)));
-    background: -o-linear-gradient(rgba(96, 171, 242, .754) 11.94%, rgb(142, 162, 198) 80.98%);
-    background:    linear-gradient(rgba(96, 171, 242, .754) 11.94%, rgb(142, 162, 198) 80.98%);
-    -webkit-box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
-            box-shadow: inset 0 0 45px 29px rgba(255, 255, 255, .154);
+    border: 1px solid rgba(255, 255, 255, .332);
+    border-radius: 42px;
+    background: -o-linear-gradient(294deg, #514a9e, #12111d);
+    background:    linear-gradient(156deg, #514a9e, #12111d);
+    -webkit-box-shadow: inset 0 0 45px 29px rgba(22, 17, 34, .338), 0 0 50px rgba(0, 0, 0, .36);
+            box-shadow: inset 0 0 45px 29px rgba(22, 17, 34, .338), 0 0 50px rgba(0, 0, 0, .36);
 
-    -webkit-backdrop-filter: blur(12px);
-            backdrop-filter: blur(12px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2105,20 +2082,24 @@ p
 
 .money-button
 {
-    padding: 10px;
+    font-size: 14px;
+    font-weight: 100;
+
+    padding: 10px 28px;
 
     -webkit-transition: .4s;
          -o-transition: .4s;
             transition: .4s;
 
-    border: none;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, .4509803922);
+    color: white;
+    border: .1px solid rgba(255, 255, 255, .559);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .0745098039);
 }
 
 .money-button:hover
 {
-    background-color: rgba(255, 255, 255, .662745098);
+    background-color: rgba(255, 255, 255, .168627451);
 }
 
 .technology
@@ -2906,15 +2887,15 @@ input[type=file]
 {
     .basic:hover
     {
-        margin-top: 15px;
+        margin-top: 17px;
     }
     .medium:hover
     {
-        margin-top: 15px;
+        margin-top: 17px;
     }
     .pro:hover
     {
-        margin-top: 0;
+        margin-top: 34px;
     }
     .wrap:hover .front
     {
