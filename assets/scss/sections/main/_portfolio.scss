@@ -159,17 +159,20 @@
 }
 
 .portfolio-wrapper__info-button-all {
-    padding: 15px 25px;
-    border-radius: 20px;
-    border: none;
-    background-color: #5c5a86;
-    color: rgba(255, 255, 255, 0.866);
-    font-size: 13px;
-    font-weight: 300;
     position: absolute;
     bottom: -25%;
     right: -5%;
     display: none;
+
+
+    font-size: 14px;
+    font-weight: 100;
+    padding: 10px 28px;
+    transition: all 0.4s ease 0s;
+    color: white;
+    border: 0.1px solid rgba(255, 255, 255, 0.56);
+    border-radius: 10px;
+    background-color: rgb(23 23 48 / 82%);
 }
 
 .portfolio-window {

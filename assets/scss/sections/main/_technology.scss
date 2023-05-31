@@ -2,7 +2,8 @@
 @use '../../mixins' as *;
 
 .technology {
-    height: 90vh;
+    padding-top: 300px;
+    padding-bottom: 300px;
     display: grid;
     grid-template-columns: 45% 55%;
     align-items: center;

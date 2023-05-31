@@ -74,16 +74,14 @@ logo.addEventListener("click", () => logoTime());
 
 // Первая заставка черного
 // function getOpacity() {
-
 //   header.classList.add("header-background__image");
-
 // }
+
 // const header = document.querySelector(".header");
 // setTimeout("getOpacity()", 1000);
-// const header = document.querySelector(".header");
 // window.addEventListener('load', function () {
 //   setTimeout(function () {
-//     header.style.backgroundImage = "url('../img/WEB_final-01.png')";
+//     header.style.backgroundImage = "url('img/WEB_final-01.png')";
 //     header.style.transition = "background-image 1s ease-in-out";
 //   }, 1000); // 1000 миллисекунд = 1 секунда
 // });
@@ -180,69 +178,6 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
   });
 });
 
-
-
-// Добавление комментариев 
-
-// отправка на сервер
-
-const API = "https://63f0efbb5b7cf4107e299645.mockapi.io";
-
-async function controller(type = "GET", action, body) {
-  const params = {
-    method: type,
-    headers: {
-      'Content-Type': "application/json",
-    }
-  }
-  if (body) {
-    params.body = JSON.stringify(body);
-  }
-  const response = await fetch(action, params);
-  const data = await response.json();
-  return data;
-};
-
-
-// замена фото
-// ! IMAGE BASE 64
-const getBase64 = file => {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = error => resolve("");
-  });
-};
-
-const oldAvatar = document.querySelector(".love-comment__info-image");
-const newAvatar = document.querySelector("#newAvatar");
-const commentButton = document.querySelector(".love-comment__button");
-const infoName = document.querySelector(".love-comment__info-name");
-const commentInput = document.querySelector(".love-comment__input");
-
-// подмена на сайте
-newAvatar.addEventListener('change', function () {
-  if (this.files && this.files[0]) {
-    var reader = new FileReader();
-    reader.onload = function (e) {
-      oldAvatar.setAttribute('src', e.target.result);
-    };
-    reader.readAsDataURL(this.files[0]);
-  }
-});
-
-// кнопка отправки
-commentButton.addEventListener("click", async () => {
-
-  const avatar = await getBase64(newAvatar.files[0]);
-
-  const response = await controller("POST", `${API}/comments`, {
-    name: infoName.value,
-    comment: commentInput.value,
-    avatar: avatar,
-  })
-});
 
 
 // показываем стрелочку при прокрутке
@@ -653,3 +588,35 @@ $('.portfolio-window__image').on('click', function () {
   $('.portfolio-window').removeClass('active');
 });
 
+
+// Переключение людей
+
+$(document).ready(function () {
+  var people = ["assets/img/nastya.png", "assets/img/nastya.png", "assets/img/person2.jpg", "assets/img/person3.jpg", "assets/img/person4.jpg"]; // Замените данный массив на ваш массив с картинками
+
+  var currentIndex = 0;
+  var maxIndex = people.length - 1;
+
+  function showImages() {
+    $(".slider").empty();
+    for (var i = currentIndex; i <= currentIndex + 1 && i <= maxIndex; i++) {
+      $(".slider").append("<img src='" + people[i] + "'>");
+    }
+  }
+
+  showImages();
+
+  $(".about-slider__arrow-left").on("click", function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+      showImages();
+    }
+  });
+
+  $(".about-slider__arrow-right").on("click", function () {
+    if (currentIndex < maxIndex - 1) {
+      currentIndex++;
+      showImages();
+    }
+  });
+});
