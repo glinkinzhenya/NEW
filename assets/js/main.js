@@ -198,30 +198,30 @@ window.addEventListener('scroll', function () {
 
 
 // появляющееся окно к комментариям 
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-const collapseExample = document.getElementById('collapseExample')
-const myInput = document.querySelector('.love-comment__input');
-const loveName = document.querySelector('.love-comment__info-name');
-const loveImage = document.querySelector('.love-comment__info-image');
+// const toastTrigger = document.getElementById('liveToastBtn')
+// const toastLiveExample = document.getElementById('liveToast')
+// const collapseExample = document.getElementById('collapseExample')
+// const myInput = document.querySelector('.love-comment__input');
+// const loveName = document.querySelector('.love-comment__info-name');
+// const loveImage = document.querySelector('.love-comment__info-image');
 
 
 
-if (toastTrigger) {
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTrigger.addEventListener('click', () => {
-    toastBootstrap.show()
-    myInput.value = '';
-    loveName.value = '';
-    newAvatar.value = '';
-    loveImage.setAttribute('src', 'assets/img/foto-icon1.png');
+// if (toastTrigger) {
+//   const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+//   toastTrigger.addEventListener('click', () => {
+//     toastBootstrap.show()
+//     myInput.value = '';
+//     loveName.value = '';
+//     newAvatar.value = '';
+//     loveImage.setAttribute('src', 'assets/img/foto-icon1.png');
 
-    setTimeout(() => {
-      collapseExample.classList.remove('show')
-    }, 6000);
+//     setTimeout(() => {
+//       collapseExample.classList.remove('show')
+//     }, 6000);
 
-  })
-}
+//   })
+// }
 
 
 
