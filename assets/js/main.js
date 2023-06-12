@@ -592,7 +592,7 @@ $('.portfolio-window__image').on('click', function () {
 // Переключение людей
 
 $(document).ready(function () {
-  var people = ["assets/img/nastya.png", "assets/img/nastya.png", "assets/img/person2.jpg", "assets/img/person3.jpg", "assets/img/person4.jpg"]; // Замените данный массив на ваш массив с картинками
+  var people = ["assets/img/nastya.png", "assets/img/alex.png", "assets/img/nastya.png", "assets/img/alex.png", "assets/img/person4.jpg"]; // Замените данный массив на ваш массив с картинками
 
   var currentIndex = 0;
   var maxIndex = people.length - 1;
